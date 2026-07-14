@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS body_target_info (
     slug TEXT NOT NULL,
     lang TEXT NOT NULL,
     title TEXT NOT NULL,
-    desc TEXT NOT NULL,
+    "desc" TEXT NOT NULL,
     PRIMARY KEY (slug, lang),
     FOREIGN KEY (slug)
         REFERENCES body_target(slug)
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS machines_info (
     slug TEXT NOT NULL,
     lang TEXT NOT NULL,
     title TEXT NOT NULL,
-    desc TEXT NOT NULL,
+    "desc" TEXT NOT NULL,
     PRIMARY KEY (slug, lang),
     FOREIGN KEY (slug)
         REFERENCES machines(slug)
