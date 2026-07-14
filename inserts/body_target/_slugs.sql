@@ -1,4 +1,3 @@
--- slugs iniciales
 INSERT INTO body_target (slug, img) VALUES
 ('abdominals', 'abdominals.png'),
 ('abductors', 'abductors.png'),
