@@ -13,6 +13,7 @@ INSERT INTO machines (slug, img, only_gym) VALUES
 ('ez_bar', 'ez_bar.png', false),
 ('foam_roller', 'foam_roller.png', false),
 ('glute_drive_machine', 'glute_drive_machine.png', true),
+('glute_ham_developer', 'glute_ham_developer.png', true),
 ('hack_squat_machine', 'hack_squat_machine.png', true),
 ('hex_bar', 'hex_bar.png', false),
 ('hyperextension_bench', 'hyperextension_bench.png', true),
