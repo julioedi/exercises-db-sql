@@ -1,0 +1,21 @@
+-- 2. Información multiidioma del grupo muscular
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES 
+('legs', 'es', 'Piernas', 'Grupo muscular que incluye cuádriceps, isquiotibiales, glúteos y pantorrillas.'),
+('legs', 'en', 'Legs', 'Muscle group including quadriceps, hamstrings, glutes, and calves.'),
+('legs', 'pt', 'Pernas', 'Grupo muscular que inclui quadríceps, isquiotibiais, glúteos e panturrilhas.'),
+('legs', 'fr', 'Jambes', 'Groupe musculaire incluant les quadriceps, les ischio-jambiers, les fessiers et les mollets.'),
+('legs', 'de', 'Beine', 'Muskelgruppe bestehend aus Quadrizeps, Beinbeugern, Gesäß und Waden.'),
+('legs', 'it', 'Gambe', 'Gruppo muscolare che include quadricipiti, bicipiti femorali, glutei e polpacci.'),
+('legs', 'zh', '腿部', '包括股四头肌、腘绳肌、臀部和小腿的肌群。'),
+('legs', 'ja', '脚', '大腿四頭肌、ハムストリングス、臀部、ふくらはぎを含む筋群。'),
+('legs', 'ko', '다리', '대퇴사두근, 햄스트링, 둔근, 종아리를 포함하는 근육 그룹입니다.'),
+('legs', 'ar', 'الأرجل', 'مجموعة عضلية تشمل العضلة الرباعية، وأوتار الركبة، والأرداف، وعضلات الساق.'),
+('legs', 'hi', 'पैर', 'मांसपेशियों का समूह जिसमें क्वाड्रिसेप्स, हैमस्ट्रिंग, ग्लूट्स और पिंडलियां शामिल हैं।'),
+('legs', 'ru', 'Ноги', 'Группа мышц, включающая квадрицепсы, бицепсы бедра, ягодицы и икры.'),
+('legs', 'nl', 'Benen', 'Spiergroep inclusief quadriceps, hamstrings, bilspieren en kuiten.'),
+('legs', 'sv', 'Ben', 'Muskelgrupp som inkluderar framsida lår, baksida lår, sätesmuskler och vader.'),
+('legs', 'pl', 'Nogi', 'Grupa mięśni obejmująca mięśnie czworogłowe, dwugłowe, pośladki i łydki.'),
+('legs', 'id', 'Kaki', 'Kelompok otot yang mencakup paha depan, paha belakang, bokong, dan betis.'),
+('legs', 'bn', 'পা', 'পেশীগুলির একটি দল যার মধ্যে কোয়াড্রিসেপস, হ্যামস্ট্রিং, গ্লুটস এবং কাফ অন্তর্ভুক্ত।'),
+('legs', 'vi', 'Chân', 'Nhóm cơ bao gồm cơ tứ đầu, cơ đùi sau, cơ mông và bắp chân.'),
+('legs', 'fa', 'پاها', 'گروه عضلانی شامل عضلات چهارسر ران، همسترینگ، باسن و ساق پا.');

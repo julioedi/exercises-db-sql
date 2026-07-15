@@ -1,0 +1,35 @@
+-- Definición del ejercicio y sus recursos
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES ('calf-raises', 'calf-raises.jpg', 'calf-raises.mp4', 'beginner'),
+VALUES ('jump-rope', 'jump-rope.jpg', 'jump-rope.mp4', 'beginner');
+
+-- Relación: el ejercicio trabaja el grupo muscular 'calves'
+INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES ('calf-raises', 'calves');
+
+-- Relación: no requiere máquina
+
+INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES ('calf-raises', 'jump-rope');
+
+-- Información multiidioma del ejercicio
+INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('calf-raises', 'es', 'Elevación de talones', 'Ejercicio sencillo para fortalecer los músculos de la pantorrilla.', 'Mejora la fuerza y estabilidad del tobillo.', 'De pie, elévate sobre las puntas de los pies y baja lentamente.', 'Mantén el core contraído para mantener el equilibrio.', 'Evitar si hay lesiones en el tendón de Aquiles.', 'Bajar demasiado rápido o no realizar el rango de movimiento completo.'),
+('calf-raises', 'en', 'Calf raises', 'Simple exercise to strengthen the calf muscles.', 'Improves ankle strength and stability.', 'Standing up, rise onto your toes and lower slowly.', 'Keep your core engaged to maintain balance.', 'Avoid if there are Achilles tendon injuries.', 'Lowering too quickly or not performing the full range of motion.'),
+('calf-raises', 'pt', 'Elevação de calcanhares', 'Exercício simples para fortalecer os músculos da barriga da perna.', 'Melhora a força e estabilidade do tornozelo.', 'De pé, eleve-se sobre as pontas dos pés e desça lentamente.', 'Mantenha o core contraído para manter o equilíbrio.', 'Evitar se houver lesões no tendão de Aquiles.', 'Descer demasiado rápido ou não realizar o movimento completo.'),
+('calf-raises', 'fr', 'Élévation des talons', 'Exercice simple pour renforcer les muscles du mollet.', 'Améliore la force et la stabilité de la cheville.', 'Debout, montez sur la pointe des pieds et redescendez lentement.', 'Gardez le tronc engagé pour maintenir l''équilibre.', 'À éviter en cas de blessures au tendon d''Achille.', 'Descendre trop rapidement ou ne pas effectuer l''amplitude complète.'),
+('calf-raises', 'de', 'Wadenheben', 'Einfache Übung zur Stärkung der Wadenmuskulatur.', 'Verbessert die Kraft und Stabilität des Knöchels.', 'Stellen Sie sich hin, gehen Sie auf die Zehenspitzen und senken Sie sich langsam ab.', 'Halten Sie Ihren Rumpf angespannt, um das Gleichgewicht zu halten.', 'Bei Achillessehnenverletzungen vermeiden.', 'Zu schnelles Absenken oder kein voller Bewegungsumfang.'),
+('calf-raises', 'it', 'Sollevamento talloni', 'Esercizio semplice per rafforzare i muscoli del polpaccio.', 'Migliora la forza e la stabilità della caviglia.', 'In piedi, sollevati sulle punte dei piedi e scendi lentamente.', 'Mantieni il core contratto per mantenere l''equilibrio.', 'Evitare in caso di lesioni al tendine d''Achille.', 'Scendere troppo velocemente o non eseguire il movimento completo.'),
+('calf-raises', 'zh', '提踵 (Calf raises)', '加强小腿肌肉的简单练习。', '提高踝关节的力量和稳定性。', '站立，垫起脚尖，然后缓慢放下。', '保持核心收紧以维持平衡。', '如有跟腱损伤，请避免使用。', '下落太快或动作幅度不完整。'),
+('calf-raises', 'ja', 'カーフレイズ', 'ふくらはぎの筋肉を強化する簡単なエクササイズ。', '足首の強さと安定性を向上させます。', '立った状態でつま先立ちになり、ゆっくりと下ろします。', 'バランスを保つために体幹を締めてください。', 'アキレス腱に怪我がある場合は避けてください。', '素早く下ろすことや、可動域をフルに使わないこと。'),
+('calf-raises', 'ko', '카프 레이즈', '종아리 근육을 강화하는 간단한 운동.', '발목의 근력과 안정성을 향상합니다.', '선 상태에서 발뒤꿈치를 들어 올리고 천천히 내립니다.', '균형을 잡기 위해 코어에 힘을 주세요.', '아킬레스건 부상이 있다면 피하세요.', '너무 빨리 내리거나 가동 범위를 다 쓰지 않는 것.'),
+('calf-raises', 'ar', 'رفع الكعبين (Calf raises)', 'تمرين بسيط لتقوية عضلات الساق.', 'يحسن قوة واستقرار الكاحل.', 'أثناء الوقوف، ارفع جسمك على أصابع قدميك ثم انزل ببطء.', 'حافظ على شد عضلات الجذع للحفاظ على التوازن.', 'تجنب التمرين في حالة وجود إصابات في وتر العرقوب.', 'النزول بسرعة كبيرة أو عدم إكمال نطاق الحركة الكامل.'),
+('calf-raises', 'hi', 'काफ रेज़', 'पिंडलियों की मांसपेशियों को मजबूत करने के लिए सरल व्यायाम।', 'टखने की ताकत और स्थिरता में सुधार करता है।', 'खड़े होकर, अपने पंजों पर ऊपर उठें और धीरे-धीरे नीचे आएं।', 'संतुलन बनाए रखने के लिए अपने कोर को व्यस्त रखें।', 'यदि एच्लीस टेंडन में चोट हो तो न करें।', 'बहुत जल्दी नीचे आना या पूरी गति का उपयोग न करना।'),
+('calf-raises', 'ru', 'Подъем на носки (Calf raises)', 'Простое упражнение для укрепления мышц голени.', 'Улучшает силу и стабильность голеностопа.', 'Стоя, поднимитесь на носки и медленно опуститесь.', 'Держите кор напряженным для сохранения равновесия.', 'Избегайте при травмах ахиллова сухожилия.', 'Слишком быстрое опускание или неполная амплитуда движения.'),
+('calf-raises', 'nl', 'Kuitheffen', 'Eenvoudige oefening om de kuitspieren te versterken.', 'Verbetert kracht en stabiliteit van de enkel.', 'Staand, kom op je tenen staan en zak langzaam weer naar beneden.', 'Houd je core aangespannen voor evenwicht.', 'Vermijden bij achillespeesblessures.', 'Te snel zakken of de volledige bewegingsuitslag niet benutten.'),
+('calf-raises', 'sv', 'Tåhävningar', 'Enkel övning för att stärka vadmusklerna.', 'Förbättrar ankelstyrka och stabilitet.', 'Stående, lyft dig upp på tå och sänk dig långsamt.', 'Håll coren aktiverad för att hålla balansen.', 'Undvik vid hälseneskador.', 'Att sänka sig för snabbt eller inte använda hela rörelseomfånget.'),
+('calf-raises', 'pl', 'Wspięcia na palce', 'Proste ćwiczenie wzmacniające mięśnie łydek.', 'Poprawia siłę i stabilność stawu skokowego.', 'W pozycji stojącej unieś się na palcach i powoli opuść.', 'Utrzymuj napięty core, aby zachować równowagę.', 'Unikaj w przypadku kontuzji ścięgna Achillesa.', 'Zbyt szybkie opuszczanie lub niewykorzystanie pełnego zakresu ruchu.'),
+('calf-raises', 'id', 'Calf raises', 'Latihan sederhana untuk memperkuat otot betis.', 'Meningkatkan kekuatan dan stabilitas pergelangan kaki.', 'Berdiri, jinjit, lalu turun perlahan.', 'Jaga inti tetap aktif untuk keseimbangan.', 'Hindari jika ada cedera tendon Achilles.', 'Turun terlalu cepat atau tidak melakukan gerakan penuh.'),
+('calf-raises', 'bn', 'কাফ রেইজ', 'পায়ের নিচের অংশের পেশি শক্তিশালী করার সহজ ব্যায়াম।', 'গোড়ালির শক্তি ও স্থিতিশীলতা উন্নত করে।', 'দাঁড়ানো অবস্থা থেকে পায়ের পাতার উপর ভর দিয়ে উপরে উঠুন এবং ধীরে ধীরে নামুন।', 'ভারসাম্য বজায় রাখতে কোর শক্ত রাখুন।', 'অ্যাকিলিস টেন্ডনে আঘাত থাকলে এড়িয়ে চলুন।', 'খুব দ্রুত নামা বা সম্পূর্ণ ব্যায়াম না করা।'),
+('calf-raises', 'vi', 'Calf raises', 'Bài tập đơn giản để làm khỏe cơ bắp chân.', 'Cải thiện sức mạnh và độ ổn định của cổ chân.', 'Đứng thẳng, kiễng gót chân lên rồi hạ xuống chậm rãi.', 'Giữ cơ lõi gồng để duy trì thăng bằng.', 'Tránh tập nếu bị chấn thương gân Achilles.', 'Hạ xuống quá nhanh hoặc không thực hiện hết biên độ chuyển động.'),
+('calf-raises', 'fa', 'ساق پا (Calf raises)', 'تمرین ساده برای تقویت عضلات ساق پا.', 'قدرت و ثبات مچ پا را بهبود می‌بخشد.', 'بایستید، روی پنجه پا بلند شوید و به آرامی پایین بیایید.', 'هسته خود را منقبض نگه دارید تا تعادل حفظ شود.', 'در صورت آسیب‌دیدگی تاندون آشیل از انجام آن خودداری کنید.', 'پایین آمدن بیش از حد سریع یا انجام ندادن دامنه حرکتی کامل.');
