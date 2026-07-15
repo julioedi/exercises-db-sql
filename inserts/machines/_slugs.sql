@@ -1,4 +1,5 @@
 INSERT INTO machines (slug, img, only_gym) VALUES
+('abdominal_crunch_machine',"abdominal_crunch_machine.png",true),
 ('assault_bike', 'assault_bike.png', true),
 ('barbell', 'barbell.png', false),
 ('battle_ropes', 'battle_ropes.png', false),

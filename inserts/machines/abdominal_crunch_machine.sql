@@ -1,0 +1,21 @@
+-- Información multiidioma de la máquina
+INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+('abdominal_crunch_machine', 'es', 'Máquina de crunch abdominal', 'Máquina diseñada para realizar ejercicios de flexión abdominal con carga guiada y soporte lumbar.'),
+('abdominal_crunch_machine', 'en', 'Abdominal crunch machine', 'Machine designed for abdominal flexion exercises with guided weight and lumbar support.'),
+('abdominal_crunch_machine', 'pt', 'Máquina de abdominal crunch', 'Máquina projetada para realizar exercícios de flexão abdominal com carga guiada e suporte lombar.'),
+('abdominal_crunch_machine', 'fr', 'Machine à crunch', 'Machine conçue pour effectuer des exercices de flexion abdominale avec charge guidée et soutien lombaire.'),
+('abdominal_crunch_machine', 'de', 'Bauchmuskelmaschine', 'Gerät für Bauchbeugeübungen mit geführtem Widerstand und Lendenwirbelstütze.'),
+('abdominal_crunch_machine', 'it', 'Macchina per crunch addominali', 'Macchina progettata per eseguire esercizi di flessione addominale con carico guidato e supporto lombare.'),
+('abdominal_crunch_machine', 'zh', '腹肌训练机', '专为进行带有导向重量和腰部支撑的腹部弯举练习而设计的机器。'),
+('abdominal_crunch_machine', 'ja', 'アブドミナルクランチマシン', 'ガイド付きの重量と腰部サポートを備えた腹筋運動を行うためのマシン。'),
+('abdominal_crunch_machine', 'ko', '복근 운동 머신', '가이드 무게와 요추 지지대가 있는 복부 굴곡 운동을 위해 설계된 기구입니다.'),
+('abdominal_crunch_machine', 'ar', 'جهاز تمرين البطن (Crunch)', 'جهاز مصمم لأداء تمارين ثني البطن مع وزن موجه ودعم للقطنية.'),
+('abdominal_crunch_machine', 'hi', 'एब्डोमिनल क्रंच मशीन', 'गाइडेड वेट और लम्बर सपोर्ट के साथ पेट के झुकने वाले व्यायाम करने के लिए डिज़ाइन की गई मशीन।'),
+('abdominal_crunch_machine', 'ru', 'Тренажер для пресса', 'Тренажер, предназначенный для выполнения скручиваний с направляемым весом и поддержкой поясницы.'),
+('abdominal_crunch_machine', 'nl', 'Abdominal crunch machine', 'Machine ontworpen voor buikspieroefeningen met geleid gewicht en lendensteun.'),
+('abdominal_crunch_machine', 'sv', 'Abdominal crunch-maskin', 'Maskin utformad för magövningar med styrd vikt och ländryggsstöd.'),
+('abdominal_crunch_machine', 'pl', 'Maszyna do brzuszków', 'Maszyna zaprojektowana do wykonywania ćwiczeń zginania brzucha z prowadzeniem ciężaru i podparciem lędźwi.'),
+('abdominal_crunch_machine', 'id', 'Mesin crunch perut', 'Mesin yang dirancang untuk melakukan latihan fleksi perut dengan beban terpandu dan dukungan lumbal.'),
+('abdominal_crunch_machine', 'bn', 'অ্যাবডমিনাল ক্রাঞ্চ মেশিন', 'গাইডেড ওয়েট এবং লাম্বার সাপোর্ট সহ পেটের ক্রাঞ্চ ব্যায়ামের জন্য ডিজাইন করা মেশিন।'),
+('abdominal_crunch_machine', 'vi', 'Máy tập bụng', 'Máy được thiết kế để thực hiện các bài tập gập bụng với tạ hướng dẫn và hỗ trợ lưng dưới.'),
+('abdominal_crunch_machine', 'fa', 'دستگاه کرانچ شکم', 'دستگاه طراحی شده برای انجام تمرینات خم شدن شکم با وزن هدایت‌شده و پشتیبانی کمر.');
