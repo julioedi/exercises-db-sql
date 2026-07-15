@@ -1,0 +1,39 @@
+-- Definición de ejercicios (Principal + Alternativas)
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('sit-ups', 'sit-ups.jpg', 'sit-ups.mp4', 'beginner'),
+('crunches', 'crunches.jpg', 'crunches.mp4', 'beginner'),
+('weighted-sit-ups', 'weighted-sit-ups.jpg', 'weighted-sit-ups.mp4', 'intermediate');
+
+-- Relaciones de grupos musculares (Solo ejercicio actual)
+INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('sit-ups', 'abdominals');
+
+-- Relaciones de alternativas
+INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('sit-ups', 'crunches'),
+('sit-ups', 'weighted-sit-ups');
+
+-- Información multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('sit-ups', 'es', 'Abdominales clásicos', 'Ejercicio de flexión de tronco para el fortalecimiento del recto abdominal.', 'Mejora la fuerza y resistencia del core.', 'Tumbado boca arriba con rodillas flexionadas, eleva el torso hasta tocar las rodillas.', 'Mantén los pies apoyados y utiliza la fuerza del abdomen, no del cuello.', 'Evitar si hay lesiones cervicales o dolor lumbar agudo.', 'Tirar del cuello con las manos o usar impulso excesivo.'),
+('sit-ups', 'en', 'Sit-ups', 'Trunk flexion exercise for rectus abdominis strengthening.', 'Improves core strength and endurance.', 'Lying on your back with knees bent, lift your torso until you touch your knees.', 'Keep feet planted and use abdominal strength, not your neck.', 'Avoid if cervical injuries or acute lower back pain exist.', 'Pulling your neck with hands or using excessive momentum.'),
+('sit-ups', 'pt', 'Abdominais clássicos', 'Exercício de flexão de tronco para fortalecimento do reto abdominal.', 'Melhora a força e resistência do core.', 'Deitado de costas com joelhos dobrados, eleve o tronco até tocar os joelhos.', 'Mantenha os pés apoiados e use a força do abdômen, não do pescoço.', 'Evitar se houver lesões cervicais ou dor lombar aguda.', 'Puxar o pescoço com as mãos ou usar impulso excessivo.'),
+('sit-ups', 'fr', 'Sit-ups (Relevés de buste)', 'Exercice de flexion du tronc pour le renforcement du grand droit.', 'Améliore la force et l''endurance du core.', 'Allongé sur le dos genoux pliés, relevez le buste jusqu''à toucher les genoux.', 'Gardez les pieds au sol et utilisez la force des abdominaux, pas du cou.', 'À éviter en cas de blessures cervicales ou de douleur aiguë au bas du dos.', 'Tirer sur le cou avec les mains ou utiliser un élan excessif.'),
+('sit-ups', 'de', 'Sit-ups', 'Rumpfbeugeübung zur Stärkung des geraden Bauchmuskels.', 'Verbessert die Rumpfkraft und -ausdauer.', 'In Rückenlage mit angewinkelten Knien den Oberkörper aufrichten, bis die Knie berührt werden.', 'Füße am Boden lassen und die Kraft aus dem Bauch ziehen, nicht aus dem Nacken.', 'Bei Nackenverletzungen oder akuten Rückenschmerzen vermeiden.', 'Mit den Händen am Nacken ziehen oder zu viel Schwung holen.'),
+('sit-ups', 'it', 'Sit-up', 'Esercizio di flessione del busto per il rafforzamento del retto addominale.', 'Migliora la forza e la resistenza del core.', 'Sdraiato sulla schiena con ginocchia flesse, solleva il busto fino a toccare le ginocchia.', 'Mantieni i piedi a terra e usa la forza dell''addome, non del collo.', 'Evitare in caso di lesioni cervicali o dolore lombare acuto.', 'Tirare il collo con le mani o usare uno slancio eccessivo.'),
+('sit-ups', 'zh', '仰卧起坐', '用于增强腹直肌的躯干屈曲练习。', '提高核心力量和耐力。', '仰卧，膝盖弯曲，抬起躯干直到碰到膝盖。', '保持双脚着地，并利用腹部力量，不要用力拉颈部。', '如有颈椎损伤或急性腰痛，请避免使用。', '用手拉颈部或使用过度的惯性。'),
+('sit-ups', 'ja', 'シットアップ', '腹直筋を強化するための体幹屈曲エクササイズ。', 'コアの筋力と持久力を向上させます。', '仰向けで膝を曲げ、上体を膝に触れるまで起こします。', '足裏を床につけ、首ではなく腹筋の力を使ってください。', '首の怪我や激しい腰痛がある場合は避けてください。', '手で首を引くことや、反動を使いすぎること。'),
+('sit-ups', 'ko', '싯업 (윗몸일으키기)', '복직근 강화를 위한 상체 굴곡 운동.', '코어 근력 및 지구력 향상.', '누운 상태에서 무릎을 굽히고 상체를 들어 무릎에 닿게 함.', '발을 지면에 고정하고 목이 아닌 복부의 힘을 사용할 것.', '경추 부상이나 요통이 있다면 피할 것.', '손으로 목을 당기거나 반동을 과하게 사용하는 것.'),
+('sit-ups', 'ar', 'تمرين البطن (Sit-ups)', 'تمرين ثني الجذع لتقوية عضلة البطن المستقيمة.', 'يحسن قوة وتحمل عضلات الجذع.', 'استلقِ على ظهرك مع ثني ركبتيك، وارفع جذعك حتى تلمس ركبتيك.', 'حافظ على ثبات قدميك واستخدم قوة عضلات البطن وليس رقبتك.', 'تجنب التمرين في حالة وجود إصابات في الرقبة أو آلام حادة في أسفل الظهر.', 'سحب الرقبة باليدين أو استخدام زخم مفرط.'),
+('sit-ups', 'hi', 'सिट-अप्स', 'रेक्टस एबडोमिनिस को मजबूत करने के लिए धड़ का फ्लेक्सन व्यायाम।', 'कोर की ताकत और सहनशक्ति में सुधार करता है।', 'घुटने मोड़कर पीठ के बल लेटें, धड़ को घुटनों तक उठाएं।', 'पैर जमीन पर रखें और गर्दन के बजाय पेट की ताकत का उपयोग करें।', 'यदि गर्दन में चोट या पीठ के निचले हिस्से में तीव्र दर्द हो तो न करें।', 'हाथों से गर्दन को खींचना या अत्यधिक गति का उपयोग करना।'),
+('sit-ups', 'ru', 'Скручивания (Sit-ups)', 'Упражнение на сгибание корпуса для укрепления прямой мышцы живота.', 'Улучшает силу и выносливость кора.', 'Лежа на спине с согнутыми коленями, поднимите корпус до касания коленей.', 'Держите ноги на полу и используйте силу пресса, а не шеи.', 'Избегайте при травмах шеи или острой боли в пояснице.', 'Тянуть шею руками или использовать излишнюю инерцию.'),
+('sit-ups', 'nl', 'Sit-ups', 'Rompspieroefening voor het versterken van de rechte buikspier.', 'Verbetert core-kracht en uithoudingsvermogen.', 'Lig op de rug met gebogen knieën, til de romp op tot de knieën worden aangeraakt.', 'Houd de voeten op de grond en gebruik buikkracht, niet die van de nek.', 'Vermijden bij nekblessures of acute onderrugpijn.', 'Aan de nek trekken met de handen of te veel momentum gebruiken.'),
+('sit-ups', 'sv', 'Sit-ups', 'Bålövning för att stärka den raka magmuskeln.', 'Förbättrar bålstyrka och uthållighet.', 'Ligg på rygg med böjda knän, lyft överkroppen tills du nuddar knäna.', 'Håll fötterna i marken och använd magmusklerna, inte nacken.', 'Undvik vid nackskador eller akut ländryggssmärta.', 'Att dra i nacken med händerna eller använda för mycket momentum.'),
+('sit-ups', 'pl', 'Brzuszki (Sit-ups)', 'Ćwiczenie na mięśnie brzucha poprzez zginanie tułowia.', 'Wzmacnia siłę i wytrzymałość mięśni core.', 'W leżeniu na plecach z ugiętymi kolanami unieś tułów, aż dotkniesz kolan.', 'Trzymaj stopy na podłożu i używaj siły mięśni brzucha, a nie szyi.', 'Unikaj w przypadku urazów szyi lub ostrego bólu kręgosłupa.', 'Ciągnięcie za szyję rękami lub używanie nadmiernego pędu.'),
+('sit-ups', 'id', 'Sit-ups', 'Latihan fleksi batang tubuh untuk memperkuat otot perut rectus.', 'Meningkatkan kekuatan dan daya tahan core.', 'Berbaring telentang dengan lutut ditekuk, angkat batang tubuh hingga menyentuh lutut.', 'Jaga kaki tetap di lantai dan gunakan kekuatan perut, bukan leher.', 'Hindari jika ada cedera leher atau nyeri punggung bawah akut.', 'Menarik leher dengan tangan atau menggunakan momentum berlebihan.'),
+('sit-ups', 'bn', 'সিট-আপস', 'রেকটাস অ্যাবডোমিনিস শক্তিশালী করার জন্য ধড় বাঁকানো ব্যায়াম।', 'কোর শক্তি এবং সহনশীলতা উন্নত করে।', 'পিঠের ওপর শুয়ে হাঁটু ভাঁজ করুন এবং ধড় তুলে হাঁটু স্পর্শ করুন।', 'পা মাটিতে রাখুন এবং ঘাড়ের বদলে পেটের পেশীর শক্তি ব্যবহার করুন।', 'ঘাড়ে আঘাত বা পিঠের নিচের অংশে তীব্র ব্যথা থাকলে এটি এড়িয়ে চলুন।', 'হাতে ঘাড় টানা বা অতিরিক্ত গতির ব্যবহার করা।'),
+('sit-ups', 'vi', 'Sit-ups', 'Bài tập gập bụng giúp tăng cường cơ bụng thẳng.', 'Tăng cường sức mạnh và sức bền core.', 'Nằm ngửa, đầu gối cong, nâng thân người lên cho đến khi chạm đầu gối.', 'Giữ chân cố định trên sàn và sử dụng lực bụng, không dùng cổ.', 'Tránh tập nếu bị chấn thương cổ hoặc đau lưng dưới cấp tính.', 'Dùng tay kéo cổ hoặc dùng đà quá mức.'),
+('sit-ups', 'fa', 'دراز و نشست (Sit-ups)', 'تمرین خم کردن تنه برای تقویت عضله راست شکمی.', 'قدرت و استقامت هسته بدن را بهبود می‌بخشد.', 'به پشت دراز بکشید، زانوها را خم کنید و تنه را تا لمس زانوها بالا بیاورید.', 'پاها را ثابت نگه دارید و از قدرت شکم استفاده کنید، نه گردن.', 'در صورت آسیب گردن یا کمردرد حاد از انجام آن خودداری کنید.', 'کشیدن گردن با دست‌ها یا استفاده از شتاب زیاد.');
