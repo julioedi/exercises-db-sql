@@ -13,7 +13,6 @@ INSERT INTO exercise_alternative (exercise_slug, alternative_slug)
 VALUES ('plank-shoulder-taps', 'plank');
 
 -- Información multiidioma del ejercicio
--- Información multiidioma del ejercicio
 INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('plank-shoulder-taps', 'es', 'Toques de hombros en plancha', 'Ejercicio de estabilidad dinámica que combina la plancha isométrica con toques alternos de hombros.', 'Mejora la estabilidad del core y la fuerza de los hombros.\nDesarrolla el equilibrio corporal.', 'Comienza en posición de plancha alta.\nSin mover la cadera, toca el hombro izquierdo con la mano derecha y viceversa.\nMantén el torso firme durante todo el movimiento.', 'Contrae el abdomen y los glúteos para evitar el balanceo de la cadera.', 'Evitar si hay dolor agudo en las muñecas.', 'Mover la cadera de lado a lado excesivamente.\nRealizar el movimiento muy rápido.'),
 ('plank-shoulder-taps', 'en', 'Plank shoulder taps', 'Dynamic stability exercise combining isometric plank with alternating shoulder touches.', 'Improves core stability and shoulder strength.\nDevelops body balance.', 'Start in a high plank position.\nWithout moving your hips, touch your left shoulder with your right hand and vice versa.\nKeep your torso firm throughout the movement.', 'Tighten your abdomen and glutes to prevent hip swaying.', 'Avoid if there is acute wrist pain.', 'Moving hips side to side excessively.\nPerforming the movement too quickly.'),
