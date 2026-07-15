@@ -6,6 +6,7 @@ INSERT INTO body_target (slug, img) VALUES
 ('biceps', 'biceps.png'),
 ('calves', 'calves.png'),
 ('chest', 'chest.png'),
+('core', 'core.png'),
 ('forearms', 'forearms.png'),
 ('glutes', 'glutes.png'),
 ('hamstrings', 'hamstrings.png'),
