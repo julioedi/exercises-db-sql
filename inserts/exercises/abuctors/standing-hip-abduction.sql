@@ -1,0 +1,38 @@
+-- Definición del ejercicio
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES
+('resistance-band-standing-balance-hip-abduction', 'resistance-band-standing-balance-hip-abduction.jpg', 'resistance-band-standing-balance-hip-abduction.mp4', 'intermediate'),
+('standing-hip-abduction', 'standing-hip-abduction.jpg', 'standing-hip-abduction.mp4', 'beginner');
+
+-- Relación de grupo muscular
+INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('standing-hip-abduction', 'abductors');
+
+-- Relación de alternativas
+INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('standing-hip-abduction','resistance-band-standing-balance-hip-abduction');
+
+
+-- Información multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('standing-hip-abduction', 'es', 'Abducción de cadera de pie', 'Movimiento de abducción realizado de pie, enfocando el glúteo medio.', 'Fortalece la estabilidad lateral de la cadera.', 'De pie, eleva la pierna lateralmente controlando el movimiento.', 'Mantén el tronco erguido sin inclinarte hacia el lado contrario.', 'No realizar si hay dolor en la cadera o rodilla.', 'Dar impulsos rápidos o balancear el cuerpo.'),
+('standing-hip-abduction', 'en', 'Standing hip abduction', 'Standing abduction movement focusing on the gluteus medius.', 'Strengthens lateral hip stability.', 'Standing, lift the leg laterally while controlling the movement.', 'Keep torso upright without leaning to the opposite side.', 'Avoid if hip or knee pain exists.', 'Using momentum or swinging the body.'),
+('standing-hip-abduction', 'pt', 'Abdução de quadril em pé', 'Movimento de abdução feito em pé, focando no glúteo médio.', 'Fortalece a estabilidade lateral do quadril.', 'Em pé, eleve a perna lateralmente controlando o movimento.', 'Mantenha o tronco ereto sem inclinar para o lado oposto.', 'Não realizar se houver dor no quadril ou joelho.', 'Usar impulso ou balançar o corpo.'),
+('standing-hip-abduction', 'fr', 'Abduction de hanche debout', 'Mouvement d''abduction réalisé debout, ciblant le moyen fessier.', 'Renforce la stabilité latérale de la hanche.', 'Debout, levez la jambe latéralement en contrôlant le mouvement.', 'Gardez le buste droit sans pencher du côté opposé.', 'À éviter en cas de douleur à la hanche ou au genou.', 'Donner des impulsions ou balancer le corps.'),
+('standing-hip-abduction', 'de', 'Stehende Hüftabduktion', 'Abduktionsbewegung im Stehen mit Fokus auf den mittleren Gesäßmuskel.', 'Stärkt die seitliche Hüftstabilität.', 'Im Stehen das Bein seitlich anheben und die Bewegung kontrollieren.', 'Oberkörper aufrecht halten, ohne zur Gegenseite zu neigen.', 'Bei Hüft- oder Knieschmerzen vermeiden.', 'Schwung holen oder Körper mitschwingen lassen.'),
+('standing-hip-abduction', 'it', 'Abduzione dell''anca in piedi', 'Movimento di abduzione eseguito in piedi, mirato al gluteo medio.', 'Rinforza la stabilità laterale dell''anca.', 'In piedi, solleva la gamba lateralmente controllando il movimento.', 'Mantieni il busto eretto senza inclinarti sul lato opposto.', 'Non eseguire in caso di dolore all''anca o al ginocchio.', 'Usare slancio o oscillare il corpo.'),
+('standing-hip-abduction', 'zh', '站姿髋外展', '站姿外展动作，专注于中臀肌。', '加强髋部侧向稳定性。', '站立，向侧方抬起腿部并控制动作过程。', '保持躯干挺直，不要向对侧倾斜。', '如有髋部或膝盖疼痛，请避免。', '使用惯性或晃动身体。'),
+('standing-hip-abduction', 'ja', 'スタンディング・ヒップアブダクション', '中殿筋に焦点を当てた立位での外転運動。', '股関節の側方の安定性を強化します。', '立って、動きをコントロールしながら脚を横に上げます。', '反対側に傾かずに体幹を真っ直ぐに保ちます。', '股関節や膝に痛みがある場合は避けてください。', '反動を使ったり、体を揺らしたりすること。'),
+('standing-hip-abduction', 'ko', '스탠딩 힙 어브덕션', '중둔근에 집중한 서서 하는 외전 운동.', '고관절 측면 안정성 강화.', '선 자세에서 동작을 제어하며 다리를 옆으로 들어 올림.', '반대편으로 기울이지 말고 상체를 똑바로 유지.', '고관절이나 무릎 통증 시 피할 것.', '반동을 이용하거나 몸을 흔드는 것.'),
+('standing-hip-abduction', 'ar', 'تمرين أبعاد الورك وقوفاً', 'حركة أبعاد في وضع الوقوف تستهدف العضلة الألوية الوسطى.', 'يقوي استقرار الورك الجانبي.', 'قف وارفع الساق جانبياً مع التحكم في الحركة.', 'حافظ على استقامة الجذع دون الميل للجانب المعاكس.', 'تجنب في حالة وجود ألم في الورك أو الركبة.', 'استخدام الزخم أو أرجحة الجسم.'),
+('standing-hip-abduction', 'hi', 'स्टैंडिंग हिप एबडक्शन', 'ग्लूटस मेडियस पर केंद्रित खड़े होकर किया जाने वाला एबडक्शन मूवमेंट।', 'कूल्हे की पार्श्व स्थिरता को मजबूत करता है।', 'खड़े होकर, गति को नियंत्रित करते हुए पैर को बगल में उठाएं।', 'विपरीत दिशा में झुके बिना धड़ को सीधा रखें।', 'यदि कूल्हे या घुटने में दर्द हो तो न करें।', 'झटके का उपयोग करना या शरीर को हिलाना।'),
+('standing-hip-abduction', 'ru', 'Отведение бедра стоя', 'Движение на отведение в положении стоя, сфокусированное на средней ягодичной мышце.', 'Укрепляет боковую стабильность таза.', 'Стоя, поднимите ногу в сторону, контролируя движение.', 'Держите корпус ровно, не наклоняясь в противоположную сторону.', 'Избегайте при болях в тазобедренном суставе или колене.', 'Использование импульса или раскачивание корпуса.'),
+('standing-hip-abduction', 'nl', 'Staande heupabductie', 'Abductiebeweging uitgevoerd in stand, gericht op de gluteus medius.', 'Versterkt de zijwaartse stabiliteit van de heup.', 'Staand, til het been zijwaarts op terwijl je de beweging controleert.', 'Houd de romp rechtop zonder naar de tegenovergestelde zijde te leunen.', 'Vermijden bij heup- of kniepijn.', 'Gebruik van momentum of het lichaam zwaaien.'),
+('standing-hip-abduction', 'sv', 'Stående höftabduktion', 'Abduktionsrörelse utförd stående, fokuserad på gluteus medius.', 'Stärker höftens sidostabilitet.', 'Stående, lyft benet i sidled medan du kontrollerar rörelsen.', 'Håll överkroppen upprätt utan att luta åt motsatt sida.', 'Undvik vid höft- eller knäsmärta.', 'Användning av momentum eller svängande med kroppen.'),
+('standing-hip-abduction', 'pl', 'Stojące odwodzenie bioder', 'Ruch odwodzenia wykonywany w staniu, skupiony na mięśniu pośladkowym średnim.', 'Wzmacnia boczna stabilność biodra.', 'Stojąc, unieś nogę w bok, kontrolując ruch.', 'Utrzymuj tułów wyprostowany bez przechylania się na drugą stronę.', 'Unikaj w przypadku bólu biodra lub kolana.', 'Używanie impetu lub kołysanie ciałem.'),
+('standing-hip-abduction', 'id', 'Abduksi pinggul berdiri', 'Gerakan abduksi yang dilakukan sambil berdiri, berfokus pada gluteus medius.', 'Memperkuat stabilitas lateral pinggul.', 'Berdiri, angkat kaki ke samping sambil mengontrol gerakan.', 'Jaga batang tubuh tetap tegak tanpa condong ke sisi yang berlawanan.', 'Hindari jika ada nyeri pinggul atau lutut.', 'Menggunakan momentum atau mengayunkan tubuh.'),
+('standing-hip-abduction', 'bn', 'স্ট্যান্ডিং হিপ অ্যাবডাকশন', 'দাঁড়িয়ে অ্যাবডাকশন মুভমেন্ট, যা গ্লুটাস মিডিয়াসের ওপর কাজ করে।', 'হিপের পার্শ্বীয় স্থিতিশীলতা বাড়ায়।', 'দাঁড়িয়ে মুভমেন্ট নিয়ন্ত্রণ করে পা পাশে তুলুন।', 'বিপরীত দিকে না ঝুঁকে শরীর সোজা রাখুন।', 'হিপ বা হাঁটুতে ব্যথা থাকলে এটি করবেন না।', 'ঝাঁকুনি বা শরীর ঘোরানো।'),
+('standing-hip-abduction', 'vi', 'Đá chân ngang đứng', 'Chuyển động giạng chân thực hiện khi đứng, nhắm vào cơ mông nhỡ.', 'Tăng cường sự ổn định bên của hông.', 'Đứng, nhấc chân sang ngang trong khi kiểm soát chuyển động.', 'Giữ thân người thẳng đứng mà không nghiêng sang bên đối diện.', 'Tránh tập nếu bị đau hông hoặc đầu gối.', 'Sử dụng đà hoặc lắc lư cơ thể.'),
+('standing-hip-abduction', 'fa', 'ابداکشن لگن در حالت ایستاده', 'حرکت ابداکشن در حالت ایستاده با تمرکز بر عضله سرینی متوسط.', 'ثبات جانبی لگن را تقویت می‌کند.', 'در حالت ایستاده، پا را به پهلو بلند کرده و حرکت را کنترل کنید.', 'تنه را صاف نگه دارید و به سمت مخالف خم نشوید.', 'در صورت درد لگن یا زانو انجام ندهید.', 'استفاده از ضربه یا تاب دادن بدن.');
