@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('battle_ropes', 'es', 'Cuerdas de batalla', 'Cuerdas pesadas y largas utilizadas para ejercicios de potencia, resistencia cardiovascular y fuerza de agarre.'),
 ('battle_ropes', 'en', 'Battle ropes', 'Heavy, long ropes used for power, cardiovascular endurance, and grip strength exercises.'),
 ('battle_ropes', 'pt', 'Cordas de batalha', 'Cordas pesadas e longas utilizadas para exercícios de potência, resistência cardiovascular e força de pegada.'),

@@ -5,7 +5,7 @@ VALUES
 ('forearm-plank', 'forearm-plank.jpg', 'forearm-plank.mp4', 'beginner');
 
 -- Relación de grupo muscular
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('forearm-plank', 'abdominals');
 

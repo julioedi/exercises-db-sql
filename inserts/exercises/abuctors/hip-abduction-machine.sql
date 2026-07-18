@@ -5,12 +5,12 @@ VALUES
 ('hip-abduction-machine', 'hip-abduction-machine.jpg', 'hip-abduction-machine.mp4', 'beginner');
 
 -- Relación de grupo muscular
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('hip-abduction-machine', 'abductors');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('hip-abduction-machine', 'cable-hip-abductions');
 

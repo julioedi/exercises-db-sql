@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('rotator_cuff', 'es', 'Manguito rotador', 'Grupo de músculos y tendones que estabilizan la articulación del hombro, esenciales para la rotación y el movimiento seguro del brazo.'),
 ('rotator_cuff', 'en', 'Rotator cuff', 'Group of muscles and tendons that stabilize the shoulder joint, essential for rotation and safe arm movement.'),
 ('rotator_cuff', 'pt', 'Manguito rotador', 'Grupo de músculos e tendões que estabilizam a articulação do ombro, essenciais para a rotação e o movimento seguro do braço.'),

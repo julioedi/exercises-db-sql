@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('neck', 'es', 'Cuello', 'Estructura que conecta la cabeza con el torso, compuesta por músculos como el trapecio superior y esternocleidomastoideo, fundamentales para la movilidad, soporte cefálico y estabilidad cervical.'),
 ('neck', 'en', 'Neck', 'Structure connecting the head to the torso, composed of muscles such as the upper trapezius and sternocleidomastoid, essential for mobility, head support, and cervical stability.'),
 ('neck', 'pt', 'Pescoço', 'Estrutura que conecta a cabeça ao tronco, composta por músculos como o trapézio superior e esternocleidomastóideo, fundamentais para a mobilidade, suporte cefálico e estabilidade cervical.'),

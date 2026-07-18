@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('cable_machine', 'es', 'Máquina de cables', 'Sistema de poleas y cables que permite una tensión constante en diversos ángulos.'),
 ('cable_machine', 'en', 'Cable machine', 'Pulley and cable system that allows for constant tension at various angles.'),
 ('cable_machine', 'pt', 'Máquina de cabos', 'Sistema de polias e cabos que permite uma tensão constante em diversos ângulos.'),

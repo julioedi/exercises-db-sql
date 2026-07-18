@@ -6,12 +6,12 @@ VALUES
 
 
 -- Relación de grupo muscular
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('fire-hydrant', 'abductors');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('fire-hydrant', 'side-lying-hip-abduction');
 

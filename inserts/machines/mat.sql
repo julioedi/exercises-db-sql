@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('mat', 'es', 'Esterilla (Mat)', 'Superficie acolchada diseñada para ejercicios de suelo, estiramientos, yoga y pilates.'),
 ('mat', 'en', 'Exercise mat', 'Cushioned surface designed for floor exercises, stretching, yoga, and pilates.'),
 ('mat', 'pt', 'Colchonete', 'Superfície acolchoada projetada para exercícios de solo, alongamento, ioga e pilates.'),

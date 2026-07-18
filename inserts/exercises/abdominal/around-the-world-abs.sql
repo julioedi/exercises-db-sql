@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('around-the-world-abs', 'around-the-world-abs.jpg', 'around-the-world-abs.mp4', 'advanced');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'abdominals'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('around-the-world-abs', 'abdominals');
 
 -- Relación: no requiere máquina, por lo tanto no se inserta en exercise_machine
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('around-the-world-abs', 'leg-raises');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('around-the-world-abs', 'es', 'Abdominales "alrededor del mundo"', 'Ejercicio dinámico de elevación de piernas que enfatiza la rotación y el control del core.', 'Fortalece todo el cinturón abdominal y mejora la movilidad de la cadera.', 'Recuéstate boca arriba, eleva las piernas rectas y dibuja círculos amplios en el aire.', 'Mantén la zona lumbar pegada al suelo durante todo el movimiento.', 'Evitar si hay dolor agudo en la zona lumbar.', 'Arquear la espalda al mover las piernas.\nRealizar los círculos demasiado rápido sin control.'),
 ('around-the-world-abs', 'en', 'Around the world abs', 'Dynamic leg raise exercise that emphasizes rotation and core control.', 'Strengthens the entire abdominal belt and improves hip mobility.', 'Lie on your back, raise your straight legs, and draw wide circles in the air.', 'Keep your lower back pressed against the floor throughout the movement.', 'Avoid if there is acute lower back pain.', 'Arching the back while moving your legs.\nPerforming circles too quickly without control.'),
 ('around-the-world-abs', 'pt', 'Abdominais "à volta do mundo"', 'Exercício dinâmico de elevação de pernas que enfatiza a rotação e o controlo do core.', 'Fortalece todo o cinto abdominal e melhora a mobilidade da anca.', 'Deite-se de costas, eleve as pernas esticadas e desenhe círculos amplos no ar.', 'Mantenha a zona lombar colada ao chão durante todo o movimento.', 'Evitar se houver dor aguda na zona lombar.', 'Arquear as costas ao mover as pernas.\nFazer os círculos demasiado rápido sem controlo.'),

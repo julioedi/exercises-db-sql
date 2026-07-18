@@ -5,12 +5,12 @@ VALUES
 ('resistance-band-seated-hip-abduction', 'resistance-band-seated-hip-abduction.jpg', 'resistance-band-seated-hip-abduction.mp4', 'beginner');
 
 -- Relación de grupo muscular
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('resistance-band-seated-hip-abduction', 'abductors');
 
 -- Relación de alternativas (vinculamos con la máquina para mayor contexto funcional)
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('resistance-band-seated-hip-abduction', 'hip-abduction-machine');
 

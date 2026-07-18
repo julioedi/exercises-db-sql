@@ -5,12 +5,12 @@ VALUES
 ('slow-mountain-climbers', 'slow-mountain-climbers.jpg', 'slow-mountain-climbers.mp4', 'beginner');
 
 -- Relaciones de grupos musculares (Principal)
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('slow-mountain-climbers', 'abdominals');
 
 -- Relaciones de alternativas (Si tiene, por ejemplo, mountain-climbers)
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('slow-mountain-climbers', 'mountain-climbers');
 

@@ -4,16 +4,16 @@ VALUES ('calf-raises', 'calf-raises.jpg', 'calf-raises.mp4', 'beginner'),
 VALUES ('jump-rope', 'jump-rope.jpg', 'jump-rope.mp4', 'beginner');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'calves'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('calf-raises', 'calves');
 
 -- Relación: no requiere máquina
 
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('calf-raises', 'jump-rope');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('calf-raises', 'es', 'Elevación de talones', 'Ejercicio sencillo para fortalecer los músculos de la pantorrilla.', 'Mejora la fuerza y estabilidad del tobillo.', 'De pie, elévate sobre las puntas de los pies y baja lentamente.', 'Mantén el core contraído para mantener el equilibrio.', 'Evitar si hay lesiones en el tendón de Aquiles.', 'Bajar demasiado rápido o no realizar el rango de movimiento completo.'),
 ('calf-raises', 'en', 'Calf raises', 'Simple exercise to strengthen the calf muscles.', 'Improves ankle strength and stability.', 'Standing up, rise onto your toes and lower slowly.', 'Keep your core engaged to maintain balance.', 'Avoid if there are Achilles tendon injuries.', 'Lowering too quickly or not performing the full range of motion.'),
 ('calf-raises', 'pt', 'Elevação de calcanhares', 'Exercício simples para fortalecer os músculos da barriga da perna.', 'Melhora a força e estabilidade do tornozelo.', 'De pé, eleve-se sobre as pontas dos pés e desça lentamente.', 'Mantenha o core contraído para manter o equilíbrio.', 'Evitar se houver lesões no tendão de Aquiles.', 'Descer demasiado rápido ou não realizar o movimento completo.'),

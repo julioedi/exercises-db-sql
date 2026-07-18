@@ -1,5 +1,5 @@
 -- Información multiidioma de la máquina
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('abdominal_crunch_machine', 'es', 'Máquina de crunch abdominal', 'Máquina diseñada para realizar ejercicios de flexión abdominal con carga guiada y soporte lumbar.'),
 ('abdominal_crunch_machine', 'en', 'Abdominal crunch machine', 'Machine designed for abdominal flexion exercises with guided weight and lumbar support.'),
 ('abdominal_crunch_machine', 'pt', 'Máquina de abdominal crunch', 'Máquina projetada para realizar exercícios de flexão abdominal com carga guiada e suporte lombar.'),

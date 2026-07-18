@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('resistance_bands', 'es', 'Bandas de resistencia', 'Bandas elásticas utilizadas para añadir resistencia progresiva en diversos ejercicios de fuerza.'),
 ('resistance_bands', 'en', 'Resistance bands', 'Elastic bands used to add progressive resistance to various strength exercises.'),
 ('resistance_bands', 'pt', 'Bandas de resistência', 'Bandas elásticas usadas para adicionar resistência progressiva em vários exercícios de força.'),

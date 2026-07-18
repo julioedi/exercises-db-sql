@@ -5,13 +5,13 @@ VALUES
 ('pull-ups', 'pull-ups.jpg', 'pull-ups.mp4', 'intermediate');
 
 -- Relaciones de grupos musculares
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('chin-ups', 'back'),
 ('chin-ups', 'biceps');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('chin-ups', 'pull-ups');
 

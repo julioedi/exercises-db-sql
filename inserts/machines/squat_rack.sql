@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('squat_rack', 'es', 'Soporte para sentadillas (Squat rack)', 'Estructura diseñada específicamente para sostener la barra durante ejercicios de sentadilla con seguridad.'),
 ('squat_rack', 'en', 'Squat rack', 'Structure specifically designed to hold the barbell during squat exercises safely.'),
 ('squat_rack', 'pt', 'Suporte para agachamento', 'Estrutura projetada especificamente para segurar a barra durante exercícios de agachamento com segurança.'),

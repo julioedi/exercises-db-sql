@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('seated_calf_raise', 'es', 'Máquina de elevación de talones sentado', 'Máquina diseñada para aislar y fortalecer los músculos sóleos de las pantorrillas mediante la flexión plantar sentado.'),
 ('seated_calf_raise', 'en', 'Seated calf raise', 'Machine designed to isolate and strengthen the calf soleus muscles through seated plantar flexion.'),
 ('seated_calf_raise', 'pt', 'Máquina de elevação de panturrilha sentado', 'Máquina projetada para isolar e fortalecer os músculos sóleos das panturrilhas através da flexão plantar sentada.'),

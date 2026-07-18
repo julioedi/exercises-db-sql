@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('glute_drive_machine', 'es', 'Máquina de empuje de cadera', 'Máquina diseñada para realizar hip thrusts de forma segura con trayectoria guiada y carga ajustable.'),
 ('glute_drive_machine', 'en', 'Glute drive machine', 'Machine designed to perform hip thrusts safely with a guided path and adjustable load.'),
 ('glute_drive_machine', 'pt', 'Máquina de elevação pélvica', 'Máquina projetada para realizar elevação pélvica com segurança, trajetória guiada e carga ajustável.'),

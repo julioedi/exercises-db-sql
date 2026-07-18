@@ -1,21 +1,21 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('ab-wheel-rollout', 'ab-wheel-rollout.jpg', 'ab-wheel-rollout.mp4', 'intermediate');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'abdominals'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('ab-wheel-rollout', 'abdominals');
 
 -- Relación: el ejercicio utiliza la máquina 'ab-wheel'
-INSERT INTO exercise_machine (exercise_slug, machine_slug) 
+INSERT OR IGNORE INTO exercise_machine (exercise_slug, machine_slug) 
 VALUES ('ab-wheel-rollout', 'ab-wheel');
 
 -- Relación: alternativa al 'plank'
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('ab-wheel-rollout', 'plank');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('ab-wheel-rollout', 'es', 'Ab wheel rollout', 'Ejercicio avanzado de anti-extensión que requiere una fuerte activación del core para estabilizar la columna.', 'Fortalece profundamente el recto abdominal y los oblicuos.\nMejora la estabilidad lumbopélvica.', 'Arrodíllate y sujeta la rueda con ambas manos.\nDeslízate hacia adelante controlando el movimiento sin arquear la espalda.\nRegresa a la posición inicial mediante la contracción abdominal.', 'Mantén la espalda neutra o ligeramente encorvada para evitar dolor lumbar.', 'Evitar si se tiene debilidad extrema en la zona lumbar.', 'Arquear la espalda durante el movimiento.\nUtilizar los brazos en lugar del abdomen para regresar.'),
 ('ab-wheel-rollout', 'en', 'Ab wheel rollout', 'Advanced anti-extension exercise requiring strong core activation to stabilize the spine.', 'Deeply strengthens the rectus abdominis and obliques.\nImproves lumbopelvic stability.', 'Kneel and hold the wheel with both hands.\nRoll forward controlling the movement without arching your back.\nReturn to the starting position by contracting the abdomen.', 'Keep your back neutral or slightly hunched to avoid lower back pain.', 'Avoid if you have extreme lower back weakness.', 'Arching the back during the movement.\nUsing arms instead of the abdomen to return.'),
 ('ab-wheel-rollout', 'pt', 'Ab wheel rollout', 'Exercício avançado de anti-extensão que requer uma forte ativação do core para estabilizar a coluna.', 'Fortalece profundamente o reto abdominal e os oblíquos.\nMelhora a estabilidade lombopélvica.', 'Ajoelhe-se e segure a roda com ambas as mãos.\nDeslize para a frente controlando o movimento sem arquear as costas.\nRegresse à posição inicial através da contração abdominal.', 'Mantenha as costas neutras ou ligeiramente curvadas para evitar dor lombar.', 'Evitar se tiver fraqueza extrema na zona lombar.', 'Arquear as costas durante o movimento.\nUsar os braços em vez do abdómen para regressar.'),

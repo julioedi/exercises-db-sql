@@ -1,0 +1,36 @@
+-- Definición del ejercicio
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('band-hip-adduction', 'band-hip-adduction.jpg', 'band-hip-adduction.mp4', 'beginner');
+
+-- Relación de grupo muscular
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('band-hip-adduction', 'adductors');
+
+-- Relaciones de alternativas
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('band-hip-adduction', 'cable-hip-adduction');
+
+-- Información multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('band-hip-adduction', 'es', 'Aducción de cadera con banda', 'Ejercicio de resistencia elástica para fortalecer los aductores.', 'Ideal para entrenamiento en casa y control excéntrico.', 'Sujeta una banda a un punto fijo, pásala por el tobillo y mueve la pierna hacia el centro.', 'Mantén la tensión constante en la banda.', 'Evitar si hay dolor de ingle.', 'Perder el control al regresar la pierna.'),
+('band-hip-adduction', 'en', 'Band hip adduction', 'Resistance band exercise to strengthen adductors.', 'Ideal for home training and eccentric control.', 'Attach a band to a fixed point, loop around the ankle, and move the leg toward the center.', 'Maintain constant tension in the band.', 'Avoid if groin pain exists.', 'Losing control when returning the leg.'),
+('band-hip-adduction', 'pt', 'Adução de quadril com banda', 'Exercício de resistência elástica para fortalecer os adutores.', 'Ideal para treino em casa e controle excêntrico.', 'Prenda uma banda num ponto fixo, passe-a pelo tornozelo e mova a perna em direção ao centro.', 'Mantenha a tensão constante na banda.', 'Evitar se houver dor na virilha.', 'Perder o controle ao retornar a perna.'),
+('band-hip-adduction', 'fr', 'Adduction de hanche avec bande', 'Exercice de résistance élastique pour renforcer les adducteurs.', 'Idéal pour l''entraînement à domicile et le contrôle excentrique.', 'Attachez une bande à un point fixe, passez-la autour de la cheville et ramenez la jambe vers le centre.', 'Maintenez une tension constante dans la bande.', 'À éviter en cas de douleur à l''aine.', 'Perdre le contrôle lors du retour de la jambe.'),
+('band-hip-adduction', 'de', 'Hüft-Adduktion mit Band', 'Widerstandsbandübung zur Stärkung der Adduktoren.', 'Ideal für das Heimtraining und exzentrische Kontrolle.', 'Band an einem festen Punkt befestigen, um den Knöchel legen und das Bein zur Mitte bewegen.', 'Konstante Spannung im Band halten.', 'Bei Leistenschmerzen vermeiden.', 'Kontrolle beim Zurückführen des Beins verlieren.'),
+('band-hip-adduction', 'it', 'Adduzione d''anca con banda', 'Esercizio con banda elastica per rinforzare gli adduttori.', 'Ideale per l''allenamento a casa e il controllo eccentrico.', 'Fissa una banda a un punto fermo, avvolgila attorno alla caviglia e muovi la gamba verso il centro.', 'Mantieni una tensione costante sulla banda.', 'Evitare in caso di dolore all''inguine.', 'Perdere il controllo nel tornare con la gamba.'),
+('band-hip-adduction', 'zh', '弹力带髋内收', '利用阻力带强化内收肌的训练。', '适合居家锻炼和离心控制。', '将弹力带固定在一点，套在脚踝上，将腿向身体中线移动。', '保持弹力带的持续张力。', '如有腹股沟疼痛，请避免。', '还原时失去控制。'),
+('band-hip-adduction', 'ja', 'バンドヒップアダクション', '内転筋を強化するためのレジスタンスバンドエクササイズ。', '自宅でのトレーニングやエキセントリックなコントロールに最適です。', 'バンドを固定点に付け、足首に巻き、脚を中央に向かって動かします。', 'バンドの張りを一定に保ってください。', '鼠径部に痛みがある場合は避けてください。', '脚を戻す際にコントロールを失うこと。'),
+('band-hip-adduction', 'ko', '밴드 힙 어덕션', '저항 밴드를 이용한 내전근 강화 운동.', '홈트레이닝 및 신장성 수축 조절에 탁월.', '밴드를 고정점에 연결하고 발목에 건 뒤 다리를 몸 안쪽으로 당김.', '밴드의 긴장을 일정하게 유지.', '사타구니 통증 시 피할 것.', '다리를 제자리로 돌릴 때 긴장 풀림.'),
+('band-hip-adduction', 'ar', 'تمرين تقريب الورك مع الشريط', 'تمرين مقاومة مرنة لتقوية المقربات.', 'مثالي للتدريب المنزلي والتحكم اللامركزي.', 'ثبت شريطاً بنقطة ثابتة، مرره حول الكاحل وحرك ساقك نحو المركز.', 'حافظ على توتر مستمر في الشريط.', 'تجنب في حالة وجود ألم في الفخذ.', 'فقدان السيطرة عند إعادة الساق.'),
+('band-hip-adduction', 'hi', 'बैंड हिप एडक्शन', 'एडक्टर्स को मजबूत करने के लिए रेजिस्टेंस बैंड व्यायाम।', 'होम वर्कआउट और एक्सेंट्रिक नियंत्रण के लिए आदर्श।', 'बैंड को एक स्थिर बिंदु से जोड़ें, टखने के चारों ओर लपेटें और पैर को केंद्र की ओर ले जाएं।', 'बैंड में निरंतर तनाव बनाए रखें।', 'यदि कमर (groin) में दर्द हो तो न करें।', 'पैर को वापस लाते समय नियंत्रण खोना।'),
+('band-hip-adduction', 'ru', 'Приведение бедра с эспандером', 'Упражнение с эспандером для укрепления приводящих мышц.', 'Идеально для домашних тренировок и эксцентрического контроля.', 'Закрепите ленту, наденьте ее на лодыжку и ведите ногу к центру.', 'Держите ленту в постоянном натяжении.', 'Избегайте при болях в паху.', 'Потеря контроля при возвращении ноги.'),
+('band-hip-adduction', 'nl', 'Band hip adduction', 'Weerstandsband-oefening om de adductoren te versterken.', 'Ideaal voor thuistraining en excentrische controle.', 'Bevestig een band aan een vast punt, doe hem rond de enkel en beweeg het been naar het midden.', 'Houd constante spanning op de band.', 'Vermijden bij liespijn.', 'Controle verliezen bij het terugbrengen van het been.'),
+('band-hip-adduction', 'sv', 'Band hip adduction', 'Gummibandsövning för att stärka adduktorerna.', 'Perfekt för hemmaträning och excentrisk kontroll.', 'Fäst ett band i en fast punkt, vira det runt fotleden och för benet mot mitten.', 'Håll konstant spänning i bandet.', 'Undvik vid ljumsksmärta.', 'Att tappa kontrollen när benet återförs.'),
+('band-hip-adduction', 'pl', 'Przywodzenie nogi z gumą', 'Ćwiczenie z taśmą oporową wzmacniające przywodziciele.', 'Idealne do treningu domowego i kontroli ekscentrycznej.', 'Zamocuj taśmę w punkcie stałym, przełóż przez kostkę i przywodź nogę.', 'Utrzymuj stałe napięcie taśmy.', 'Unikaj w przypadku bólu pachwiny.', 'Utrata kontroli przy powrocie nogi.'),
+('band-hip-adduction', 'id', 'Band hip adduction', 'Latihan pita resistensi untuk memperkuat adduktor.', 'Ideal untuk latihan di rumah dan kontrol eksentrik.', 'Ikat pita ke titik tetap, lingkarkan di pergelangan kaki, dan gerakkan kaki ke arah tengah.', 'Jaga tegangan pita tetap konstan.', 'Hindari jika ada nyeri selangkangan.', 'Kehilangan kontrol saat mengembalikan kaki.'),
+('band-hip-adduction', 'bn', 'ব্যান্ড হিপ অ্যাডাকশন', 'অ্যাডাকটর শক্তিশালী করার জন্য রেজিস্ট্যান্স ব্যান্ড ব্যায়াম।', 'হোম ট্রেনিং এবং এক্সেন্ট্রিক কন্ট্রোলের জন্য আদর্শ।', 'একটি ফিক্সড পয়েন্টে ব্যান্ড আটকান, গোড়ালিতে জড়ান এবং পা কেন্দ্রের দিকে টানুন।', 'ব্যান্ডে অবিরাম টান রাখুন।', 'কুঁচকিতে ব্যথা থাকলে এটি করবেন না।', 'পা ফেরত আনার সময় নিয়ন্ত্রণ হারানো।'),
+('band-hip-adduction', 'vi', 'Khép chân với dây kháng lực', 'Bài tập với dây kháng lực giúp tăng cường cơ khép.', 'Lý tưởng cho tập tại nhà và kiểm soát lực ly tâm.', 'Cố định dây, vòng qua cổ chân và kéo chân về phía trung tâm.', 'Giữ dây luôn căng.', 'Tránh tập nếu bị đau háng.', 'Mất kiểm soát khi đưa chân về vị trí cũ.'),
+('band-hip-adduction', 'fa', 'تمرين اداکشن ران با کش', 'تمرين با کش مقاومتي براي تقويت عضلات نزديک‌کننده.', 'مناسب براي تمرين در خانه و کنترل اکسنتریک.', 'کش را به يک نقطه ثابت ببنديد، دور مچ پا بيندازيد و پا را به سمت مرکز حرکت دهيد.', 'کش را همواره در حالت کشش نگه داريد.', 'در صورت درد کشاله ران انجام ندهيد.', 'از دست دادن کنترل هنگام بازگرداندن پا.');

@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('alternate-arm-leg-plank', 'alternate-arm-leg-plank.jpg', 'alternate-arm-leg-plank.mp4', 'intermediate');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'abdominals'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('alternate-arm-leg-plank', 'abdominals');
 
 -- Relación: no requiere máquina, por lo tanto no se inserta en exercise_machine
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('alternate-arm-leg-plank', 'plank');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('alternate-arm-leg-plank', 'es', 'Plancha con elevación alterna de brazo y pierna', 'Variación avanzada de la plancha que desafía el equilibrio y la estabilidad anti-rotacional.', 'Mejora la estabilidad del core y la coordinación neuromuscular.', 'Comienza en posición de plancha frontal.\nEleva simultáneamente el brazo derecho y la pierna izquierda sin inclinar la cadera.\nMantén por un segundo y cambia de lado.', 'Mantén la mirada hacia el suelo para alinear la columna cervical.', 'Evitar si se pierde el equilibrio o hay inestabilidad en la espalda baja.', 'Rotar la cadera al elevar los miembros.\nLevantar demasiado rápido sin control.'),
 ('alternate-arm-leg-plank', 'en', 'Alternate arm and leg plank', 'Advanced plank variation that challenges balance and anti-rotational stability.', 'Improves core stability and neuromuscular coordination.', 'Start in a front plank position.\nSimultaneously lift your right arm and left leg without tilting your hips.\nHold for a second and switch sides.', 'Keep your gaze towards the floor to align the cervical spine.', 'Avoid if you lose balance or have lower back instability.', 'Rotating the hips while lifting the limbs.\nLifting too quickly without control.'),
 ('alternate-arm-leg-plank', 'pt', 'Prancha com elevação alternada de braço e perna', 'Variação avançada da prancha que desafia o equilíbrio e a estabilidade anti-rotacional.', 'Melhora a estabilidade do core e a coordenação neuromuscular.', 'Comece na posição de prancha frontal.\nEleve simultaneamente o braço direito e a perna esquerda sem inclinar a anca.\nMantenha por um segundo e troque de lado.', 'Mantenha o olhar para o chão para alinhar a coluna cervical.', 'Evitar se perder o equilíbrio ou tiver instabilidade lombar.', 'Rodar a anca ao elevar os membros.\nLevantar demasiado rápido sem controlo.'),

@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('tibialis', 'es', 'Tibial', 'Músculo situado en la parte anterior de la pierna, responsable de la dorsiflexión del pie y la estabilización del tobillo.'),
 ('tibialis', 'en', 'Tibialis', 'Muscle located on the anterior aspect of the lower leg, responsible for dorsiflexion of the foot and ankle stabilization.'),
 ('tibialis', 'pt', 'Tibial', 'Músculo situado na parte anterior da perna, responsável pela dorsiflexão do pé e estabilização do tornozelo.'),

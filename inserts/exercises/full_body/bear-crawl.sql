@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('bear-crawl', 'bear-crawl.jpg', 'bear-crawl.mp4', 'intermediate');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'full-body'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('bear-crawl', 'full_body');
 
 -- Relación: no requiere máquina, por lo tanto no se inserta en exercise_machine
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('bear-crawl', 'plank');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('bear-crawl', 'es', 'Gateo de oso (Bear Crawl)', 'Ejercicio de movimiento funcional que exige coordinación, fuerza en el core y estabilidad de hombros.', 'Mejora la coordinación, la resistencia cardiovascular y la estabilidad del core.', 'En posición de cuatro patas, eleva ligeramente las rodillas del suelo y avanza moviendo brazo y pierna opuestos.', 'Mantén la espalda lo más plana posible durante el movimiento.', 'Evitar si hay dolor agudo en muñecas o rodillas.', 'Dejar subir la cadera demasiado alto o mover el mismo brazo y pierna a la vez.'),
 ('bear-crawl', 'en', 'Bear crawl', 'Functional movement exercise that requires coordination, core strength, and shoulder stability.', 'Improves coordination, cardiovascular endurance, and core stability.', 'In a quadruped position, lift your knees slightly off the floor and move forward by moving opposite arm and leg.', 'Keep your back as flat as possible during the movement.', 'Avoid if there is acute wrist or knee pain.', 'Letting the hips rise too high or moving the same arm and leg at the same time.'),
 ('bear-crawl', 'pt', 'Rastejo de urso (Bear Crawl)', 'Exercício de movimento funcional que exige coordenação, força no core e estabilidade dos ombros.', 'Melhora a coordenação, a resistência cardiovascular e a estabilidade do core.', 'Na posição de quatro apoios, eleve ligeiramente os joelhos do chão e avance movendo braço e perna opostos.', 'Mantenha as costas o mais planas possível durante o movimento.', 'Evitar se houver dor aguda nos pulsos ou joelhos.', 'Deixar a anca subir demasiado ou mover o mesmo braço e perna ao mesmo tempo.'),

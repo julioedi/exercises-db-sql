@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('triceps', 'es', 'Tríceps', 'Músculo de la parte posterior del brazo formado por tres cabezas, encargado de la extensión del codo.'),
 ('triceps', 'en', 'Triceps', 'Muscle on the back of the arm consisting of three heads, responsible for elbow extension.'),
 ('triceps', 'pt', 'Tríceps', 'Músculo da parte posterior do braço formado por três cabeças, responsável pela extensão do cotovelo.'),

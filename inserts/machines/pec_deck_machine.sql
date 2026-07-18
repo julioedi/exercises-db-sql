@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('pec_deck_machine', 'es', 'Máquina pec deck (Contractora de pecho)', 'Máquina diseñada para aislar los músculos pectorales mediante un movimiento de aducción horizontal.'),
 ('pec_deck_machine', 'en', 'Pec deck machine', 'Machine designed to isolate the pectoral muscles through a horizontal adduction movement.'),
 ('pec_deck_machine', 'pt', 'Máquina Peck Deck', 'Máquina projetada para isolar os músculos peitorais através de um movimento de adução horizontal.'),

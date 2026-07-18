@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('alternate-leg-raises', 'alternate-leg-raises.jpg', 'alternate-leg-raises.mp4', 'beginner');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'abdominals'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('alternate-leg-raises', 'abdominals');
 
 -- Relación: no requiere máquina, por lo tanto no se inserta en exercise_machine
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('alternate-leg-raises', 'leg-raises');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('alternate-leg-raises', 'es', 'Elevación alterna de piernas', 'Ejercicio básico enfocado en la parte inferior del recto abdominal manteniendo la espalda estable.', 'Fortalece la zona abdominal baja y mejora el control pélvico.', 'Recuéstate boca arriba, manos bajo los glúteos.\nEleva una pierna estirada mientras la otra permanece cerca del suelo.\nAlterna el movimiento controlando el descenso.', 'Mantén la zona lumbar siempre pegada al suelo durante toda la ejecución.', 'Evitar si hay dolor agudo en la zona lumbar.', 'Arquear la espalda al bajar la pierna.\nRealizar el movimiento con impulso.'),
 ('alternate-leg-raises', 'en', 'Alternate leg raises', 'Basic exercise focusing on the lower rectus abdominis while keeping the back stable.', 'Strengthens the lower abdominal area and improves pelvic control.', 'Lie on your back, hands under your glutes.\nRaise one straight leg while the other remains near the floor.\nAlternate the movement, controlling the descent.', 'Keep your lower back pressed against the floor throughout the execution.', 'Avoid if there is acute lower back pain.', 'Arching the back when lowering the leg.\nPerforming the movement with momentum.'),
 ('alternate-leg-raises', 'pt', 'Elevação alternada de pernas', 'Exercício básico focado na parte inferior do reto abdominal, mantendo as costas estáveis.', 'Fortalece a zona abdominal inferior e melhora o controlo pélvico.', 'Deite-se de costas, mãos sob os glúteos.\nEleve uma perna esticada enquanto a outra permanece perto do chão.\nAlterne o movimento controlando a descida.', 'Mantenha a zona lombar sempre colada ao chão durante toda a execução.', 'Evitar se houver dor aguda na zona lombar.', 'Arquear as costas ao baixar a perna.\nRealizar o movimento com impulso.'),

@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('barbell', 'es', 'Barra', 'Barra larga de acero utilizada para levantamientos pesados como sentadillas, press banca y peso muerto.'),
 ('barbell', 'en', 'Barbell', 'Long steel bar used for heavy lifts such as squats, bench press, and deadlifts.'),
 ('barbell', 'pt', 'Barra', 'Barra longa de aço utilizada para levantamentos pesados como agachamentos, supino e levantamento terra.'),

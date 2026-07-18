@@ -5,12 +5,12 @@ VALUES
 ('weighted-leg-raises', 'weighted-leg-raises.jpg', 'weighted-leg-raises.mp4', 'advanced');
 
 -- Relación de grupo muscular
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('weighted-leg-raises', 'abdominals');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('weighted-leg-raises', 'leg-raises');
 

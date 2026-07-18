@@ -5,12 +5,12 @@ VALUES
 ('front-plank', 'front-plank.jpg', 'front-plank.mp4', 'beginner');
 
 -- Relaciones de grupos musculares
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('dynamic-plank', 'abdominals');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('dynamic-plank', 'front-plank');
 

@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('smith_machine', 'es', 'Máquina Smith', 'Máquina de entrenamiento de fuerza con barra guiada, diseñada para ejercicios de presión y sentadillas con mayor estabilidad.'),
 ('smith_machine', 'en', 'Smith machine', 'Strength training machine with a guided barbell, designed for pressing and squatting exercises with increased stability.'),
 ('smith_machine', 'pt', 'Máquina Smith', 'Máquina de treinamento de força com barra guiada, projetada para exercícios de pressão e agachamento com maior estabilidade.'),

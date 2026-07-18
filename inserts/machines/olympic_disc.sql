@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('olympic_disc', 'es', 'Disco olímpico', 'Disco de peso estándar de 50mm diseñado para barras olímpicas, utilizado en levantamiento de pesas y entrenamiento de fuerza.'),
 ('olympic_disc', 'en', 'Olympic plate', '50mm standard weight plate designed for Olympic bars, used in weightlifting and strength training.'),
 ('olympic_disc', 'pt', 'Anilha olímpica', 'Disco de peso padrão de 50mm projetado para barras olímpicas, usado em levantamento de peso e treinamento de força.'),

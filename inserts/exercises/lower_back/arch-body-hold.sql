@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('arch-body-hold', 'arch-body-hold.jpg', 'arch-body-hold.mp4', 'intermediate');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'lower-back'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('arch-body-hold', 'lower_back');
 
 -- Relación: no requiere máquina, por lo tanto no se inserta en exercise_machine
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('arch-body-hold', 'superman');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('arch-body-hold', 'es', 'Sostén en arco (Arch Body Hold)', 'Ejercicio de estabilidad isométrica que fortalece la cadena posterior y la zona lumbar.', 'Fortalece la espalda baja, glúteos y mejora la postura.', 'Acuéstate boca abajo, eleva simultáneamente brazos y piernas manteniéndolos rectos.', 'Mantén la mirada hacia el suelo para proteger el cuello.', 'Evitar si hay lesiones graves en la columna vertebral.', 'Levantar demasiado el cuello forzando las cervicales.\nDoblar las rodillas.'),
 ('arch-body-hold', 'en', 'Arch body hold', 'Isometric stability exercise that strengthens the posterior chain and lower back.', 'Strengthens the lower back, glutes, and improves posture.', 'Lie face down, simultaneously lift arms and legs while keeping them straight.', 'Keep your gaze towards the floor to protect your neck.', 'Avoid if there are serious spinal injuries.', 'Lifting the neck too high, straining the cervical spine.\nBending the knees.'),
 ('arch-body-hold', 'pt', 'Sustentação em arco', 'Exercício de estabilidade isométrica que fortalece a cadeia posterior e a zona lombar.', 'Fortalece a zona lombar, glúteos e melhora a postura.', 'Deite-se de barriga para baixo, eleve simultaneamente braços e pernas mantendo-os retos.', 'Mantenha o olhar para o chão para proteger o pescoço.', 'Evitar se houver lesões graves na coluna vertebral.', 'Levantar demasiado o pescoço forçando as cervicais.\nDobrar os joelhos.'),

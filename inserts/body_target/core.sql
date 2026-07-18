@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES 
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES 
 ('core', 'es', 'Core', 'Conjunto de músculos que incluye los abdominales, la zona lumbar, la pelvis y los glúteos, fundamentales para la estabilidad.'),
 ('core', 'en', 'Core', 'Group of muscles including the abdominals, lower back, pelvis, and glutes, essential for stability.'),
 ('core', 'pt', 'Core', 'Grupo de músculos que inclui o abdómen, zona lombar, pélvis e glúteos, fundamentais para a estabilidade.'),

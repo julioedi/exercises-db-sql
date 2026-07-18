@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('bird-dog', 'bird-dog.jpg', 'bird-dog.mp4', 'beginner');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'core'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('bird-dog', 'core');
 
 -- Relación: no requiere máquina
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('bird-dog', 'plank');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('bird-dog', 'es', 'Bird dog', 'Ejercicio de estabilidad que mejora el equilibrio, la coordinación y fortalece la zona lumbar y el core.', 'Fortalece la espalda baja y mejora la estabilidad de la columna.', 'En posición de cuatro patas, extiende simultáneamente el brazo y la pierna opuestos.', 'Mantén la columna neutra y evita girar las caderas.', 'Evitar si hay dolor agudo en la zona lumbar.', 'Arquear la espalda excesivamente o elevar demasiado la pierna.'),
 ('bird-dog', 'en', 'Bird dog', 'Stability exercise that improves balance, coordination, and strengthens the lower back and core.', 'Strengthens the lower back and improves spinal stability.', 'In a quadruped position, simultaneously extend the opposite arm and leg.', 'Keep your spine neutral and avoid rotating your hips.', 'Avoid if there is acute lower back pain.', 'Arching the back excessively or lifting the leg too high.'),
 ('bird-dog', 'pt', 'Bird dog', 'Exercício de estabilidade que melhora o equilíbrio, a coordenação e fortalece a zona lombar e o core.', 'Fortalece a zona lombar e melhora a estabilidade da coluna.', 'Na posição de quatro apoios, estenda simultaneamente o braço e a perna opostos.', 'Mantenha a coluna neutra e evite rodar as ancas.', 'Evitar se houver dor aguda na zona lombar.', 'Arquear as costas excessivamente ou elevar demasiado a perna.'),

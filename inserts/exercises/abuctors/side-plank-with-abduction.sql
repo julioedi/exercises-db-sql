@@ -5,12 +5,12 @@ VALUES
 ('side-plank-with-abduction', 'side-plank-with-abduction.jpg', 'side-plank-with-abduction.mp4', 'advanced');
 
 -- Relación de grupo muscular
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('side-plank-with-abduction', 'abductors');
 
 -- Relación de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('side-plank-with-abduction', 'side-lying-hip-abduction');
 

@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('leg_curl_machine', 'es', 'Máquina de curl de pierna', 'Equipo diseñado para aislar y fortalecer los isquiotibiales mediante un movimiento de flexión de rodilla.'),
 ('leg_curl_machine', 'en', 'Leg curl machine', 'Equipment designed to isolate and strengthen the hamstrings through a knee flexion movement.'),
 ('leg_curl_machine', 'pt', 'Máquina de cadeira flexora', 'Equipamento projetado para isolar e fortalecer os isquiotibiais através de um movimento de flexão do joelho.'),

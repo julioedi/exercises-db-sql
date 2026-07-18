@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('lat_pulldown_machine', 'es', 'Máquina de jalón al pecho', 'Máquina de poleas diseñada para trabajar los músculos dorsales mediante un movimiento de tracción vertical.'),
 ('lat_pulldown_machine', 'en', 'Lat pulldown machine', 'Pulley machine designed to work the latissimus dorsi muscles through a vertical pulling movement.'),
 ('lat_pulldown_machine', 'pt', 'Máquina de puxada alta', 'Máquina de polias projetada para trabalhar os músculos dorsais através de um movimento de tração vertical.'),

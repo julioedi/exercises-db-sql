@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('rowing_machine', 'es', 'Máquina de remo', 'Equipo que simula el movimiento de remo, trabajando todo el cuerpo con énfasis en la espalda y sistema cardiovascular.'),
 ('rowing_machine', 'en', 'Rowing machine', 'Equipment that simulates the rowing motion, working the whole body with an emphasis on back and cardiovascular system.'),
 ('rowing_machine', 'pt', 'Máquina de remo', 'Equipamento que simula o movimento de remo, trabalhando todo o corpo com ênfase nas costas e no sistema cardiovascular.'),

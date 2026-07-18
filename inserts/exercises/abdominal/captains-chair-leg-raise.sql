@@ -5,12 +5,12 @@ VALUES
 ('hanging-knee-raises', 'hanging-knee-raises.jpg', 'hanging-knee-raises.mp4', 'intermediate');
 
 -- Relaciones de grupos musculares
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('captains-chair-leg-raise', 'abdominals');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('captains-chair-leg-raise', 'hanging-knee-raises');
 

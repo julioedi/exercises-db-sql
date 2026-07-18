@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('hip_flexors', 'es', 'Flexores de la cadera', 'Grupo muscular que incluye el psoas ilíaco, recto femoral y sartorio, responsables de elevar el muslo hacia el torso y estabilizar la pelvis durante la marcha.'),
 ('hip_flexors', 'en', 'Hip flexors', 'Muscle group including the iliopsoas, rectus femoris, and sartorius, responsible for lifting the thigh towards the torso and stabilizing the pelvis during gait.'),
 ('hip_flexors', 'pt', 'Flexores do quadril', 'Grupo muscular que inclui o iliopsoas, reto femoral e sartório, responsáveis por elevar a coxa em direção ao tronco e estabilizar a pélvis durante a marcha.'),

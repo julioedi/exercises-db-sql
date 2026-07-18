@@ -5,12 +5,12 @@ VALUES
 ('sumo-squat', 'sumo-squat.jpg', 'sumo-squat.mp4', 'intermediate');
 
 -- 2. Registro de grupo muscular
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('sumo-squat', 'abductors');
 
 -- 3. Registro de alternativas (ejemplo de enlace)
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('sumo-squat', 'hip-abduction-machine');
 

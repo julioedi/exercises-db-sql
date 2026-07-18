@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('stationary_bike', 'es', 'Bicicleta estática', 'Bicicleta fija diseñada para entrenamiento cardiovascular y fortalecimiento de piernas sin impacto articular.'),
 ('stationary_bike', 'en', 'Stationary bike', 'Fixed bike designed for cardiovascular training and leg strengthening with low joint impact.'),
 ('stationary_bike', 'pt', 'Bicicleta ergométrica', 'Bicicleta fixa projetada para treinamento cardiovascular e fortalecimento das pernas com baixo impacto articular.'),

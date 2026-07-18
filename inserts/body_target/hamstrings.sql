@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('hamstrings', 'es', 'Isquiotibiales', 'Grupo muscular en la parte posterior del muslo compuesto por el bíceps femoral, semitendinoso y semimembranoso, clave para la flexión de rodilla y extensión de cadera.'),
 ('hamstrings', 'en', 'Hamstrings', 'Muscle group in the back of the thigh consisting of the biceps femoris, semitendinosus, and semimembranosus, key for knee flexion and hip extension.'),
 ('hamstrings', 'pt', 'Isquiotibiais', 'Grupo muscular na parte posterior da coxa composto pelo bíceps femoral, semitendíneo e semimembranoso, chave para a flexão do joelho e extensão do quadril.'),

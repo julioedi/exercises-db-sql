@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('obliques', 'es', 'Oblicuos', 'Músculos situados a los lados del abdomen (interno y externo), responsables de la rotación del tronco, flexión lateral y estabilización de la columna.'),
 ('obliques', 'en', 'Obliques', 'Muscles located on the sides of the abdomen (internal and external), responsible for trunk rotation, lateral flexion, and spinal stabilization.'),
 ('obliques', 'pt', 'Oblíquos', 'Músculos situados nas laterais do abdômen (interno e externo), responsáveis pela rotação do tronco, flexão lateral e estabilização da coluna.'),

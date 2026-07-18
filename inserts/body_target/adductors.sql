@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('adductors', 'es', 'Aductores', 'Grupo muscular situado en la cara interna del muslo, incluyendo el pectíneo, aductor largo, corto y mayor, responsables de la aducción de la cadera y la estabilización del fémur.'),
 ('adductors', 'en', 'Adductors', 'Muscle group located on the inner thigh, including the pectineus, adductor longus, brevis, and magnus, responsible for hip adduction and femur stabilization.'),
 ('adductors', 'pt', 'Adutores', 'Grupo muscular localizado na parte interna da coxa, incluindo o pectíneo, adutor longo, curto e magno, responsáveis pela adução do quadril e estabilização do fémur.'),

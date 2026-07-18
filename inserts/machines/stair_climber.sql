@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('stair_climber', 'es', 'Máquina de escaleras', 'Equipo cardiovascular que simula subir escalones de forma continua para mejorar la resistencia y tonificar el tren inferior.'),
 ('stair_climber', 'en', 'Stair climber', 'Cardiovascular equipment that simulates climbing stairs continuously to improve endurance and tone the lower body.'),
 ('stair_climber', 'pt', 'Escada rolante de academia', 'Equipamento cardiovascular que simula subir escadas de forma contínua para melhorar a resistência e tonificar os membros inferiores.'),

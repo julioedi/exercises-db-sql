@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('ez_bar', 'es', 'Barra Z', 'Barra con forma ondulada para reducir la tensión en muñecas durante ejercicios de bíceps y tríceps.'),
 ('ez_bar', 'en', 'EZ bar', 'Wavy-shaped bar designed to reduce wrist strain during bicep and tricep exercises.'),
 ('ez_bar', 'pt', 'Barra W', 'Barra com formato ondulado para reduzir a tensão nos pulsos durante exercícios de bíceps e tríceps.'),

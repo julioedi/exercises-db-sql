@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('serratus', 'es', 'Serrato', 'Músculo situado en la parte lateral del tórax, clave para la protracción de la escápula y la estabilidad durante movimientos de empuje.'),
 ('serratus', 'en', 'Serratus', 'Muscle located on the lateral aspect of the thorax, key for scapular protraction and stability during pushing movements.'),
 ('serratus', 'pt', 'Serrátil', 'Músculo localizado na parte lateral do tórax, chave para a protração da escápula e estabilidade durante movimentos de empurrar.'),

@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('incline_bench', 'es', 'Banco inclinado', 'Banco con ángulo ajustable hacia arriba, ideal para ejercicios de press superior de pecho y hombros.'),
 ('incline_bench', 'en', 'Incline bench', 'Bench with an upward adjustable angle, ideal for upper chest press and shoulder exercises.'),
 ('incline_bench', 'pt', 'Banco inclinado', 'Banco com ângulo ajustável para cima, ideal para exercícios de supino superior e ombros.'),

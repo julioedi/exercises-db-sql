@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('lats', 'es', 'Dorsales', 'El músculo dorsal ancho es el músculo más grande del torso; su función es la aducción, extensión y rotación interna del brazo, esencial para la tracción.'),
 ('lats', 'en', 'Lats', 'The latissimus dorsi is the largest muscle of the torso; its function is arm adduction, extension, and internal rotation, essential for pulling movements.'),
 ('lats', 'pt', 'Dorsais', 'O músculo latíssimo do dorso é o maior músculo do tronco; sua função é a adução, extensão e rotação interna do braço, essencial para a tração.'),

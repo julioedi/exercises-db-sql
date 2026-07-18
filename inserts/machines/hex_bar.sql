@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('hex_bar', 'es', 'Barra hexagonal (Trap bar)', 'Barra en forma hexagonal que permite cargar peso alineado con el centro de gravedad, ideal para peso muerto.'),
 ('hex_bar', 'en', 'Hex bar (Trap bar)', 'Hexagon-shaped bar allowing weight to be loaded in line with the center of gravity, ideal for deadlifts.'),
 ('hex_bar', 'pt', 'Barra hexagonal (Trap bar)', 'Barra em forma hexagonal que permite carregar peso alinhado com o centro de gravidade, ideal para levantamento terra.'),

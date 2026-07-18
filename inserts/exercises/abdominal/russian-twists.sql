@@ -6,12 +6,12 @@ VALUES
 ('medicine-ball-twists', 'medicine-ball-twists.jpg', 'medicine-ball-twists.mp4', 'intermediate');
 
 -- Relaciones de grupos musculares (Solo ejercicio actual)
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('russian-twists', 'abdominals');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('russian-twists', 'seated-twists'),
 ('russian-twists', 'medicine-ball-twists');

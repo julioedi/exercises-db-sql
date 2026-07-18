@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('burpees', 'burpees.jpg', 'burpees.mp4', 'advanced');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'full_body'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('burpees', 'full_body');
 
 -- Relación: no requiere máquina
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('burpees', 'squat-jumps');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('burpees', 'es', 'Burpees', 'Ejercicio de alta intensidad que combina sentadilla, flexión y salto.', 'Mejora la resistencia cardiovascular, la fuerza y la quema de calorías.', 'Desde posición de pie, baja a cuclillas, lanza los pies atrás, haz una flexión, vuelve a recoger y salta.', 'Mantén un ritmo constante y evita arquear la espalda al hacer la flexión.', 'Evitar si hay problemas articulares graves o cardiovasculares.', 'Realizar el movimiento de forma descontrolada o no completar el salto.'),
 ('burpees', 'en', 'Burpees', 'High-intensity exercise that combines a squat, a push-up, and a jump.', 'Improves cardiovascular endurance, strength, and calorie burn.', 'From a standing position, squat down, kick your feet back, do a push-up, jump feet forward, and jump up.', 'Maintain a steady pace and avoid arching your back during the push-up.', 'Avoid if you have serious joint or cardiovascular issues.', 'Performing the movement uncontrollably or not completing the jump.'),
 ('burpees', 'pt', 'Burpees', 'Exercício de alta intensidade que combina agachamento, flexão e salto.', 'Melhora a resistência cardiovascular, a força e a queima de calorias.', 'Da posição em pé, agache, lance os pés para trás, faça uma flexão, volte a recolher e salte.', 'Mantenha um ritmo constante e evite arquear as costas ao fazer a flexão.', 'Evitar se houver problemas articulares graves ou cardiovasculares.', 'Realizar o movimento de forma descontrolada ou não completar o salto.'),

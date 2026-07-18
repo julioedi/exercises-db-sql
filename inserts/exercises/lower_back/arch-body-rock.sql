@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('arch-body-rock', 'arch-body-rock.jpg', 'arch-body-rock.mp4', 'advanced');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'lower_back'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('arch-body-rock', 'lower_back');
 
 -- Relación: no requiere máquina, por lo tanto no se inserta en exercise_machine
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('arch-body-rock', 'arch-body-hold');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('arch-body-rock', 'es', 'Balanceo en arco (Arch Body Rock)', 'Variación dinámica del sostén en arco, añadiendo un balanceo controlado para fortalecer la cadena posterior.', 'Mejora el control dinámico de la espalda baja y la coordinación de la cadena posterior.', 'En posición de arco, balancéate suavemente hacia adelante y atrás sin romper la alineación.', 'Mantén la tensión en todo el cuerpo durante el balanceo.', 'Evitar si hay lesiones graves en la columna vertebral.', 'Usar impulso excesivo perdiendo el control del movimiento.\nDoblar las rodillas.'),
 ('arch-body-rock', 'en', 'Arch body rock', 'Dynamic variation of the arch body hold, adding controlled rocking to strengthen the posterior chain.', 'Improves dynamic lower back control and posterior chain coordination.', 'In an arch position, rock gently back and forth without breaking alignment.', 'Maintain tension throughout the entire body during the rock.', 'Avoid if there are serious spinal injuries.', 'Using excessive momentum and losing control of the movement.\nBending the knees.'),
 ('arch-body-rock', 'pt', 'Balanço em arco', 'Variação dinâmica da sustentação em arco, adicionando um balanço controlado para fortalecer a cadeia posterior.', 'Melhora o controlo dinâmico da zona lombar e a coordenação da cadeia posterior.', 'Na posição de arco, balanceie suavemente para a frente e para trás sem quebrar o alinhamento.', 'Mantenha a tensão em todo o corpo durante o balanço.', 'Evitar se houver lesões graves na coluna vertebral.', 'Usar impulso excessivo perdendo o controlo do movimento.\nDobrar os joelhos.'),

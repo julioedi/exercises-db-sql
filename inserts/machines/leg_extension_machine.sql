@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('leg_extension_machine', 'es', 'Máquina de extensión de pierna', 'Equipo diseñado para aislar y fortalecer los cuádriceps mediante un movimiento de extensión de rodilla.'),
 ('leg_extension_machine', 'en', 'Leg extension machine', 'Equipment designed to isolate and strengthen the quadriceps through a knee extension movement.'),
 ('leg_extension_machine', 'pt', 'Cadeira extensora', 'Equipamento projetado para isolar e fortalecer os quadríceps através de um movimento de extensão do joelho.'),

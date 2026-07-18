@@ -5,12 +5,12 @@ VALUES
 ('pelvic-drop', 'pelvic-drop.jpg', 'pelvic-drop.mp4', 'intermediate');
 
 -- 2. Registro de grupo muscular
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('pelvic-drop', 'abductors');
 
 -- 3. Registro de alternativas (ejemplo de enlace)
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('pelvic-drop', 'standing-hip-abduction');
 

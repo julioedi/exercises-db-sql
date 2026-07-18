@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('chest_press_machine', 'es', 'Máquina de press de pecho', 'Máquina diseñada para realizar el movimiento de empuje de pecho con trayectoria guiada y resistencia ajustable.'),
 ('chest_press_machine', 'en', 'Chest press machine', 'Machine designed to perform chest pushing movements with a guided path and adjustable resistance.'),
 ('chest_press_machine', 'pt', 'Máquina de supino', 'Máquina projetada para realizar o movimento de empurrar o peito com trajetória guiada e resistência ajustável.'),

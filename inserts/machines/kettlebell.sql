@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('kettlebell', 'es', 'Kettlebell (Pesa rusa)', 'Pesa de hierro fundido con forma de bola y asa, ideal para ejercicios balísticos y de fuerza funcional.'),
 ('kettlebell', 'en', 'Kettlebell', 'Cast iron weight with a spherical body and handle, ideal for ballistic and functional strength exercises.'),
 ('kettlebell', 'pt', 'Kettlebell', 'Peso de ferro fundido em forma de bola com alça, ideal para exercícios balísticos e de força funcional.'),

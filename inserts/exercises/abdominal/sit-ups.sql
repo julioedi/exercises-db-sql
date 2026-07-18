@@ -6,12 +6,12 @@ VALUES
 ('weighted-sit-ups', 'weighted-sit-ups.jpg', 'weighted-sit-ups.mp4', 'intermediate');
 
 -- Relaciones de grupos musculares (Solo ejercicio actual)
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('sit-ups', 'abdominals');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('sit-ups', 'crunches'),
 ('sit-ups', 'weighted-sit-ups');

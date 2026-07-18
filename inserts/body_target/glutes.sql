@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('glutes', 'es', 'Glúteos', 'Grupo muscular posterior de la cadera formado por el glúteo mayor, medio y menor; son fundamentales para la extensión de la cadera, la estabilización de la pelvis y la potencia en el movimiento.'),
 ('glutes', 'en', 'Glutes', 'Posterior hip muscle group consisting of the gluteus maximus, medius, and minimus; they are essential for hip extension, pelvic stabilization, and power during movement.'),
 ('glutes', 'pt', 'Glúteos', 'Grupo muscular posterior do quadril formado pelo glúteo máximo, médio e mínimo; são fundamentais para a extensão do quadril, estabilização da pélvis e potência durante o movimento.'),

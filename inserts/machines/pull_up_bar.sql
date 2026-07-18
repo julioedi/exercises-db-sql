@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('pull_up_bar', 'es', 'Barra de dominadas', 'Barra fija elevada diseñada para ejercicios de tracción y fortalecimiento de espalda y brazos.'),
 ('pull_up_bar', 'en', 'Pull-up bar', 'Elevated fixed bar designed for pulling exercises and strengthening the back and arms.'),
 ('pull_up_bar', 'pt', 'Barra de elevação', 'Barra fixa elevada projetada para exercícios de tração e fortalecimento das costas e braços.'),

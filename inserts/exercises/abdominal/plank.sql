@@ -6,12 +6,12 @@ VALUES
 ('forearm-plank', 'forearm-plank.jpg', 'forearm-plank.mp4', 'beginner');
 
 -- Relaciones de grupos musculares (Solo ejercicio actual)
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('plank', 'abdominals');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('plank', 'side-plank'),
 ('plank', 'forearm-plank');

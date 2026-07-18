@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('shoulders', 'es', 'Hombros', 'Complejo articular formado principalmente por el deltoides (anterior, lateral y posterior); es fundamental para la movilidad del brazo, la fuerza de empuje vertical y la estabilidad del hombro.'),
 ('shoulders', 'en', 'Shoulders', 'Joint complex primarily formed by the deltoids (anterior, lateral, and posterior); essential for arm mobility, vertical pushing strength, and shoulder stability.'),
 ('shoulders', 'pt', 'Ombros', 'Complexo articular formado principalmente pelo deltoide (anterior, lateral e posterior); é fundamental para a mobilidade do braço, força de empurrar vertical e estabilidade do ombro.'),

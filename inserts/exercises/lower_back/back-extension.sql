@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('back-extension', 'back-extension.jpg', 'back-extension.mp4', 'beginner');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'lower_back'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('back-extension', 'lower_back');
 
 -- Relación: no requiere máquina
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('back-extension', 'superman');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('back-extension', 'es', 'Extensión de espalda', 'Ejercicio básico para fortalecer los músculos erectores de la columna y mejorar la postura.', 'Fortalece la zona lumbar y reduce el riesgo de dolor de espalda.', 'Túmbate boca abajo, manos tras la nuca o a los lados, eleva suavemente el pecho del suelo.', 'Realiza el movimiento lentamente y sin forzar el cuello.', 'Evitar si hay lesiones graves en la columna.', 'Dar tirones bruscos o levantar el pecho demasiado alto forzando las cervicales.'),
 ('back-extension', 'en', 'Back extension', 'Basic exercise to strengthen the erector spinae muscles and improve posture.', 'Strengthens the lower back and reduces the risk of back pain.', 'Lie face down, hands behind your head or at your sides, gently lift your chest off the floor.', 'Perform the movement slowly and without straining your neck.', 'Avoid if there are serious spinal injuries.', 'Jerking movements or lifting the chest too high, straining the cervical spine.'),
 ('back-extension', 'pt', 'Extensão de costas', 'Exercício básico para fortalecer os músculos eretores da coluna e melhorar a postura.', 'Fortalece a zona lombar e reduz o risco de dores nas costas.', 'Deite-se de barriga para baixo, mãos atrás da nuca ou ao lado, eleve suavemente o peito do chão.', 'Realize o movimento lentamente e sem forçar o pescoço.', 'Evitar se houver lesões graves na coluna.', 'Dar puxões bruscos ou elevar o peito demasiado alto forçando as cervicais.'),

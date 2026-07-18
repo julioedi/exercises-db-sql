@@ -5,12 +5,12 @@ VALUES
 ('bird-dog', 'bird-dog.jpg', 'bird-dog.mp4', 'beginner');
 
 -- Relaciones de grupos musculares
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('cobra-stretch', 'abdominals');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('cobra-stretch', 'bird-dog');
 

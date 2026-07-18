@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('chest', 'es', 'Pecho', 'Grupo muscular situado en la parte anterior del torso, formado principalmente por el pectoral mayor y menor, esencial para movimientos de empuje y aducción del brazo.'),
 ('chest', 'en', 'Chest', 'Muscular group located on the anterior torso, primarily composed of the pectoralis major and minor, essential for pushing movements and arm adduction.'),
 ('chest', 'pt', 'Peito', 'Grupo muscular localizado na parte anterior do tronco, formado principalmente pelo peitoral maior e menor, essencial para movimentos de empurrar e adução do braço.'),

@@ -1,19 +1,19 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('plank-shoulder-taps', 'plank-shoulder-taps.jpg', 'plank-shoulder-taps.mp4', 'beginner');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'abdominals' (y 'shoulders' si aplica)
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('plank-shoulder-taps', 'abdominals');
 
 -- Relación: no requiere máquina, por lo tanto no se inserta en exercise_machine
 
 -- Relación: alternativa al 'plank' tradicional
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('plank-shoulder-taps', 'plank');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('plank-shoulder-taps', 'es', 'Toques de hombros en plancha', 'Ejercicio de estabilidad dinámica que combina la plancha isométrica con toques alternos de hombros.', 'Mejora la estabilidad del core y la fuerza de los hombros.\nDesarrolla el equilibrio corporal.', 'Comienza en posición de plancha alta.\nSin mover la cadera, toca el hombro izquierdo con la mano derecha y viceversa.\nMantén el torso firme durante todo el movimiento.', 'Contrae el abdomen y los glúteos para evitar el balanceo de la cadera.', 'Evitar si hay dolor agudo en las muñecas.', 'Mover la cadera de lado a lado excesivamente.\nRealizar el movimiento muy rápido.'),
 ('plank-shoulder-taps', 'en', 'Plank shoulder taps', 'Dynamic stability exercise combining isometric plank with alternating shoulder touches.', 'Improves core stability and shoulder strength.\nDevelops body balance.', 'Start in a high plank position.\nWithout moving your hips, touch your left shoulder with your right hand and vice versa.\nKeep your torso firm throughout the movement.', 'Tighten your abdomen and glutes to prevent hip swaying.', 'Avoid if there is acute wrist pain.', 'Moving hips side to side excessively.\nPerforming the movement too quickly.'),
 ('plank-shoulder-taps', 'pt', 'Toques nos ombros em prancha', 'Exercício de estabilidade dinâmica que combina a prancha isométrica com toques alternados nos ombros.', 'Melhora a estabilidade do core e a força dos ombros.\nDesenvolve o equilíbrio corporal.', 'Comece na posição de prancha alta.\nSem mover a anca, toque no ombro esquerdo com a mão direita e vice-versa.\nMantenha o tronco firme durante todo o movimento.', 'Contraia o abdómen e os glúteos para evitar o balanço da anca.', 'Evitar se houver dor aguda nos pulsos.', 'Mover a anca excessivamente de lado para o lado.\nRealizar o movimento muito rapidamente.'),

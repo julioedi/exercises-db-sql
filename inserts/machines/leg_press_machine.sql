@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('leg_press_machine', 'es', 'Prensa de piernas', 'Máquina para ejercicios de empuje con los pies, enfocada en fortalecer los músculos de las piernas y glúteos.'),
 ('leg_press_machine', 'en', 'Leg press machine', 'Machine for foot-pushing exercises, focused on strengthening leg and glute muscles.'),
 ('leg_press_machine', 'pt', 'Leg press', 'Máquina para exercícios de empurrar com os pés, focada em fortalecer os músculos das pernas e glúteos.'),

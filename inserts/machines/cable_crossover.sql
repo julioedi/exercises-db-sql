@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('cable_crossover', 'es', 'Cruce de poleas', 'Estación de poleas duales ajustable para trabajar el pecho y los hombros desde múltiples ángulos con tensión constante.'),
 ('cable_crossover', 'en', 'Cable crossover', 'Adjustable dual pulley station to work the chest and shoulders from multiple angles with constant tension.'),
 ('cable_crossover', 'pt', 'Crossover', 'Estação de polias duplas ajustável para trabalhar o peito e os ombros a partir de múltiplos ângulos com tensão constante.'),

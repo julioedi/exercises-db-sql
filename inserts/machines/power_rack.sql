@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('power_rack', 'es', 'Jaula de potencia (Power rack)', 'Estructura metálica robusta para realizar ejercicios con barra de forma segura, incluyendo sentadillas y press.'),
 ('power_rack', 'en', 'Power rack', 'Sturdy metal structure for performing barbell exercises safely, including squats and presses.'),
 ('power_rack', 'pt', 'Gaiola de força (Power rack)', 'Estrutura metálica robusta para realizar exercícios com barra com segurança, incluindo agachamentos e supinos.'),

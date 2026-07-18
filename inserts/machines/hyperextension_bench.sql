@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('hyperextension_bench', 'es', 'Banco de hiperextensiones', 'Banco diseñado para fortalecer la zona lumbar y los erectores de la columna.'),
 ('hyperextension_bench', 'en', 'Hyperextension bench', 'Bench designed to strengthen the lower back and spinal erectors.'),
 ('hyperextension_bench', 'pt', 'Banco de hiperextensão', 'Banco projetado para fortalecer a região lombar e os eretores da espinha.'),

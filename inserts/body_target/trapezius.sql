@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('trapezius', 'es', 'Trapecio', 'Músculo grande que abarca la parte superior de la espalda y el cuello; crucial para el movimiento de la escápula, la estabilidad cervical y la postura.'),
 ('trapezius', 'en', 'Trapezius', 'Large muscle covering the upper back and neck; crucial for scapular movement, cervical stability, and posture.'),
 ('trapezius', 'pt', 'Trapézio', 'Músculo grande que abrange a parte superior das costas e o pescoço; crucial para o movimento da escápula, estabilidade cervical e postura.'),

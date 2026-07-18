@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('arm-circles', 'arm-circles.jpg', 'arm-circles.mp4', 'beginner');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'shoulders'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('arm-circles', 'shoulders');
 
 -- Relación: no requiere máquina, por lo tanto no se inserta en exercise_machine
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('arm-circles', 'shoulder-rotations');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('arm-circles', 'es', 'Círculos con los brazos', 'Ejercicio de movilidad articular enfocado en los hombros para mejorar el rango de movimiento.', 'Mejora la flexibilidad de los hombros y calienta la articulación.', 'Extiende los brazos a los lados y realiza círculos pequeños y controlados.', 'Mantén los hombros relajados y el torso estable.', 'Evitar si hay dolor agudo o lesiones en el hombro.', 'Realizar círculos demasiado rápidos o con demasiada tensión en el cuello.'),
 ('arm-circles', 'en', 'Arm circles', 'Joint mobility exercise focused on the shoulders to improve range of motion.', 'Improves shoulder flexibility and warms up the joint.', 'Extend your arms to the sides and perform small, controlled circles.', 'Keep your shoulders relaxed and your torso stable.', 'Avoid if there is acute pain or shoulder injury.', 'Performing circles too quickly or with too much neck tension.'),
 ('arm-circles', 'pt', 'Círculos com os braços', 'Exercício de mobilidade articular focado nos ombros para melhorar a amplitude de movimento.', 'Melhora a flexibilidade dos ombros e aquece a articulação.', 'Estenda os braços para os lados e faça círculos pequenos e controlados.', 'Mantenha os ombros relaxados e o tronco estável.', 'Evitar se houver dor aguda ou lesão no ombro.', 'Fazer círculos demasiado rápidos ou com demasiada tensão no pescoço.'),

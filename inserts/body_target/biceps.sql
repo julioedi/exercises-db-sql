@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('biceps', 'es', 'Bíceps', 'Músculo de la cara anterior del brazo que consta de dos cabezas (larga y corta); su función principal es la flexión del codo y la supinación del antebrazo.'),
 ('biceps', 'en', 'Biceps', 'Muscle on the anterior side of the arm consisting of two heads (long and short); its primary function is elbow flexion and forearm supination.'),
 ('biceps', 'pt', 'Bíceps', 'Músculo da face anterior do braço que consiste em duas cabeças (longa e curta); sua principal função é a flexão do cotovelo e a supinação do antebraço.'),

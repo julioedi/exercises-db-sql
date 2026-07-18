@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('abdominals', 'es', 'Abdominales', 'Grupo muscular que comprende el recto abdominal, oblicuos y transverso, fundamentales para la estabilidad del core y la transferencia de fuerza entre el tren superior e inferior.'),
 ('abdominals', 'en', 'Abdominals', 'Muscular group including the rectus abdominis, obliques, and transverse abdominis, essential for core stability and force transfer between the upper and lower body.'),
 ('abdominals', 'pt', 'Abdominais', 'Grupo muscular que compreende o reto abdominal, oblíquos e transverso, fundamental para a estabilidade do core e transferência de força entre o tronco superior e inferior.'),

@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('olympic_bar', 'es', 'Barra olímpica', 'Barra de acero de alta resistencia diseñada para levantamiento de pesas olímpico y ejercicios de fuerza pesados.'),
 ('olympic_bar', 'en', 'Olympic bar', 'High-strength steel bar designed for Olympic weightlifting and heavy strength exercises.'),
 ('olympic_bar', 'pt', 'Barra olímpica', 'Barra de aço de alta resistência projetada para levantamento de peso olímpico e exercícios de força pesados.'),

@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('abductors', 'es', 'Abductores', 'Grupo muscular situado en la cara externa de la cadera, principalmente el glúteo medio y menor, responsable de la abducción del muslo y la estabilización de la pelvis durante la marcha.'),
 ('abductors', 'en', 'Abductors', 'Muscular group located on the outer hip, primarily the gluteus medius and minimus, responsible for thigh abduction and pelvic stabilization during gait.'),
 ('abductors', 'pt', 'Abdutores', 'Grupo muscular localizado na face externa do quadril, principalmente o glúteo médio e mínimo, responsável pela abdução da coxa e estabilização da pélvis durante a marcha.'),

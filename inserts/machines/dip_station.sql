@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('dip_station', 'es', 'Estación de fondos', 'Estructura con barras paralelas para realizar fondos (dips) enfocados en tríceps y pecho.'),
 ('dip_station', 'en', 'Dip station', 'Structure with parallel bars to perform dips focused on triceps and chest.'),
 ('dip_station', 'pt', 'Estação de paralelas', 'Estrutura com barras paralelas para realizar mergulhos (dips) focados em tríceps e peito.'),

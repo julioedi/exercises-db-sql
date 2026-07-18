@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('elliptical', 'es', 'Elíptica', 'Máquina de cardio que simula correr o caminar sin impacto en las articulaciones.'),
 ('elliptical', 'en', 'Elliptical', 'Cardio machine that simulates running or walking without impact on the joints.'),
 ('elliptical', 'pt', 'Elíptico', 'Máquina de cardio que simula correr ou caminhar sem impacto nas articulações.'),

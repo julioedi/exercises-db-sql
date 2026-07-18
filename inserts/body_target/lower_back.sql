@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('lower_back', 'es', 'Espalda baja', 'Zona lumbar que incluye los erectores espinales, crucial para la estabilidad de la columna, la postura erguida y la transferencia de fuerza entre el tren inferior y superior.'),
 ('lower_back', 'en', 'Lower back', 'Lumbar region including the spinal erectors, crucial for spinal stability, upright posture, and force transfer between the lower and upper body.'),
 ('lower_back', 'pt', 'Costas baixas (lombar)', 'Região lombar que inclui os eretores da espinha, crucial para a estabilidade da coluna, postura ereta e transferência de força entre o tronco inferior e superior.'),

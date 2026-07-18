@@ -6,12 +6,12 @@ VALUES
 ('jackknife-sit-ups', 'jackknife-sit-ups.jpg', 'jackknife-sit-ups.mp4', 'intermediate');
 
 -- Relaciones de grupos musculares (Solo ejercicio actual)
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('v-ups', 'abdominals');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('v-ups', 'toe-touches'),
 ('v-ups', 'jackknife-sit-ups');

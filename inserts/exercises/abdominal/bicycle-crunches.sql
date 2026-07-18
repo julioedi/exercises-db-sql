@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('bicycle-crunches', 'bicycle-crunches.jpg', 'bicycle-crunches.mp4', 'intermediate');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'abdominals'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('bicycle-crunches', 'abdominals');
 
 -- Relación: no requiere máquina
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('bicycle-crunches', 'crunch');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('bicycle-crunches', 'es', 'Bicycle crunches', 'Ejercicio abdominal que imita el pedaleo, enfocándose en los músculos rectos y oblicuos del abdomen.', 'Fortalece el core y mejora la rotación del tronco.', 'Tumbado, acerca el codo opuesto a la rodilla contraria mientras estiras la otra pierna.', 'Mantén la zona lumbar pegada al suelo y controla el movimiento.', 'Evitar si hay dolor agudo en la zona lumbar o cuello.', 'Tirar del cuello con las manos o mover las piernas demasiado rápido sin control.'),
 ('bicycle-crunches', 'en', 'Bicycle crunches', 'Abdominal exercise that mimics pedaling, focusing on the rectus abdominis and obliques.', 'Strengthens the core and improves torso rotation.', 'Lying down, bring the opposite elbow to the opposite knee while extending the other leg.', 'Keep your lower back pressed to the floor and control the movement.', 'Avoid if there is acute lower back or neck pain.', 'Pulling on the neck with your hands or moving your legs too fast without control.'),
 ('bicycle-crunches', 'pt', 'Bicycle crunches', 'Exercício abdominal que imita a pedalada, focando nos músculos retos e oblíquos do abdómen.', 'Fortalece o core e melhora a rotação do tronco.', 'Deitado, aproxime o cotovelo oposto ao joelho contrário enquanto estica a outra perna.', 'Mantenha a zona lombar colada ao chão e controle o movimento.', 'Evitar se houver dor aguda na zona lombar ou pescoço.', 'Puxar o pescoço com as mãos ou mover as pernas demasiado rápido sem controlo.'),

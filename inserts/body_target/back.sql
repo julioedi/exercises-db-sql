@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('back', 'es', 'Espalda', 'Estructura muscular posterior que abarca desde la región cervical hasta la lumbar, proporcionando soporte estructural, postura y movilidad al tronco.'),
 ('back', 'en', 'Back', 'Posterior muscular structure spanning from the cervical to the lumbar region, providing structural support, posture, and trunk mobility.'),
 ('back', 'pt', 'Costas', 'Estrutura muscular posterior que se estende da região cervical à lombar, fornecendo suporte estrutural, postura e mobilidade ao tronco.'),

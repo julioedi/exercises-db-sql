@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('alternate-single-leg-raise-plank', 'alternate-single-leg-raise-plank.jpg', 'alternate-single-leg-raise-plank.mp4', 'intermediate');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'abdominals'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('alternate-single-leg-raise-plank', 'abdominals');
 
 -- Relación: no requiere máquina, por lo tanto no se inserta en exercise_machine
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('alternate-single-leg-raise-plank', 'plank');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('alternate-single-leg-raise-plank', 'es', 'Plancha con elevación alterna de pierna', 'Variación de la plancha que añade inestabilidad al elevar una pierna, intensificando el trabajo del core.', 'Aumenta la activación del core y mejora la estabilidad de la zona lumbar.', 'En posición de plancha frontal, eleva una pierna estirada sin arquear la espalda.\nBájala y alterna con la otra pierna.', 'Mantén los glúteos contraídos para proteger la zona lumbar.', 'Evitar si hay dolor agudo en la zona lumbar.', 'Arquear la espalda al elevar la pierna.\nElevar la pierna demasiado alto perdiendo la alineación.'),
 ('alternate-single-leg-raise-plank', 'en', 'Alternate single leg raise plank', 'Plank variation adding instability by lifting one leg, intensifying core work.', 'Increases core activation and improves lower back stability.', 'In a front plank position, lift one straight leg without arching your back.\nLower it and alternate with the other leg.', 'Keep your glutes contracted to protect your lower back.', 'Avoid if there is acute lower back pain.', 'Arching the back when lifting the leg.\nLifting the leg too high and losing alignment.'),
 ('alternate-single-leg-raise-plank', 'pt', 'Prancha com elevação alternada de perna', 'Variação da prancha que adiciona instabilidade ao elevar uma perna, intensificando o trabalho do core.', 'Aumenta a ativação do core e melhora a estabilidade da zona lombar.', 'Na posição de prancha frontal, eleve uma perna esticada sem arquear as costas.\nBaixe-a e alterne com a outra perna.', 'Mantenha os glúteos contraídos para proteger a zona lombar.', 'Evitar se houver dor aguda na zona lombar.', 'Arquear as costas ao elevar a perna.\nElevar a perna demasiado alto, perdendo o alinhamento.'),

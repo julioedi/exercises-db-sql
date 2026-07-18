@@ -1,17 +1,17 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('alternate-leg-pull', 'alternate-leg-pull.jpg', 'alternate-leg-pull.mp4', 'intermediate');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'abdominals'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('alternate-leg-pull', 'abdominals');
 
 -- Relación: no requiere máquina, por lo tanto no se inserta en exercise_machine
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('alternate-leg-pull', 'plank');
 
 -- Información multiidioma del ejercicio
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('alternate-leg-pull', 'es', 'Tracción alterna de piernas', 'Ejercicio de control core en posición de plancha, enfocado en la estabilidad dinámica.', 'Fortalece el abdomen, los glúteos y mejora la estabilidad de los hombros.', 'En posición de plancha alta, lleva una rodilla hacia el pecho sin mover la cadera.\nRegresa la pierna y alterna con la otra.', 'Mantén el abdomen contraído firmemente durante todo el movimiento.', 'Evitar si hay dolor agudo en la zona lumbar o muñecas.', 'Mover la cadera de lado a lado o arquear la espalda.'),
 ('alternate-leg-pull', 'en', 'Alternate leg pull', 'Core control exercise in a plank position, focused on dynamic stability.', 'Strengthens the abdomen, glutes, and improves shoulder stability.', 'In a high plank position, bring one knee towards the chest without moving the hips.\nReturn the leg and alternate with the other.', 'Keep your abdomen firmly contracted throughout the movement.', 'Avoid if there is acute lower back or wrist pain.', 'Moving the hips side to side or arching the back.'),
 ('alternate-leg-pull', 'pt', 'Tração alternada de pernas', 'Exercício de controle de core na posição de prancha, focado na estabilidade dinâmica.', 'Fortalece o abdómen, os glúteos e melhora a estabilidade dos ombros.', 'Na posição de prancha alta, leve um joelho em direção ao peito sem mover a anca.\nRegresse a perna e alterne com a outra.', 'Mantenha o abdómen contraído firmemente durante todo o movimento.', 'Evitar se houver dor aguda na zona lombar ou nos pulsos.', 'Mover a anca de lado a lado ou arquear as costas.'),

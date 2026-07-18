@@ -5,12 +5,12 @@ VALUES
 ('high-plank', 'high-plank.jpg', 'high-plank.mp4', 'intermediate');
 
 -- Relaciones de grupos musculares
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('alternating-plank-lunge', 'abdominals');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('alternating-plank-lunge', 'high-plank');
 

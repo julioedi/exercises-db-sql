@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('glute_ham_developer', 'es', 'Máquina de glúteo-isquios (GHD)', 'Banco especializado para fortalecer la cadena posterior, glúteos e isquiotibiales mediante extensiones.'),
 ('glute_ham_developer', 'en', 'Glute-Ham Developer (GHD)', 'Specialized bench to strengthen the posterior chain, glutes, and hamstrings through extensions.'),
 ('glute_ham_developer', 'pt', 'Máquina GHD', 'Banco especializado para fortalecer a cadeia posterior, glúteos e isquiotibiais através de extensões.'),

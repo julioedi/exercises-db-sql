@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('foam_roller', 'es', 'Rodillo de espuma', 'Herramienta cilíndrica de espuma para liberación miofascial y recuperación muscular.'),
 ('foam_roller', 'en', 'Foam roller', 'Cylindrical foam tool used for myofascial release and muscle recovery.'),
 ('foam_roller', 'pt', 'Rolo de espuma', 'Ferramenta cilíndrica de espuma usada para liberação miofascial e recuperação muscular.'),

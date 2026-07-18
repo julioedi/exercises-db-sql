@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('shoulder_press_machine', 'es', 'Máquina de press de hombros', 'Equipo diseñado para el fortalecimiento de los deltoides mediante un movimiento de empuje vertical guiado.'),
 ('shoulder_press_machine', 'en', 'Shoulder press machine', 'Equipment designed for strengthening the deltoids through a guided vertical pushing movement.'),
 ('shoulder_press_machine', 'pt', 'Máquina de desenvolvimento de ombros', 'Equipamento projetado para o fortalecimento dos deltoides através de um movimento de empurrão vertical guiado.'),

@@ -1,22 +1,22 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('abdominal-crunch-machine', 'abdominal-crunch-machine.jpg', 'abdominal-crunch-machine.mp4', 'beginner');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'abdominals'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('abdominal-crunch-machine', 'abdominals');
 
 -- Relación: el ejercicio utiliza la máquina 'abdominal_crunch_machine'
-INSERT INTO exercise_machine (exercise_slug, machine_slug) 
+INSERT OR IGNORE INTO exercise_machine (exercise_slug, machine_slug) 
 VALUES ('abdominal-crunch-machine', 'abdominal_crunch_machine');
 
 -- Relación: alternativa al 'crunch' tradicional
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('abdominal-crunch-machine', 'crunch');
 
 
 -- Información multiidioma
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('abdominal-crunch-machine', 'es', 'Crunch en máquina', 'Ejercicio de aislamiento para el recto abdominal utilizando una máquina de carga guiada para mayor estabilidad.', 'Seguridad en la ejecución mediante el movimiento guiado.\nFacilita la concentración en la contracción abdominal.\nIdeal para principiantes.', 'Siéntate y ajusta el asiento para que el eje coincida con tu torso.\nSujeta los agarres y realiza la flexión de tronco.\nRegresa lentamente a la posición inicial.', 'Mantén el cuello relajado y evita presionar la barbilla contra el pecho.', 'Evitar si se presentan hernias discales agudas.', 'Utilizar el impulso para mover el peso.\nDespegar la zona lumbar del respaldo.'),
 ('abdominal-crunch-machine', 'en', 'Abdominal crunch machine', 'Isolation exercise for the rectus abdominis using a fixed-path machine for enhanced stability.', 'Safety in execution through guided movement.\nFacilitates concentration on abdominal contraction.\nIdeal for beginners.', 'Sit and adjust the seat so the pivot point aligns with your torso.\nGrab the handles and perform a trunk flexion.\nReturn slowly to the starting position.', 'Keep your neck relaxed and avoid pressing chin against chest.', 'Avoid if acute disc herniations are present.', 'Using body momentum to move the weight.\nLifting the lower back off the pad.'),
 ('abdominal-crunch-machine', 'pt', 'Crunch na máquina', 'Exercício de isolamento para o reto abdominal usando uma máquina de carga guiada para maior estabilidade.', 'Segurança na execução através do movimento guiado.\nFacilita a concentração na contração abdominal.\nIdeal para iniciantes.', 'Sente-se e ajuste o assento para que o eixo coincida com o seu tronco.\nSegure as pegas e realize a flexão do tronco.\nRegresse lentamente à posição inicial.', 'Mantenha o pescoço relaxado e evite pressionar o queixo contra o peito.', 'Evitar se houver hérnias discais agudas.', 'Usar o impulso para mover o peso.\nDescolar a zona lombar do apoio.'),

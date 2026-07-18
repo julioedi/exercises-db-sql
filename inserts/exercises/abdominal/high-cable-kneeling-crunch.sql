@@ -1,22 +1,22 @@
 -- Definición del ejercicio y sus recursos
-INSERT INTO exercises (slug, img, video, difficulty) 
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES ('high-cable-kneeling-crunch', 'high-cable-kneeling-crunch.jpg', 'high-cable-kneeling-crunch.mp4', 'intermediate');
 
 -- Relación: el ejercicio trabaja el grupo muscular 'abdominals'
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES ('high-cable-kneeling-crunch', 'abdominals');
 
 -- Relación: el ejercicio utiliza el equipo 'cable-machine'
-INSERT INTO exercise_machine (exercise_slug, machine_slug) 
+INSERT OR IGNORE INTO exercise_machine (exercise_slug, machine_slug) 
 VALUES ('high-cable-kneeling-crunch', 'cable_machine');
 
 -- Relación: con otros ejercicios en este caso 'crunch'
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES ('high-cable-kneeling-crunch', 'crunch');
 
 
 -- Información multiidioma
-INSERT INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
 ('high-cable-kneeling-crunch', 'es', 'Crunch en polea alta de rodillas', 'Variante avanzada que utiliza resistencia externa para maximizar la hipertrofia del recto abdominal mediante carga progresiva.', 'Permite aplicar sobrecarga progresiva al core.\nMejora la densidad muscular abdominal.\nFomenta un control motor superior bajo tensión.', 'Arrodíllate frente a la polea alta y sujeta el agarre de cuerda cerca de la cabeza.\nFlexiona la columna torácica acercando los codos a las rodillas.\nRegresa lentamente a la posición inicial controlando el peso.', 'Mantén la pelvis estable para evitar usar el impulso de la cadera.\nNo permitas que los brazos realicen el esfuerzo; el movimiento nace del abdomen.', 'Evitar con lesiones lumbares crónicas.\nNo realizar si existe falta de control cervical.', 'Usar los brazos como palanca principal.\nRealizar el movimiento con los flexores de la cadera en lugar de la columna.'),
 ('high-cable-kneeling-crunch', 'en', 'High cable kneeling crunch', 'Advanced variation utilizing external resistance to maximize rectus abdominis hypertrophy through progressive overload.', 'Enables progressive overload for the core.\nImproves abdominal muscle density.\nFosters superior motor control under tension.', 'Kneel in front of a high pulley and hold the rope attachment near your head.\nFlex your thoracic spine, bringing elbows toward knees.\nReturn slowly to the start, controlling the weight.', 'Keep pelvis stable to avoid hip momentum.\nEnsure movement originates from abdominal contraction, not arm pull.', 'Avoid with chronic lower back injuries.\nDo not perform if cervical control is lacking.', 'Using arms as the primary lever.\nPerforming the movement with hip flexors instead of thoracic spine.'),
 ('high-cable-kneeling-crunch', 'pt', 'Crunch ajoelhado no cabo alto', 'Variação avançada que utiliza resistência externa para maximizar a hipertrofia do reto abdominal através da sobrecarga progressiva.', 'Permite aplicar sobrecarga progressiva ao core.\nMelhora a densidade muscular abdominal.\nPromove um controle motor superior sob tensão.', 'Ajoelhe-se em frente à polia alta e segure a corda perto da cabeça.\nFlexione a coluna torácica aproximando os cotovelos dos joelhos.\nRetorne lentamente controlando o peso.', 'Mantenha a pelve estável para evitar usar o impulso do quadril.\nCertifique-se de que o movimento venha da contração abdominal.', 'Evitar com lesões lombares crônicas.\nNão realizar se faltar controle cervical.', 'Usar os braços como alavanca principal.\nRealizar o movimento com os flexores do quadril em vez da coluna.'),

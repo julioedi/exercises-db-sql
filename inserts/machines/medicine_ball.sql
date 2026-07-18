@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('medicine_ball', 'es', 'Balón medicinal', 'Balón pesado utilizado para ejercicios de fuerza explosiva, rehabilitación y entrenamiento funcional.'),
 ('medicine_ball', 'en', 'Medicine ball', 'Weighted ball used for explosive strength, rehabilitation, and functional training exercises.'),
 ('medicine_ball', 'pt', 'Bola medicinal', 'Bola com peso usada para exercícios de força explosiva, reabilitação e treinamento funcional.'),

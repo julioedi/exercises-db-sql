@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('hack_squat_machine', 'es', 'Máquina de sentadilla Hack', 'Máquina que guía el movimiento de sentadilla para enfatizar el trabajo de cuádriceps mediante un soporte de espalda fijo.'),
 ('hack_squat_machine', 'en', 'Hack squat machine', 'Machine that guides the squat movement to emphasize quad work with a fixed back support.'),
 ('hack_squat_machine', 'pt', 'Máquina de agachamento Hack', 'Máquina que guia o movimento de agachamento para enfatizar o trabalho de quadríceps com um suporte de costas fixo.'),

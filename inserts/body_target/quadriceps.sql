@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('quadriceps', 'es', 'Cuádriceps', 'Grupo muscular en la parte anterior del muslo formado por cuatro cabezas (recto femoral, vasto lateral, medial e intermedio), esencial para la extensión de la rodilla y estabilidad postural.'),
 ('quadriceps', 'en', 'Quads', 'Muscle group on the front of the thigh consisting of four heads (rectus femoris, vastus lateralis, medialis, and intermedius), essential for knee extension and postural stability.'),
 ('quadriceps', 'pt', 'Quadríceps', 'Grupo muscular na parte anterior da coxa formado por quatro cabeças (reto femoral, vasto lateral, medial e intermédio), essencial para a extensão do joelho e estabilidade postural.'),

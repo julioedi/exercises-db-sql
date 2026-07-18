@@ -5,13 +5,13 @@ VALUES
 ('glute-bridge', 'glute-bridge.jpg', 'glute-bridge.mp4', 'intermediate');
 
 -- Relaciones de grupos musculares (Solo para single-leg-glute-bridge)
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('single-leg-glute-bridge', 'abdominals'),
 ('single-leg-glute-bridge', 'glutes');
 
 -- Relaciones de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('single-leg-glute-bridge', 'glute-bridge');
 

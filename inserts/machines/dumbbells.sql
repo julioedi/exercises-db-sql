@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('dumbbells', 'es', 'Mancuernas', 'Pesas de mano ajustables o fijas, versátiles para ejercicios de aislamiento y compuestos.'),
 ('dumbbells', 'en', 'Dumbbells', 'Adjustable or fixed hand weights, versatile for isolation and compound exercises.'),
 ('dumbbells', 'pt', 'Halteres', 'Pesos de mão ajustáveis ou fixos, versáteis para exercícios de isolamento e compostos.'),

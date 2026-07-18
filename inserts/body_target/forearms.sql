@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('forearms', 'es', 'Antebrazos', 'Grupo muscular que abarca desde el codo hasta la muñeca, responsable de la fuerza de agarre, la flexión y extensión de la muñeca y los movimientos de pronación y supinación.'),
 ('forearms', 'en', 'Forearms', 'Muscle group extending from the elbow to the wrist, responsible for grip strength, wrist flexion and extension, and pronation and supination movements.'),
 ('forearms', 'pt', 'Antebraços', 'Grupo muscular que se estende do cotovelo ao punho, responsável pela força de preensão, flexão e extensão do punho e movimentos de pronação e supinação.'),

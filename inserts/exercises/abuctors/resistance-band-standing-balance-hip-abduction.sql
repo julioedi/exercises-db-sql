@@ -5,12 +5,12 @@ VALUES
 ('resistance-band-standing-balance-hip-abduction', 'resistance-band-standing-balance-hip-abduction.jpg', 'resistance-band-standing-balance-hip-abduction.mp4', 'intermediate');
 
 -- Relación de grupo muscular
-INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
 VALUES 
 ('resistance-band-standing-balance-hip-abduction', 'abductors');
 
 -- Relación de alternativas
-INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
 VALUES 
 ('resistance-band-standing-balance-hip-abduction', 'standing-hip-abduction');
 

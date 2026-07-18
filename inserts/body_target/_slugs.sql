@@ -1,4 +1,4 @@
-INSERT INTO body_target (slug, img) VALUES
+INSERT OR IGNORE INTO body_target (slug, img) VALUES
 ('abdominals', 'abdominals.png'),
 ('abductors', 'abductors.png'),
 ('adductors', 'adductors.png'),

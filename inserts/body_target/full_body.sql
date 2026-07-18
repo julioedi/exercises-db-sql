@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('full_body', 'es', 'Cuerpo completo', 'Entrenamiento que involucra múltiples grupos musculares en una sola sesión para maximizar la eficiencia metabólica y funcional.'),
 ('full_body', 'en', 'Full body', 'Training that involves multiple muscle groups in a single session to maximize metabolic and functional efficiency.'),
 ('full_body', 'pt', 'Corpo completo', 'Treino que envolve múltiplos grupos musculares em uma única sessão para maximizar a eficiência metabólica e funcional.'),

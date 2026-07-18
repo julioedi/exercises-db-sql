@@ -1,4 +1,4 @@
-INSERT INTO body_target_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO body_target_info (slug, lang, title, "desc") VALUES
 ('calves', 'es', 'Pantorrillas', 'Grupo muscular de la parte posterior de la pierna, compuesto principalmente por el gastrocnemio y el sóleo, esenciales para la flexión plantar del pie y la propulsión durante el movimiento.'),
 ('calves', 'en', 'Calves', 'Muscular group in the back of the lower leg, primarily composed of the gastrocnemius and soleus, essential for plantar flexion of the foot and propulsion during movement.'),
 ('calves', 'pt', 'Panturrilhas', 'Grupo muscular da parte posterior da perna, composto principalmente pelo gastrocnêmio e sóleo, essenciais para a flexão plantar do pé e propulsão durante o movimento.'),

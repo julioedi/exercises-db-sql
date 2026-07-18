@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('treadmill', 'es', 'Cinta de correr (Treadmill)', 'Máquina de ejercicios cardiovascular que permite caminar, trotar o correr en un lugar fijo mediante una banda móvil.'),
 ('treadmill', 'en', 'Treadmill', 'Cardiovascular exercise machine that allows walking, jogging, or running in a fixed location using a moving belt.'),
 ('treadmill', 'pt', 'Esteira', 'Máquina de exercícios cardiovasculares que permite caminhar, trotar ou correr em um local fixo através de uma correia móvel.'),

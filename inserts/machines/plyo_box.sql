@@ -1,4 +1,4 @@
-INSERT INTO machines_info (slug, lang, title, "desc") VALUES
+INSERT OR IGNORE INTO machines_info (slug, lang, title, "desc") VALUES
 ('plyo_box', 'es', 'Cajón pliométrico', 'Caja robusta diseñada para ejercicios de salto, explosividad y acondicionamiento físico.'),
 ('plyo_box', 'en', 'Plyo box', 'Sturdy box designed for jumping exercises, explosiveness, and physical conditioning.'),
 ('plyo_box', 'pt', 'Caixa pliométrica', 'Caixa robusta projetada para exercícios de salto, explosividade e condicionamento físico.'),
