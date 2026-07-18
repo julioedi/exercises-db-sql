@@ -1,0 +1,37 @@
+-- 1. Registro
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('cable-seated-row-wide-grip', 'cable-seated-row-wide-grip.jpg', 'cable-seated-row-wide-grip.mp4', 'beginner'),
+('cable-seated-row-v-grip', 'cable-seated-row-v-grip.jpg', 'cable-seated-row-v-grip.mp4', 'beginner');
+
+-- 2. Relación músculo
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('cable-seated-row-v-grip', 'back');
+
+-- 3. Relación alternativa
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('cable-seated-row-v-grip', 'cable-seated-row-wide-grip');
+
+-- 4. Info multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('cable-seated-row-v-grip', 'es', 'Remo sentado agarre neutro estrecho', 'Remo en polea baja utilizando un agarre en V estrecho.', 'Mayor enfoque en el centro de la espalda y grosor general.', 'Siéntate, coloca los pies, sujeta el agarre en V y tira hacia el abdomen.', 'Mantén la espalda recta y aprieta las escápulas al final.', 'Evitar con lesiones graves de espalda baja.', 'Encoger los hombros hacia las orejas.'),
+('cable-seated-row-v-grip', 'en', 'Cable seated row V-grip', 'Low pulley row using a narrow V-grip attachment.', 'Increased focus on mid-back and overall thickness.', 'Sit, place feet, grasp V-grip, and pull towards abdomen.', 'Keep back straight and squeeze shoulder blades at the end.', 'Avoid with severe lower back injuries.', 'Shrugging shoulders towards ears.'),
+('cable-seated-row-v-grip', 'pt', 'Remada sentada com triângulo', 'Remada na polia baixa usando puxador V (triângulo).', 'Maior foco no meio das costas e espessura geral.', 'Sente-se, posicione os pés, segure o puxador em V e puxe em direção ao abdômen.', 'Mantenha as costas retas e esprema as escápulas no final.', 'Evitar com lesões graves na região lombar.', 'Encolher os ombros em direção às orelhas.'),
+('cable-seated-row-v-grip', 'fr', 'Tirage assis poulie basse prise en V', 'Tirage à la poulie basse utilisant une poignée en V.', 'Accent mis sur le milieu du dos et l''épaisseur globale.', 'Asseyez-vous, placez vos pieds, saisissez la poignée en V et tirez vers l''abdomen.', 'Gardez le dos droit et serrez les omoplates à la fin.', 'À éviter en cas de blessures graves au bas du dos.', 'Hausser les épaules vers les oreilles.'),
+('cable-seated-row-v-grip', 'de', 'Sitzendes Rudern am Kabelzug im V-Griff', 'Rudern am tiefen Kabelzug mit einem engen V-Griff.', 'Mehr Fokus auf den mittleren Rücken und allgemeine Rückendichte.', 'Hinsetzen, Füße aufstellen, V-Griff fassen und zum Bauch ziehen.', 'Rücken gerade halten und Schulterblätter am Ende zusammenpressen.', 'Bei schweren Verletzungen des unteren Rückens vermeiden.', 'Schultern zu den Ohren hochziehen.'),
+('cable-seated-row-v-grip', 'it', 'Rematore seduto al cavo presa a V', 'Rematore al cavo basso utilizzando una presa a V.', 'Maggiore focus sulla parte centrale della schiena e sullo spessore generale.', 'Siediti, posiziona i piedi, afferra la presa a V e tira verso l''addome.', 'Mantieni la schiena dritta e contrai le scapole alla fine.', 'Evitare in caso di gravi lesioni alla parte bassa della schiena.', 'Sollevare le spalle verso le orecchie.'),
+('cable-seated-row-v-grip', 'zh', '坐姿V把手绳索划船', '利用低位拉力器并使用V形把手进行划船。', '更集中于背部中段和整体厚度。', '坐下，放好双脚，握住V把手并向腹部拉动。', '保持背部挺直，在动作末端夹紧肩胛骨。', '下背部严重受伤者请避免。', '耸肩。'),
+('cable-seated-row-v-grip', 'ja', 'ケーブル・シーテッドロー（Vグリップ）', 'Vグリップアタッチメントを使用したロープーリーローイング。', '背中の中央部と全体的な厚みに集中できます。', '座って足を固定し、Vグリップを掴んで腹部へ引きます。', '背筋を伸ばし、最後に肩甲骨を寄せてください。', '腰に重度の怪我がある場合は避けてください。', '肩をすくめること。'),
+('cable-seated-row-v-grip', 'ko', '케이블 시티드 로우 (V-그립)', 'V-그립 어태치먼트를 이용한 로우 폴리 로우.', '중부 등 집중 및 전반적인 두께 향상.', '앉아서 발을 고정하고 V-그립을 잡아 복부 쪽으로 당김.', '허리를 펴고 마지막에 견갑골을 조임.', '심한 요추 부상 시 피할 것.', '어깨를 으쓱하는 것.'),
+('cable-seated-row-v-grip', 'ar', 'تمرين التجديف بالكابل من وضع الجلوس بقبضة V', 'تجديف باستخدام بكرة سفلية مع قبضة V.', 'تركيز أكبر على منتصف الظهر والسمك العام.', 'اجلس، ضع قدميك، أمسك قبضة V واسحب نحو البطن.', 'حافظ على استقامة الظهر واضغط على لوحي الكتف في النهاية.', 'تجنب في حالة وجود إصابات خطيرة في أسفل الظهر.', 'رفع الكتفين نحو الأذنين.'),
+('cable-seated-row-v-grip', 'hi', 'केबल सीटेड रो V-ग्रिप', 'V-ग्रिप अटैचमेंट का उपयोग करके लो पुली रो।', 'मध्य पीठ और समग्र मोटाई पर अधिक ध्यान।', 'बैठें, पैर रखें, V-ग्रिप पकड़ें और पेट की ओर खींचें।', 'पीठ सीधी रखें और अंत में स्कैपुला को दबाएं।', 'पीठ के निचले हिस्से में गंभीर चोट होने पर न करें।', 'कंधों को कानों की ओर सिकोड़ना।'),
+('cable-seated-row-v-grip', 'ru', 'Тяга блока к поясу сидя (V-образная рукоять)', 'Тяга на нижнем блоке с V-образной рукоятью.', 'Усиленный акцент на середину спины и общую толщину.', 'Сядьте, упритесь ногами, возьмите V-рукоять и тяните к животу.', 'Держите спину прямой и сводите лопатки в конечной точке.', 'Избегайте при серьезных травмах поясницы.', 'Подъем плеч к ушам.'),
+('cable-seated-row-v-grip', 'nl', 'Cable seated row V-grip', 'Low pulley row met een V-greep.', 'Meer focus op het midden van de rug en algehele dikte.', 'Ga zitten, plaats voeten, pak V-greep en trek naar de buik.', 'Houd rug recht en knijp schouderbladen aan het einde samen.', 'Vermijden bij ernstige onderrugblessures.', 'Schouders optrekken naar de oren.'),
+('cable-seated-row-v-grip', 'sv', 'Kabelrodd med V-grepp', 'Sittande rodd i kabelmaskin med V-handtag.', 'Ökat fokus på mittryggen och generell ryggtjocklek.', 'Sitt ner, placera fötterna, greppa V-handtaget och dra mot magen.', 'Håll ryggen rak och knip ihop skulderbladen i slutläget.', 'Undvik vid svåra skador i ländryggen.', 'Att dra upp axlarna mot öronen.'),
+('cable-seated-row-v-grip', 'pl', 'Wiosłowanie na wyciągu dolnym siedząc (chwyt V)', 'Wiosłowanie na wyciągu dolnym przy użyciu uchwytu V.', 'Większy nacisk na środek pleców i ogólną grubość.', 'Usiądź, zaprzyj stopy, chwyć uchwyt V i przyciągaj do brzucha.', 'Utrzymuj proste plecy i ściągaj łopatki w końcowej fazie.', 'Unikaj przy poważnych urazach dolnego odcinka pleców.', 'Wzruszanie barkami do uszu.'),
+('cable-seated-row-v-grip', 'id', 'Cable seated row V-grip', 'Mendayung menggunakan katrol rendah dengan pegangan V.', 'Fokus lebih pada punggung tengah dan ketebalan secara keseluruhan.', 'Duduk, letakkan kaki, pegang pegangan V, dan tarik ke arah perut.', 'Jaga punggung tetap lurus dan peras belikat di akhir gerakan.', 'Hindari jika ada cedera punggung bawah yang parah.', 'Mengangkat bahu ke arah telinga.'),
+('cable-seated-row-v-grip', 'bn', 'কেবল সিটেড রো V-গ্রিপ', 'V-গ্রিপ ব্যবহার করে লো-পুলি রো।', 'পিঠের মাঝখানের অংশে এবং সামগ্রিক পুরুত্বে আরও ফোকাস।', 'বসুন, পা রাখুন, V-গ্রিপ ধরুন এবং পেটের দিকে টানুন।', 'পিঠ সোজা রাখুন এবং শেষে স্ক্যাপুলা চেপে ধরুন।', 'পিঠের নিচের অংশে গুরুতর আঘাত থাকলে এটি করবেন না।', 'কান বরাবর কাঁধ ওঠানো।'),
+('cable-seated-row-v-grip', 'vi', 'Chèo cáp ngồi tay nắm V', 'Bài tập chèo dùng cáp thấp với tay nắm hình chữ V.', 'Tập trung vào phần giữa lưng và độ dày cơ lưng.', 'Ngồi, đặt chân, nắm tay cầm V và kéo về phía bụng.', 'Giữ lưng thẳng và ép xương bả vai ở cuối nhịp.', 'Tránh tập nếu bị chấn thương lưng dưới nghiêm trọng.', 'Nhún vai về phía tai.'),
+('cable-seated-row-v-grip', 'fa', 'زيربغل قايقي با دست خنثي (V)', 'زيربغل با قرقره پايين با استفاده از دستگيره V.', 'تمرکز بيشتر بر وسط کمر و ضخامت کلي عضلات.', 'بنشينيد، پاها را ثابت کنيد، دستگيره V را بگيريد و به سمت شکم بکشيد.', 'کمر را صاف نگه داريد و در انتها کتف‌ها را به هم فشار دهيد.', 'در صورت آسيب جدي کمر انجام ندهيد.', 'بالا انداختن شانه‌ها به سمت گوش‌ها.')

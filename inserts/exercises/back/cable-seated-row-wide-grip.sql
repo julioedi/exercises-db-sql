@@ -1,0 +1,37 @@
+-- 1. Registro
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('cable-seated-row-v-grip', 'cable-seated-row-v-grip.jpg', 'cable-seated-row-v-grip.mp4', 'beginner'),
+('cable-seated-row-wide-grip', 'cable-seated-row-wide-grip.jpg', 'cable-seated-row-wide-grip.mp4', 'beginner');
+
+-- 2. Relación músculo
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('cable-seated-row-wide-grip', 'back');
+
+-- 3. Relación alternativa
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('cable-seated-row-wide-grip', 'cable-seated-row-v-grip');
+
+-- 4. Info multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('cable-seated-row-wide-grip', 'es', 'Remo sentado agarre ancho', 'Remo en polea baja utilizando una barra ancha.', 'Mayor énfasis en el dorsal ancho y la parte superior de la espalda.', 'Siéntate, sujeta la barra con un agarre amplio y tira hacia el torso superior.', 'Mantén los codos abiertos y la espalda neutra.', 'Evitar con lesiones lumbares severas.', 'Tirar utilizando principalmente los bíceps.'),
+('cable-seated-row-wide-grip', 'en', 'Cable seated row wide-grip', 'Low pulley row using a wide bar attachment.', 'Greater emphasis on the latissimus dorsi and upper back.', 'Sit, grasp the bar with a wide grip, and pull towards the upper torso.', 'Keep elbows flared and back neutral.', 'Avoid with severe lumbar injuries.', 'Pulling primarily using the biceps.'),
+('cable-seated-row-wide-grip', 'pt', 'Remada sentada com barra aberta', 'Remada na polia baixa usando barra aberta.', 'Maior ênfase no latíssimo e na parte superior das costas.', 'Sente-se, segure a barra com pegada aberta e puxe em direção à parte superior do tronco.', 'Mantenha os cotovelos abertos e as costas neutras.', 'Evitar com lesões lombares graves.', 'Puxar usando principalmente os bíceps.'),
+('cable-seated-row-wide-grip', 'fr', 'Tirage assis poulie basse prise large', 'Tirage à la poulie basse utilisant une barre large.', 'Accent mis sur le grand dorsal et le haut du dos.', 'Asseyez-vous, saisissez la barre avec une prise large et tirez vers le haut du buste.', 'Gardez les coudes écartés et le dos neutre.', 'À éviter en cas de blessures lombaires graves.', 'Tirer principalement avec les biceps.'),
+('cable-seated-row-wide-grip', 'de', 'Sitzendes Rudern am Kabelzug im breiten Griff', 'Rudern am tiefen Kabelzug mit einer breiten Stange.', 'Größerer Fokus auf den Latissimus und oberen Rücken.', 'Hinsetzen, Stange breit greifen und zum oberen Oberkörper ziehen.', 'Ellbogen nach außen halten und Rücken neutral lassen.', 'Bei schweren Lendenwirbelverletzungen vermeiden.', 'Hauptsächlich mit dem Bizeps ziehen.'),
+('cable-seated-row-wide-grip', 'it', 'Rematore seduto al cavo presa larga', 'Rematore al cavo basso utilizzando una barra larga.', 'Maggiore enfasi sul gran dorsale e sulla parte superiore della schiena.', 'Siediti, afferra la barra con una presa larga e tira verso la parte superiore del busto.', 'Tieni i gomiti aperti e la schiena neutra.', 'Evitare in caso di gravi lesioni lombari.', 'Tirare utilizzando principalmente i bicipiti.'),
+('cable-seated-row-wide-grip', 'zh', '坐姿宽距绳索划船', '利用低位拉力器并使用宽横杆进行划船。', '更侧重于背阔肌和上背部。', '坐下，宽握横杆，拉向躯干上部。', '保持手肘外展，背部中立。', '腰部严重受伤者请避免。', '主要依靠二头肌拉动。'),
+('cable-seated-row-wide-grip', 'ja', 'ケーブル・シーテッドロー（ワイドグリップ）', 'ワイドバーアタッチメントを使用したロープーリーローイング。', '広背筋と上背部をより強調して鍛えられます。', '座り、ワイドグリップでバーを掴んで上部体幹へ引きます。', '肘を外側に向け、背中はニュートラルに保ってください。', '腰に重度の怪我がある場合は避けてください。', '主に上腕二頭筋を使って引くこと。'),
+('cable-seated-row-wide-grip', 'ko', '케이블 시티드 로우 (와이드 그립)', '와이드 바 어태치먼트를 이용한 로우 폴리 로우.', '광배근 및 상부 등 강조.', '앉아서 와이드 그립으로 바를 잡고 상체 쪽으로 당김.', '팔꿈치를 벌리고 허리는 중립 유지.', '심한 요추 부상 시 피할 것.', '주로 이두근을 사용하여 당기는 것.'),
+('cable-seated-row-wide-grip', 'ar', 'تمرين التجديف بالكابل من وضع الجلوس بقبضة واسعة', 'تجديف باستخدام بكرة سفلية مع بار واسع.', 'تركيز أكبر على العضلة الظهرية العريضة وأعلى الظهر.', 'اجلس، أمسك البار بقبضة واسعة واسحب نحو أعلى الجذع.', 'حافظ على اتساع المرفقين واستقامة الظهر.', 'تجنب في حالة وجود إصابات خطيرة في أسفل الظهر.', 'السحب باستخدام العضلة ذات الرأسين بشكل أساسي.'),
+('cable-seated-row-wide-grip', 'hi', 'केबल सीटेड रो वाइड-ग्रिप', 'वाइड बार अटैचमेंट का उपयोग करके लो पुली रो।', 'लैटिसिमस डोरसी और ऊपरी पीठ पर अधिक जोर।', 'बैठें, चौड़ी पकड़ के साथ बार पकड़ें और ऊपरी धड़ की ओर खींचें।', 'कोहनियों को बाहर रखें और पीठ तटस्थ रखें।', 'पीठ के निचले हिस्से में गंभीर चोट होने पर न करें।', 'मुख्य रूप से बाइसेप्स का उपयोग करके खींचना।'),
+('cable-seated-row-wide-grip', 'ru', 'Тяга блока к поясу сидя (широкий хват)', 'Тяга на нижнем блоке с широкой перекладиной.', 'Больший акцент на широчайшие и верхнюю часть спины.', 'Сядьте, возьмитесь широким хватом и тяните к верхней части корпуса.', 'Держите локти разведенными, а спину ровно.', 'Избегайте при серьезных травмах поясницы.', 'Тяга преимущественно бицепсами.'),
+('cable-seated-row-wide-grip', 'nl', 'Cable seated row wide-grip', 'Low pulley row met een brede stang.', 'Meer nadruk op de lats en de bovenrug.', 'Ga zitten, pak de stang breed vast en trek naar het bovenlichaam.', 'Houd ellebogen naar buiten en rug neutraal.', 'Vermijden bij ernstige onderrugblessures.', 'Trekken voornamelijk met de biceps.'),
+('cable-seated-row-wide-grip', 'sv', 'Kabelrodd med brett grepp', 'Sittande rodd i kabelmaskin med bred stång.', 'Ökad fokus på ryggmusklerna och övre ryggen.', 'Sitt ner, greppa stången brett och dra mot övre delen av överkroppen.', 'Håll armbågarna utåt och ryggen neutral.', 'Undvik vid svåra ländryggsskador.', 'Att dra främst med biceps.'),
+('cable-seated-row-wide-grip', 'pl', 'Wiosłowanie na wyciągu dolnym siedząc (chwyt szeroki)', 'Wiosłowanie na wyciągu dolnym przy użyciu szerokiego drążka.', 'Większy nacisk na mięśnie najszersze i górną część pleców.', 'Usiądź, chwyć drążek szeroko i przyciągaj do górnej części tułowia.', 'Trzymaj łokcie szeroko, a plecy neutralnie.', 'Unikaj przy poważnych urazach lędźwi.', 'Przyciąganie głównie za pomocą bicepsów.'),
+('cable-seated-row-wide-grip', 'id', 'Cable seated row wide-grip', 'Mendayung menggunakan katrol rendah dengan bar lebar.', 'Penekanan lebih pada latissimus dorsi dan punggung atas.', 'Duduk, pegang bar dengan genggaman lebar, dan tarik ke arah batang tubuh bagian atas.', 'Jaga siku terbuka dan punggung netral.', 'Hindari jika ada cedera punggung bawah yang parah.', 'Menarik terutama menggunakan bisep.'),
+('cable-seated-row-wide-grip', 'bn', 'কেবল সিটেড রো ওয়াইড-গ্রিপ', 'ওয়াইড বার ব্যবহার করে লো-পুলি রো।', 'ল্যাটিসিমাস ডরসি এবং ওপরের পিঠে বেশি জোর।', 'বসুন, প্রশস্ত গ্রিপে বার ধরুন এবং ওপরের ধড়ের দিকে টানুন।', 'কনুই বাইরে রাখুন এবং পিঠ সোজা রাখুন।', 'পিঠের নিচের অংশে গুরুতর আঘাত থাকলে এটি করবেন না।', 'মূলত বাইসেপ ব্যবহার করে টানা।'),
+('cable-seated-row-wide-grip', 'vi', 'Chèo cáp ngồi tay nắm rộng', 'Bài tập chèo dùng cáp thấp với thanh đòn rộng.', 'Nhấn mạnh vào cơ xô và lưng trên.', 'Ngồi, nắm thanh đòn rộng và kéo về phía thân trên.', 'Giữ khuỷu tay mở rộng và lưng trung tính.', 'Tránh tập nếu bị chấn thương lưng dưới nghiêm trọng.', 'Kéo chủ yếu bằng cơ nhị đầu.'),
+('cable-seated-row-wide-grip', 'fa', 'زيربغل قايقي با دست باز', 'زيربغل با قرقره پايين با استفاده از ميله پهن.', 'تأکيد بيشتر بر عضلات زيربغل (لت) و بالاي کمر.', 'بنشينيد، ميله را با دست باز بگيريد و به سمت بالاي تنه بکشيد.', 'آرنج‌ها را باز نگه داريد و کمر را در حالت خنثي حفظ کنيد.', 'در صورت آسيب شديد کمر انجام ندهيد.', 'کشيدن ميله عمدتاً با استفاده از عضلات جلو بازو.');

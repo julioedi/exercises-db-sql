@@ -1,0 +1,37 @@
+-- 1. Registro
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('child-pose', 'child-pose.jpg', 'child-pose.mp4', 'beginner'),
+('cat-pose', 'cat-pose.jpg', 'cat-pose.mp4', 'beginner');
+
+-- 2. Relación músculo (Solo ejercicio actual)
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('cat-pose', 'back');
+
+-- 3. Relación alternativa
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('cat-pose', 'child-pose');
+
+-- 4. Info multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('cat-pose', 'es', 'Postura del gato', 'Movimiento de columna en cuadrupedia para mejorar la flexibilidad.', 'Mejora la movilidad espinal y reduce la tensión en la espalda.', 'En manos y rodillas, arquea la espalda hacia el techo y luego hacia abajo.', 'Coordina el movimiento con tu respiración.', 'Evitar si existe dolor lumbar agudo o lesiones vertebrales.', 'Realizar movimientos rápidos o forzar el cuello.'),
+('cat-pose', 'en', 'Cat pose', 'Spinal movement in quadruped position to improve flexibility.', 'Improves spinal mobility and reduces back tension.', 'On hands and knees, arch your back toward the ceiling and then downward.', 'Coordinate the movement with your breath.', 'Avoid if there is acute lower back pain or spinal injuries.', 'Making fast movements or straining the neck.'),
+('cat-pose', 'pt', 'Postura do gato', 'Movimento da coluna em posição de quatro apoios para melhorar a flexibilidade.', 'Melhora a mobilidade espinhal e reduz a tensão nas costas.', 'De mãos e joelhos, arqueie as costas em direção ao teto e depois para baixo.', 'Coordene o movimento com sua respiração.', 'Evitar se houver dor lombar aguda ou lesões vertebrais.', 'Fazer movimentos rápidos ou forçar o pescoço.'),
+('cat-pose', 'fr', 'Posture du chat', 'Mouvement de la colonne vertébrale à quatre pattes pour améliorer la flexibilité.', 'Améliore la mobilité vertébrale et réduit la tension dorsale.', 'À quatre pattes, cambrez le dos vers le plafond puis vers le bas.', 'Coordonnez le mouvement avec votre respiration.', 'À éviter en cas de douleur lombaire aiguë ou de lésions vertébrales.', 'Effectuer des mouvements rapides ou forcer sur le cou.'),
+('cat-pose', 'de', 'Katzenbuckel (Cat Pose)', 'Wirbelsäulenbewegung im Vierfüßlerstand zur Verbesserung der Flexibilität.', 'Verbessert die Wirbelsäulenmobilität und reduziert Rückenverspannungen.', 'Im Vierfüßlerstand den Rücken zur Decke wölben und dann nach unten führen.', 'Bewegung mit der Atmung koordinieren.', 'Bei akuten Lendenwirbelschmerzen oder Wirbelsäulenverletzungen vermeiden.', 'Schnelle Bewegungen oder Nackenverspannung.'),
+('cat-pose', 'it', 'Posizione del gatto', 'Movimento della colonna vertebrale in quadrupedia per migliorare la flessibilità.', 'Migliora la mobilità spinale e riduce la tensione alla schiena.', 'In ginocchio e sulle mani, inarca la schiena verso il soffitto e poi verso il basso.', 'Coordina il movimento con la respirazione.', 'Evitare in caso di dolore lombare acuto o lesioni vertebrali.', 'Fare movimenti veloci o sforzare il collo.'),
+('cat-pose', 'zh', '猫式伸展', '四足支撑状态下的脊柱活动，用于提高柔韧性。', '改善脊柱活动度并减轻背部紧张。', '双手双膝着地，将背部向上拱起，然后向下伸展。', '将动作与呼吸配合。', '急性腰痛或脊椎损伤者请避免。', '动作过快或颈部用力过度。'),
+('cat-pose', 'ja', 'キャットポーズ', '柔軟性を高めるための四つん這い状態での脊椎運動。', '脊椎の可動域を改善し、背中の緊張を和らげます。', '手と膝をつき、背中を天井に向けて丸め、次に反らせます。', '動きを呼吸に合わせて行ってください。', '急性腰痛や脊椎の怪我がある場合は避けてください。', '急激な動きや首への過度な負荷。'),
+('cat-pose', 'ko', '캣 포즈 (고양이 자세)', '유연성 향상을 위한 사발 자세에서의 척추 운동.', '척추 가동성 향상 및 등 긴장 완화.', '손과 무릎을 대고 등을 천장 쪽으로 둥글게 말았다가 다시 아래로 내림.', '호흡과 동작을 일치시킬 것.', '급성 요통이나 척추 부상 시 피할 것.', '동작을 너무 빨리하거나 목에 과도한 힘을 주는 것.'),
+('cat-pose', 'ar', 'وضعية القطة', 'حركة العمود الفقري في وضعية الأطراف الأربعة لتحسين المرونة.', 'تحسن مرونة العمود الفقري وتقلل من توتر الظهر.', 'على اليدين والركبتين، قم بتقويس ظهرك نحو السقف ثم للأسفل.', 'نسق الحركة مع تنفسك.', 'تجنب في حالة وجود ألم حاد في أسفل الظهر أو إصابات في العمود الفقري.', 'القيام بحركات سريعة أو إجهاد الرقبة.'),
+('cat-pose', 'hi', 'कैट पोज़', 'लचीलेपन में सुधार के लिए चौपाया स्थिति में रीढ़ का आंदोलन।', 'रीढ़ की गतिशीलता में सुधार और पीठ का तनाव कम करता है।', 'हाथों और घुटनों के बल, अपनी पीठ को छत की ओर मोड़ें और फिर नीचे की ओर।', 'गति को अपनी सांस के साथ समन्वित करें।', 'पीठ के निचले हिस्से में तीव्र दर्द या रीढ़ की हड्डी में चोट होने पर न करें।', 'तेजी से हरकत करना या गर्दन पर जोर देना।'),
+('cat-pose', 'ru', 'Поза кошки', 'Движение позвоночника в положении на четвереньках для гибкости.', 'Улучшает подвижность позвоночника и снимает напряжение в спине.', 'Стоя на четвереньках, выгните спину вверх к потолку, затем прогнитесь вниз.', 'Координируйте движение с дыханием.', 'Избегайте при острой боли в пояснице или травмах позвоночника.', 'Слишком резкие движения или перенапряжение шеи.'),
+('cat-pose', 'nl', 'Cat pose', 'Wervelkolombeweging in quadruped positie om flexibiliteit te verbeteren.', 'Verbetert de wervelkolommobiliteit en vermindert rugspanning.', 'Op handen en knieën, maak je rug hol en bol.', 'Coördineer de beweging met je ademhaling.', 'Vermijden bij acute rugpijn of wervelkolomblessures.', 'Te snelle bewegingen of nek overbelasten.'),
+('cat-pose', 'sv', 'Kattens position (Cat pose)', 'Ryggradsrörelse i fyrfota position för att förbättra flexibilitet.', 'Förbättrar ryggradens rörlighet och minskar ryggspänning.', 'Stå på alla fyra, skjut rygg mot taket och sänk sedan ner.', 'Koordinera rörelsen med andningen.', 'Undvik vid akut ländryggssmärta eller ryggradsskador.', 'Att utföra snabba rörelser eller anstränga nacken.'),
+('cat-pose', 'pl', 'Pozycja kota', 'Ruch kręgosłupa w klęku podpartym w celu poprawy elastyczności.', 'Poprawia mobilność kręgosłupa i redukuje napięcie pleców.', 'W klęku podpartym wyginaj plecy w górę, a następnie w dół.', 'Koordynuj ruch z oddechem.', 'Unikaj przy ostrym bólu lędźwi lub urazach kręgosłupa.', 'Zbyt szybkie ruchy lub napinanie szyi.'),
+('cat-pose', 'id', 'Cat pose', 'Gerakan tulang belakang dalam posisi merangkak untuk meningkatkan fleksibilitas.', 'Meningkatkan mobilitas tulang belakang dan mengurangi ketegangan punggung.', 'Dengan tangan dan lutut, lengkungkan punggung Anda ke arah langit-langit lalu ke bawah.', 'Koordinasikan gerakan dengan napas Anda.', 'Hindari jika ada nyeri punggung bawah akut atau cedera tulang belakang.', 'Melakukan gerakan cepat atau membebani leher.'),
+('cat-pose', 'bn', 'ক্যাট পোজ', 'নমনীয়তা বাড়ানোর জন্য চার পায়ের অবস্থানে মেরুদণ্ডের সঞ্চালন।', 'মেরুদণ্ডের গতিশীলতা বাড়ায় এবং পিঠের টান কমায়।', 'হাত ও হাঁটুতে ভর দিয়ে পিঠ ওপরের দিকে বাঁকান এবং তারপর নিচের দিকে।', 'শ্বাস-প্রশ্বাসের সাথে সামঞ্জস্য রেখে এই ব্যায়ামটি করুন।', 'পিঠের নিচের অংশে তীব্র ব্যথা বা মেরুদণ্ডের আঘাত থাকলে এটি করবেন না।', 'খুব দ্রুত নড়াচড়া করা বা ঘাড়ে চাপ দেওয়া।'),
+('cat-pose', 'vi', 'Tư thế con mèo', 'Chuyển động cột sống ở tư thế bốn điểm để cải thiện sự linh hoạt.', 'Cải thiện khả năng vận động của cột sống và giảm căng thẳng lưng.', 'Ở tư thế quỳ, cong lưng về phía trần nhà rồi hạ xuống.', 'Phối hợp chuyển động với nhịp thở.', 'Tránh tập nếu bị đau lưng dưới cấp tính hoặc chấn thương cột sống.', 'Thực hiện chuyển động quá nhanh hoặc làm căng cổ.'),
+('cat-pose', 'fa', 'حرکت گربه', 'حرکت ستون فقرات در حالت چهار دست و پا برای انعطاف‌پذیری.', 'بهبود تحرک و کاهش تنش در کمر.', 'در حالت چهار دست و پا، کمر را به سمت سقف قوس دهید و سپس به پایین ببرید.', 'با تنفس هماهنگ کنید.', 'در صورت درد شدید کمر انجام ندهید.', 'حرکات سریع یا ناگهانی.');

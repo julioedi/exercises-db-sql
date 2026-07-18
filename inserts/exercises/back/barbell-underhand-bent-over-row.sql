@@ -1,0 +1,37 @@
+-- 1. Registro
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('barbell-bent-over-row', 'barbell-bent-over-row.jpg', 'barbell-bent-over-row.mp4', 'intermediate'),
+('barbell-underhand-bent-over-row', 'barbell-underhand-bent-over-row.jpg', 'barbell-underhand-bent-over-row.mp4', 'intermediate');
+
+-- 2. Relación músculo
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('barbell-bent-over-row', 'back');
+
+-- 3. Relación alternativa
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('barbell-underhand-bent-over-row', 'barbell-bent-over-row');
+
+-- 4. Info multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('barbell-underhand-bent-over-row', 'es', 'Remo con barra agarre supino', 'Remo inclinado utilizando un agarre supino (palmas hacia arriba).', 'Mayor activación del bíceps y dorsal inferior.', 'Inclina el torso, agarre supino, lleva la barra hacia la parte baja del abdomen.', 'Mantén los codos pegados al torso.', 'Evitar con dolor lumbar agudo.', 'Permitir que la espalda se redondee.'),
+('barbell-underhand-bent-over-row', 'en', 'Barbell underhand bent-over row', 'Bent-over row using an underhand (palms up) grip.', 'Increased biceps and lower lat activation.', 'Incline torso, underhand grip, pull bar toward lower abdomen.', 'Keep elbows tucked near torso.', 'Avoid with acute lower back pain.', 'Allowing the back to round.'),
+('barbell-underhand-bent-over-row', 'pt', 'Remada curvada com pegada supinada', 'Remada curvada usando pegada supinada (palmas para cima).', 'Maior ativação do bíceps e latíssimo inferior.', 'Incline o tronco, pegada supinada, puxe a barra para a parte inferior do abdômen.', 'Mantenha os cotovelos próximos ao tronco.', 'Evitar com dor lombar aguda.', 'Deixar as costas arredondarem.'),
+('barbell-underhand-bent-over-row', 'fr', 'Rowing barre prise supination', 'Rowing penché utilisant une prise en supination (paumes vers le haut).', 'Activation accrue des biceps et du bas des dorsaux.', 'Buste incliné, prise supination, tirez la barre vers le bas de l''abdomen.', 'Gardez les coudes près du corps.', 'À éviter en cas de douleur lombaire aiguë.', 'Laisser le dos s''arrondir.'),
+('barbell-underhand-bent-over-row', 'de', 'Langhantel-Rudern im Untergriff', 'Vorgebeugtes Rudern mit Untergriff (Handflächen zeigen nach oben).', 'Stärkere Aktivierung von Bizeps und unterem Lat.', 'Oberkörper neigen, Untergriff, Stange zum unteren Bauch ziehen.', 'Ellbogen eng am Körper halten.', 'Bei akuten Rückenschmerzen vermeiden.', 'Rücken rund werden lassen.'),
+('barbell-underhand-bent-over-row', 'it', 'Rematore con bilanciere presa supina', 'Rematore inclinato con presa supina (palmi verso l''alto).', 'Maggiore attivazione dei bicipiti e del gran dorsale inferiore.', 'Inclina il busto, presa supina, tira il bilanciere verso la parte bassa dell''addome.', 'Tieni i gomiti vicini al busto.', 'Evitare in caso di dolore lombare acuto.', 'Lasciare che la schiena si curvi.'),
+('barbell-underhand-bent-over-row', 'zh', '反握杠铃俯身划船', '俯身状态下使用反握（掌心向上）的杠铃划船。', '增加肱二头肌和下背阔肌的参与度。', '身体前倾，反握，将杠铃拉向腹部下方。', '保持手肘贴近躯干。', '腰背部急性疼痛者请避免。', '背部弓起。'),
+('barbell-underhand-bent-over-row', 'ja', 'アンダーハンド・バーベルベントオーバーロー', 'アンダーハンドグリップ（掌を上）で行うベントオーバーロー。', '上腕二頭筋と下部広背筋をより強く刺激します。', '上体を倒し、アンダーハンドでバーを腹部下部へ引きます。', '肘を体幹に近づけてください。', '腰に急性的な痛みがある場合は避けてください。', '背中を丸めること。'),
+('barbell-underhand-bent-over-row', 'ko', '바벨 언더핸드 벤트오버 로우', '언더핸드 그립(손바닥이 위로)을 이용한 벤트오버 로우.', '이두근과 하부 광배근 활성화 증가.', '상체를 기울이고 언더핸드 그립으로 바벨을 하복부 쪽으로 당김.', '팔꿈치를 몸통에 붙이기.', '급성 요통 시 피할 것.', '허리가 굽는 것.'),
+('barbell-underhand-bent-over-row', 'ar', 'تمرين التجديف بالبار بقبضة تحتية', 'تجديف منحني باستخدام قبضة تحتية (الكف للأعلى).', 'زيادة تفعيل العضلة ذات الرأسين والعضلة الظهرية السفلية.', 'أمل جذعك، استخدم قبضة تحتية، واسحب البار نحو أسفل البطن.', 'حافظ على المرفقين قريبين من الجذع.', 'تجنب في حالة آلام أسفل الظهر الحادة.', 'السماح للظهر بالتقوس.'),
+('barbell-underhand-bent-over-row', 'hi', 'बारबेल अंडरहैंड बेंट-ओवर रो', 'अंडरहैंड पकड़ (हथेलियां ऊपर) का उपयोग करके बेंट-ओवर रो।', 'बाइसेप्स और निचले लैट्स की अधिक सक्रियता।', 'धड़ झुकाएं, अंडरहैंड पकड़ें, बारबेल को पेट के निचले हिस्से की ओर खींचें।', 'कोहनियों को धड़ के करीब रखें।', 'कमर के निचले हिस्से में तीव्र दर्द होने पर न करें।', 'पीठ को गोल होने देना।'),
+('barbell-underhand-bent-over-row', 'ru', 'Тяга штанги в наклоне обратным хватом', 'Тяга штанги в наклоне обратным хватом (ладони вверх).', 'Усиленная активация бицепсов и нижних широчайших.', 'Наклоните корпус, обратный хват, тяните штангу к нижней части живота.', 'Держите локти ближе к корпусу.', 'Избегайте при острой боли в пояснице.', 'Округление спины.'),
+('barbell-underhand-bent-over-row', 'nl', 'Barbell underhand bent-over row', 'Voorovergebogen roeien met onderhandse grip (handpalmen omhoog).', 'Verhoogde activatie van biceps en onderste lats.', 'Houd romp schuin, onderhandse grip, trek stang naar onderbuik.', 'Houd ellebogen dicht bij romp.', 'Vermijden bij acute rugpijn.', 'De rug laten bollen.'),
+('barbell-underhand-bent-over-row', 'sv', 'Stångrodd med undergrepp', 'Framåtlutad rodd med undergrepp (handflator uppåt).', 'Ökad aktivering av biceps och nedre ryggmuskler.', 'Luta överkroppen, använd undergrepp, dra stången mot nedre delen av magen.', 'Håll armbågarna nära kroppen.', 'Undvik vid akut ländryggssmärta.', 'Att låta ryggen kuta.'),
+('barbell-underhand-bent-over-row', 'pl', 'Wiosłowanie sztangą podchwytem', 'Wiosłowanie w opadzie przy użyciu podchwytu (dłonie do góry).', 'Większa aktywacja bicepsów i dolnych partii pleców.', 'Pochyl tułów, użyj podchwytu, przyciągaj sztangę do dołu brzucha.', 'Trzymaj łokcie blisko tułowia.', 'Unikaj przy ostrym bólu lędźwi.', 'Pozwalanie na zaokrąglanie pleców.'),
+('barbell-underhand-bent-over-row', 'id', 'Barbell underhand bent-over row', 'Mendayung miring menggunakan genggaman bawah (telapak tangan menghadap ke atas).', 'Meningkatkan aktivasi bisep dan lat bawah.', 'Miringkan batang tubuh, genggaman bawah, tarik barbell ke perut bagian bawah.', 'Jaga siku dekat dengan batang tubuh.', 'Hindari jika ada nyeri punggung bawah akut.', 'Membiarkan punggung membungkuk.'),
+('barbell-underhand-bent-over-row', 'bn', 'বারবেল আন্ডারহ্যান্ড বেন্ট-ওভার রো', 'আন্ডারহ্যান্ড গ্রিপ (হাতের তালু ওপরের দিকে) ব্যবহার করে বেন্ট-ওভার রো।', 'বাইসেপ এবং ল্যাটের নিচের অংশে বেশি সক্রিয়তা।', 'ধড় সামনের দিকে ঝুকান, আন্ডারহ্যান্ড গ্রিপে বারবেল পেটের নিচের দিকে টানুন।', 'কনুই শরীরের কাছে রাখুন।', 'পিঠের নিচের অংশে তীব্র ব্যথা থাকলে এটি করবেন না।', 'পিঠ বাঁকানো।'),
+('barbell-underhand-bent-over-row', 'vi', 'Chèo tạ đòn gập người lòng bàn tay hướng lên', 'Bài tập chèo cúi người với lòng bàn tay hướng lên.', 'Tăng cường kích hoạt cơ nhị đầu và phần lưng xô dưới.', 'Cúi người, nắm tạ lòng bàn tay hướng lên, kéo về phía bụng dưới.', 'Giữ khuỷu tay sát thân người.', 'Tránh tập nếu đau lưng dưới cấp tính.', 'Để lưng bị gù.'),
+('barbell-underhand-bent-over-row', 'fa', 'زيربغل هالتر خم با دست برعکس', 'زيربغل خم با دست برعکس (کف دست رو به بالا).', 'فعال‌سازي بيشتر عضله دوسر و پشتي پاييني.', 'تنه را خم کنيد، دست برعکس بگيريد، هالتر را به سمت پايين شکم بکشيد.', 'آرنج‌ها را نزديک تنه نگه داريد.', 'در صورت درد حاد کمر انجام ندهيد.', 'گرد کردن کمر.');

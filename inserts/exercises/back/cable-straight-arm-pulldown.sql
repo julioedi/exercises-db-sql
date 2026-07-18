@@ -1,0 +1,37 @@
+-- 1. Registro
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('lat-pull-down-normal-grip', 'lat-pull-down-normal-grip.jpg', 'lat-pull-down-normal-grip.mp4', 'beginner'),
+('cable-straight-arm-pulldown', 'cable-straight-arm-pulldown.jpg', 'cable-straight-arm-pulldown.mp4', 'beginner');
+
+-- 2. Relación músculo (Solo ejercicio actual)
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('cable-straight-arm-pulldown', 'back');
+
+-- 3. Relación alternativa
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('cable-straight-arm-pulldown', 'lat-pull-down-normal-grip');
+
+-- 4. Info multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('cable-straight-arm-pulldown', 'es', 'Pulldown de brazos rectos', 'Extensión de hombros con brazos extendidos en polea.', 'Aislamiento efectivo del dorsal ancho.', 'Sujeta la barra, mantén brazos rectos y tira hacia tus muslos.', 'No dobles los codos; enfócate en el movimiento del hombro.', 'Evitar con lesiones graves de hombro.', 'Usar impulso corporal para mover el peso.'),
+('cable-straight-arm-pulldown', 'en', 'Cable straight-arm pulldown', 'Shoulder extension with extended arms on a cable machine.', 'Effective isolation of the latissimus dorsi.', 'Grasp the bar, keep arms straight, and pull towards your thighs.', 'Do not bend your elbows; focus on shoulder movement.', 'Avoid with severe shoulder injuries.', 'Using body momentum to move the weight.'),
+('cable-straight-arm-pulldown', 'pt', 'Puxada com braços estendidos', 'Extensão de ombros com braços estendidos na polia.', 'Isolamento efetivo do latíssimo do dorso.', 'Segure a barra, mantenha os braços retos e puxe em direção às coxas.', 'Não dobre os cotovelos; foque no movimento do ombro.', 'Evitar com lesões graves no ombro.', 'Usar impulso corporal para mover o peso.'),
+('cable-straight-arm-pulldown', 'fr', 'Tirage bras tendus poulie haute', 'Extension d''épaule bras tendus à la poulie.', 'Isolation efficace du grand dorsal.', 'Saisissez la barre, gardez les bras tendus et tirez vers vos cuisses.', 'Ne pliez pas les coudes ; concentrez-vous sur le mouvement de l''épaule.', 'À éviter en cas de blessures graves à l''épaule.', 'Utiliser l''élan du corps pour déplacer le poids.'),
+('cable-straight-arm-pulldown', 'de', 'Latziehen mit gestreckten Armen am Kabelzug', 'Schulterextension mit gestreckten Armen am Kabelzug.', 'Effektive Isolation des Latissimus.', 'Stange greifen, Arme gerade lassen und zu den Oberschenkeln ziehen.', 'Ellbogen nicht beugen; auf Schulterbewegung konzentrieren.', 'Bei schweren Schulterverletzungen vermeiden.', 'Körperschwung verwenden, um das Gewicht zu bewegen.'),
+('cable-straight-arm-pulldown', 'it', 'Pulldown a braccia tese', 'Estensione delle spalle a braccia tese al cavo.', 'Isolamento efficace del gran dorsale.', 'Afferra la barra, tieni le braccia tese e tira verso le cosce.', 'Non piegare i gomiti; concentrati sul movimento della spalla.', 'Evitare in caso di gravi lesioni alla spalla.', 'Usare lo slancio del corpo per muovere il peso.'),
+('cable-straight-arm-pulldown', 'zh', '绳索直臂下压', '在拉力器上进行直臂肩部伸展。', '有效隔离背阔肌。', '握住横杆，保持手臂伸直，向大腿方向拉动。', '不要弯曲肘部；专注于肩部运动。', '肩部严重受伤者请避免。', '利用身体惯性来移动重量。'),
+('cable-straight-arm-pulldown', 'ja', 'ケーブル・ストレートアームプルダウン', 'ケーブルマシンを使用した、腕を伸ばした状態での肩関節伸展。', '広背筋の効率的な分離・鍛錬。', 'バーを掴み、腕を伸ばしたまま太ももに向かって引きます。', '肘を曲げず、肩の動きに集中してください。', '肩に深刻な怪我がある場合は避けてください。', '反動を使って重量を動かすこと。'),
+('cable-straight-arm-pulldown', 'ko', '케이블 스트레이트 암 풀다운', '케이블 머신에서 팔을 펴고 하는 어깨 신전 운동.', '광배근 효과적 고립.', '바를 잡고 팔을 곧게 편 상태에서 허벅지 쪽으로 당김.', '팔꿈치를 굽히지 말고 어깨 움직임에 집중.', '심한 어깨 부상 시 피할 것.', '몸의 반동을 이용하여 무게를 움직이는 것.'),
+('cable-straight-arm-pulldown', 'ar', 'تمرين سحب لأسفل بالذراعين المفرودتين بالكابل', 'تمديد الكتف مع ذراعين مفرودتين على جهاز الكابل.', 'عزل فعال للعضلة الظهرية العريضة.', 'أمسك البار، حافظ على استقامة الذراعين واسحب نحو الفخذين.', 'لا تثنِ المرفقين؛ ركز على حركة الكتف.', 'تجنب في حالة وجود إصابات خطيرة في الكتف.', 'استخدام دفع الجسم لتحريك الوزن.'),
+('cable-straight-arm-pulldown', 'hi', 'केबल स्ट्रेट-आर्म पुलडाउन', 'केबल मशीन पर फैली हुई भुजाओं के साथ कंधे का विस्तार।', 'लैटिसिमस डोरसी का प्रभावी अलगाव।', 'बार पकड़ें, भुजाएं सीधी रखें और जांघों की ओर खींचें।', 'कोहनियां न मोड़ें; कंधे की गति पर ध्यान दें।', 'कंधे की गंभीर चोट होने पर न करें।', 'भार ले जाने के लिए शरीर की गति का उपयोग करना।'),
+('cable-straight-arm-pulldown', 'ru', 'Тяга на прямых руках', 'Разгибание плеч с выпрямленными руками на блочном тренажере.', 'Эффективная изоляция широчайших мышц.', 'Возьмитесь за гриф, держите руки прямыми и тяните к бедрам.', 'Не сгибайте локти; сосредоточьтесь на движении плеч.', 'Избегайте при серьезных травмах плеча.', 'Использование инерции тела для движения веса.'),
+('cable-straight-arm-pulldown', 'nl', 'Cable straight-arm pulldown', 'Schouderextensie met gestrekte armen op een kabelmachine.', 'Effectieve isolatie van de lats.', 'Pak de stang vast, houd armen recht en trek naar je bovenbenen.', 'Buig je ellebogen niet; focus op de schouderbeweging.', 'Vermijden bij ernstige schouderblessures.', 'Lichaamsmomentum gebruiken om het gewicht te verplaatsen.'),
+('cable-straight-arm-pulldown', 'sv', 'Kabelpulldown med raka armar', 'Axelextension med raka armar i kabelmaskin.', 'Effektiv isolering av ryggmusklerna.', 'Greppa stången, håll armarna raka och dra mot låren.', 'Böj inte armbågarna; fokusera på axelrörelsen.', 'Undvik vid allvarliga axelskador.', 'Att använda kroppens momentum för att flytta vikten.'),
+('cable-straight-arm-pulldown', 'pl', 'Ściąganie drążka na prostych rękach', 'Wyprosty ramion w stawie barkowym na wyciągu.', 'Skuteczna izolacja mięśni najszerszych.', 'Chwyć drążek, trzymaj ramiona proste i ściągaj w stronę ud.', 'Nie uginaj łokci; skup się na ruchu barków.', 'Unikaj przy poważnych urazach barku.', 'Używanie impetu ciała do poruszania ciężarem.'),
+('cable-straight-arm-pulldown', 'id', 'Cable straight-arm pulldown', 'Ekstensi bahu dengan lengan lurus pada mesin kabel.', 'Isolasi efektif latissimus dorsi.', 'Pegang bar, jaga lengan tetap lurus, dan tarik ke arah paha.', 'Jangan tekuk siku Anda; fokus pada gerakan bahu.', 'Hindari jika ada cedera bahu yang parah.', 'Menggunakan momentum tubuh untuk memindahkan beban.'),
+('cable-straight-arm-pulldown', 'bn', 'কেবল স্ট্রেইট-আর্ম পুলডাউন', 'কেবল মেশিনে হাত সোজা রেখে কাঁধের এক্সটেনশন।', 'ল্যাটিসিমাস ডরসি-এর কার্যকর আইসোলেশন।', 'বার ধরুন, হাত সোজা রাখুন এবং উরুর দিকে টানুন।', 'কনুই বাঁকাবেন না; কাঁধের নড়াচড়ার দিকে মনোযোগ দিন।', 'কাঁধে গুরুতর আঘাত থাকলে এটি করবেন না।', 'ওজন সরানোর জন্য শরীরের গতির ব্যবহার।'),
+('cable-straight-arm-pulldown', 'vi', 'Kéo cáp tay thẳng', 'Bài tập duỗi vai với cánh tay thẳng trên máy cáp.', 'Cô lập hiệu quả cơ xô.', 'Nắm thanh đòn, giữ cánh tay thẳng và kéo về phía đùi.', 'Không cong khuỷu tay; tập trung vào chuyển động của vai.', 'Tránh tập nếu bị chấn thương vai nghiêm trọng.', 'Sử dụng đà của cơ thể để di chuyển tạ.'),
+('cable-straight-arm-pulldown', 'fa', 'زیربغل سیم‌کش دست صاف', 'اکستنشن شانه با بازوهای صاف در سیم‌کش.', 'جداسازی موثر عضلات زیربغل.', 'میله را بگیرید، بازوها را صاف نگه دارید و به سمت ران‌ها بکشید.', 'آرنج‌ها را خم نکنید؛ روی حرکت شانه تمرکز کنید.', 'در صورت آسیب جدی شانه انجام ندهید.', 'استفاده از نیروی تکانه‌ای بدن برای جابجایی وزنه.');
