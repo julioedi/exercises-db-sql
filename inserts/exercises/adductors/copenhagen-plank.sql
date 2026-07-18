@@ -1,0 +1,37 @@
+-- 1. Registro
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('adduction-machine', 'adduction-machine.jpg', 'adduction-machine.mp4', 'beginner'),
+('copenhagen-plank', 'copenhagen-plank.jpg', 'copenhagen-plank.mp4', 'advanced');
+
+-- 2. Relación músculo
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('copenhagen-plank', 'adductors');
+
+-- 3. Relación alternativa
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('copenhagen-plank', 'adduction-machine');
+
+-- 4. Info multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('copenhagen-plank', 'es', 'Plancha Copenhague', 'Plancha lateral con la pierna superior apoyada sobre un banco.', 'Máxima activación del aductor y prevención de lesiones de ingle.', 'En posición de plancha lateral, apoya la rodilla o pie superior en un banco y eleva la cadera.', 'Mantén el cuerpo alineado y fuerte.', 'Evitar si hay lesiones de hombro o cadera.', 'Dejar caer la pelvis o arquear la espalda.'),
+('copenhagen-plank', 'en', 'Copenhagen plank', 'Side plank with the top leg supported on a bench.', 'Maximum adductor activation and groin injury prevention.', 'In side plank, rest top knee/foot on a bench and lift hips.', 'Keep body aligned and rigid.', 'Avoid if shoulder or hip injuries exist.', 'Letting the pelvis drop or arching the back.'),
+('copenhagen-plank', 'pt', 'Prancha de Copenhague', 'Prancha lateral com a perna superior apoiada num banco.', 'Máxima ativação do adutor e prevenção de lesões na virilha.', 'Em posição de prancha lateral, apoie o joelho ou pé superior num banco e eleve o quadril.', 'Mantenha o corpo alinhado e firme.', 'Evitar se houver lesões no ombro ou quadril.', 'Deixar a pelve cair ou arquear as costas.'),
+('copenhagen-plank', 'fr', 'Planche de Copenhague', 'Planche latérale avec la jambe supérieure appuyée sur un banc.', 'Activation maximale des adducteurs et prévention des blessures à l''aine.', 'En position de planche latérale, posez le genou ou le pied supérieur sur un banc et levez le bassin.', 'Gardez le corps aligné et rigide.', 'À éviter en cas de blessures à l''épaule ou à la hanche.', 'Laisser tomber le bassin ou cambrer le dos.'),
+('copenhagen-plank', 'de', 'Kopenhagen-Plank', 'Seitstütz mit dem oberen Bein auf einer Bank.', 'Maximale Adduktorenaktivierung und Vorbeugung von Leistenverletzungen.', 'In Seitstützposition das obere Knie oder den Fuß auf eine Bank legen und das Becken anheben.', 'Körper ausgerichtet und stabil halten.', 'Bei Schulter- oder Hüftverletzungen vermeiden.', 'Becken absinken lassen oder Rücken krümmen.'),
+('copenhagen-plank', 'it', 'Plank di Copenaghen', 'Plank laterale con la gamba superiore appoggiata su una panca.', 'Massima attivazione dell''adduttore e prevenzione degli infortuni all''inguine.', 'In posizione di plank laterale, poggia il ginocchio o il piede superiore su una panca e solleva il bacino.', 'Mantieni il corpo allineato e rigido.', 'Evitare in caso di lesioni alla spalla o all''anca.', 'Far cadere il bacino o inarcare la schiena.'),
+('copenhagen-plank', 'zh', '哥本哈根平板支撑', '侧支撑平板支撑，上侧腿支撑在长凳上。', '最大限度激活内收肌并预防腹股沟损伤。', '在侧支撑位置，将上侧膝盖或脚支撑在长凳上，抬起骨盆。', '保持身体对齐并收紧。', '如有肩部或髋部损伤，请避免。', '骨盆下垂或背部弓起。'),
+('copenhagen-plank', 'ja', 'コペンハーゲンプランク', '上の脚をベンチに乗せたサイドプランク。', '内転筋を最大限に活性化させ、鼠径部の怪我を予防します。', 'サイドプランクの姿勢で、上の膝または足をベンチに乗せ、骨盤を上げます。', '体を一直線に保ち、しっかり固定してください。', '肩や股関節に怪我がある場合は避けてください。', '骨盤が落ちることや、背中を反らせること。'),
+('copenhagen-plank', 'ko', '코펜하겐 플랭크', '위쪽 다리를 벤치에 올리고 수행하는 사이드 플랭크.', '내전근 활성화 극대화 및 사타구니 부상 예방.', '사이드 플랭크 자세에서 위쪽 무릎이나 발을 벤치에 올리고 골반을 들어 올림.', '몸을 일직선으로 유지하고 힘을 줄 것.', '어깨나 고관절 부상 시 피할 것.', '골반이 처지거나 허리가 굽는 것.'),
+('copenhagen-plank', 'ar', 'بلانك كوبنهاغن', 'بلانك جانبي مع دعم الساق العلوية على مقعد.', 'أقصى تنشيط للمقربات ومنع إصابات الفخذ.', 'في وضع البلانك الجانبي، ضع الركبة أو القدم العلوية على مقعد وارفع الحوض.', 'حافظ على استقامة الجسم وقوته.', 'تجنب في حالة وجود إصابات في الكتف أو الورك.', 'سقوط الحوض أو تقوس الظهر.'),
+('copenhagen-plank', 'hi', 'कोपेनहेगन प्लैंक', 'साइड प्लैंक जिसमें ऊपर वाला पैर बेंच पर टिका होता है।', 'एडक्टर्स की अधिकतम सक्रियता और कमर (groin) की चोट से बचाव।', 'साइड प्लैंक स्थिति में, ऊपर वाले घुटने या पैर को बेंच पर टिकाएं और पेल्विस को ऊपर उठाएं।', 'शरीर को सीधा और सख्त रखें।', 'यदि कंधे या कूल्हे में चोट हो तो न करें।', 'पेल्विस को गिरने देना या पीठ को मोड़ना।'),
+('copenhagen-plank', 'ru', 'Планка Копенгагена', 'Боковая планка с опорой верхней ноги о скамью.', 'Максимальная активация приводящих мышц и профилактика травм паха.', 'В положении боковой планки положите верхнее колено или стопу на скамью и поднимите таз.', 'Держите тело прямым и напряженным.', 'Избегайте при травмах плеча или бедра.', 'Опускание таза или прогиб в спине.'),
+('copenhagen-plank', 'nl', 'Copenhagen plank', 'Zijwaartse plank met het bovenste been ondersteund op een bankje.', 'Maximale adductoren-activatie en preventie van liesblessures.', 'In zijwaartse plank, rust de bovenste knie of voet op een bankje en til het bekken op.', 'Houd het lichaam uitgelijnd en stijf.', 'Vermijden bij schouder- of heupblessures.', 'Het bekken laten zakken of de rug krommen.'),
+('copenhagen-plank', 'sv', 'Copenhagen plank', 'Sidoplanka med det övre benet vilande på en bänk.', 'Maximal adduktoraktivering och förebyggande av ljumskskador.', 'I sidoplankposition, vila det övre knäet eller foten på en bänk och lyft bäckenet.', 'Håll kroppen rak och spänd.', 'Undvik vid axel- eller höftskador.', 'Att låta bäckenet sjunka eller att svanka.'),
+('copenhagen-plank', 'pl', 'Deska kopenhaska', 'Plank boczny z górną nogą opartą na ławce.', 'Maksymalna aktywacja przywodzicieli i zapobieganie urazom pachwiny.', 'W pozycji planku bocznego oprzyj górne kolano lub stopę na ławce i unieś biodra.', 'Utrzymuj ciało w linii i napięte.', 'Unikaj w przypadku urazów barku lub biodra.', 'Opadanie bioder lub wyginanie pleców.'),
+('copenhagen-plank', 'id', 'Copenhagen plank', 'Side plank dengan kaki atas ditopang pada bangku.', 'Aktivasi adduktor maksimal dan pencegahan cedera selangkangan.', 'Dalam posisi side plank, istirahatkan lutut atau kaki atas di atas bangku dan angkat panggul.', 'Jaga tubuh tetap lurus dan kencang.', 'Hindari jika ada cedera bahu atau pinggul.', 'Membiarkan panggul turun atau melengkungkan punggung.'),
+('copenhagen-plank', 'bn', 'কোপেনহেগেন প্ল্যাঙ্ক', 'সাইড প্ল্যাঙ্ক যেখানে ওপরের পা একটি বেঞ্চে রাখা থাকে।', 'অ্যাডাকটর সক্রিয়তা সর্বোচ্চ করে এবং কুঁচকির চোট প্রতিরোধ করে।', 'সাইড প্ল্যাঙ্ক পজিশনে, ওপরের হাঁটু বা পা বেঞ্চে রাখুন এবং পেলভিস ওপরে তুলুন।', 'শরীর সোজা এবং শক্ত রাখুন।', 'কাঁধ বা হিপে চোট থাকলে এটি করবেন না।', 'পেলভিস নিচে পড়তে দেওয়া বা পিঠ বাঁকানো।'),
+('copenhagen-plank', 'vi', 'Plank Copenhagen', 'Plank nghiêng với chân trên đặt trên ghế.', 'Kích hoạt tối đa cơ khép và phòng ngừa chấn thương háng.', 'Ở tư thế plank nghiêng, đặt đầu gối hoặc bàn chân trên lên ghế và nâng khung chậu lên.', 'Giữ cơ thể thẳng và cứng cáp.', 'Tránh tập nếu bị chấn thương vai hoặc hông.', 'Để khung chậu hạ xuống hoặc cong lưng.'),
+('copenhagen-plank', 'fa', 'تمرين پلانک کپنهاگ', 'پلانک جانبی با حمایت ساق بالایی روی نیمکت.', 'فعال‌سازی حداکثری عضلات نزدیک‌کننده و پیشگیری از آسیب کشاله ران.', 'در حالت پلانک جانبی، زانو یا پای بالایی را روی نیمکت قرار داده و لگن را بالا ببرید.', 'بدن را صاف و سفت نگه دارید.', 'در صورت آسیب شانه یا لگن انجام ندهید.', 'پایین افتادن لگن یا قوس دادن به کمر.');

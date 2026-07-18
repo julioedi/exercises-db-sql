@@ -1,0 +1,37 @@
+-- 1. Registro
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('side-lunge', 'side-lunge.jpg', 'side-lunge.mp4', 'beginner'),
+('sliding-adductor-lunge', 'sliding-adductor-lunge.jpg', 'sliding-adductor-lunge.mp4', 'intermediate');
+
+-- 2. Relación músculo
+INSERT OR IGNORE INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('sliding-adductor-lunge', 'adductors');
+
+-- 3. Relación alternativa
+INSERT OR IGNORE INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('sliding-adductor-lunge', 'side-lunge');
+
+-- 4. Info multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('sliding-adductor-lunge', 'es', 'Zancada deslizante de aductor', 'Sentadilla lateral usando un disco deslizante para mayor control y estiramiento.', 'Aumenta la flexibilidad y fuerza excéntrica.', 'De pie, desliza una pierna hacia un lado mientras flexionas la otra.', 'Mantén el torso erguido y el peso en el talón.', 'Evitar con problemas de rodilla.', 'Dejar que la rodilla pase la punta del pie.'),
+('sliding-adductor-lunge', 'en', 'Sliding adductor lunge', 'Lateral lunge using a slider for better control and stretch.', 'Increases flexibility and eccentric strength.', 'Standing, slide one leg out to the side while flexing the other.', 'Keep torso upright and weight on the heel.', 'Avoid with knee issues.', 'Letting knee go past the toes.'),
+('sliding-adductor-lunge', 'pt', 'Afundo deslizante de adutor', 'Agachamento lateral usando um disco deslizante para melhor controle e alongamento.', 'Aumenta a flexibilidade e a força excêntrica.', 'Em pé, deslize uma perna para o lado enquanto flexiona a outra.', 'Mantenha o tronco ereto e o peso no calcanhar.', 'Evitar com problemas no joelho.', 'Deixar o joelho ultrapassar a ponta do pé.'),
+('sliding-adductor-lunge', 'fr', 'Fente glissée adducteur', 'Fente latérale utilisant un disque de glisse pour un meilleur contrôle et étirement.', 'Augmente la flexibilité et la force excentrique.', 'Debout, faites glisser une jambe sur le côté tout en fléchissant l''autre.', 'Gardez le buste droit et le poids sur le talon.', 'À éviter en cas de problèmes de genou.', 'Laisser le genou dépasser la pointe du pied.'),
+('sliding-adductor-lunge', 'de', 'Gleitende Adduktoren-Ausfallschritte', 'Seitlicher Ausfallschritt mit einem Slider für bessere Kontrolle und Dehnung.', 'Steigert Flexibilität und exzentrische Kraft.', 'Im Stehen ein Bein zur Seite gleiten lassen, während das andere gebeugt wird.', 'Oberkörper aufrecht halten und Gewicht auf der Ferse.', 'Bei Knieproblemen vermeiden.', 'Knie über die Fußspitze hinausragen lassen.'),
+('sliding-adductor-lunge', 'it', 'Affondo scorrevole per adduttori', 'Affondo laterale utilizzando un disco scorrevole per un maggiore controllo e allungamento.', 'Aumenta la flessibilità e la forza eccentrica.', 'In piedi, fai scivolare una gamba di lato mentre fletti l''altra.', 'Mantieni il busto eretto e il peso sul tallone.', 'Evitare in caso di problemi al ginocchio.', 'Lasciare che il ginocchio superi la punta del piede.'),
+('sliding-adductor-lunge', 'zh', '滑动内收肌弓步', '利用滑动盘进行侧弓步，以获得更好的控制和伸展。', '增加灵活性和离心力量。', '站立，将一条腿向侧面滑动，同时弯曲另一条腿。', '保持躯干直立，重心放在脚后跟。', '如有膝盖问题，请避免。', '让膝盖超过脚尖。'),
+('sliding-adductor-lunge', 'ja', 'スライディング・アダクターランジ', 'スライダーを使用したサイドランジで、コントロールとストレッチを強化。', '柔軟性とエキセントリックな筋力を向上させます。', '立った状態で、片方の脚を横にスライドさせながらもう片方の脚を曲げます。', '体幹をまっすぐに保ち、かかとに体重を乗せてください。', '膝に問題がある場合は避けてください。', '膝がつま先より前に出ること。'),
+('sliding-adductor-lunge', 'ko', '슬라이딩 어덕터 런지', '슬라이더를 이용한 사이드 런지로 더 나은 통제와 스트레칭.', '유연성 및 신장성 근력 향상.', '선 자세에서 한쪽 다리를 옆으로 미끄러뜨리며 반대쪽 다리를 굽힘.', '상체를 세우고 뒤꿈치에 무게 중심을 둘 것.', '무릎 문제 시 피할 것.', '무릎이 발끝보다 앞으로 나가는 것.'),
+('sliding-adductor-lunge', 'ar', 'تمرين الطعن المنزلق للمقربات', 'طعن جانبي باستخدام قرص منزلق لمزيد من التحكم والتمدد.', 'يزيد من المرونة والقوة اللامركزية.', 'وأنت واقف، حرك ساقاً واحدة إلى الجانب بينما تثني الأخرى.', 'حافظ على استقامة الجذع والوزن على الكعب.', 'تجنب في حالة وجود مشاكل في الركبة.', 'السماح للركبة بتجاوز أصابع القدم.'),
+('sliding-adductor-lunge', 'hi', 'स्लाइडिंग एडक्टर लंज़', 'बेहतर नियंत्रण और खिंचाव के लिए स्लाइडर का उपयोग करके साइड लंज़।', 'लचीलापन और एक्सेंट्रिक ताकत बढ़ाता है।', 'खड़े होकर, एक पैर को साइड में स्लाइड करें जबकि दूसरे को मोड़ें।', 'धड़ को सीधा रखें और वजन एड़ी पर रखें।', 'यदि घुटने की समस्या हो तो न करें।', 'घुटने को पैर की उंगलियों से आगे जाने देना।'),
+('sliding-adductor-lunge', 'ru', 'Скользящие выпады на приводящие мышцы', 'Боковой выпад с использованием слайдера для контроля и растяжки.', 'Увеличивает гибкость и эксцентрическую силу.', 'Стоя, скользите одной ногой в сторону, сгибая другую.', 'Держите корпус прямо, вес на пятке.', 'Избегайте при проблемах с коленями.', 'Выход колена за носок.'),
+('sliding-adductor-lunge', 'nl', 'Sliding adductor lunge', 'Zijwaartse lunge met een slider voor betere controle en stretch.', 'Verhoogt flexibiliteit en excentrische kracht.', 'Staand, schuif één been opzij terwijl je het andere buigt.', 'Houd de romp rechtop en het gewicht op de hiel.', 'Vermijden bij knieproblemen.', 'De knie voorbij de tenen laten komen.'),
+('sliding-adductor-lunge', 'sv', 'Glidande adduktorutfall', 'Sidoutfall med en glidplatta för bättre kontroll och stretch.', 'Ökar rörlighet och excentrisk styrka.', 'Stå upp, glid ut med ena benet åt sidan samtidigt som du böjer det andra.', 'Håll överkroppen upprätt och vikten på hälen.', 'Undvik vid knäproblem.', 'Att låta knät gå förbi tårna.'),
+('sliding-adductor-lunge', 'pl', 'Ślizgowy wykrok na przywodziciele', 'Wykrok boczny z użyciem ślizgacza dla lepszej kontroli i rozciągania.', 'Zwiększa elastyczność i siłę ekscentryczną.', 'Stojąc, przesuń jedną nogę w bok, zginając drugą.', 'Utrzymuj wyprostowany tułów i ciężar na pięcie.', 'Unikaj w przypadku problemów z kolanami.', 'Pozwalanie, by kolano wyszło poza linię palców.'),
+('sliding-adductor-lunge', 'id', 'Sliding adductor lunge', 'Lunge lateral menggunakan slider untuk kontrol dan peregangan yang lebih baik.', 'Meningkatkan fleksibilitas dan kekuatan eksentrik.', 'Berdiri, geser satu kaki ke samping sambil menekuk kaki lainnya.', 'Jaga batang tubuh tegak dan berat badan pada tumit.', 'Hindari jika ada masalah lutut.', 'Membiarkan lutut melewati ujung jari kaki.'),
+('sliding-adductor-lunge', 'bn', 'স্লাইডিং অ্যাডাকটর লাঞ্জ', 'ভালো কন্ট্রোল এবং স্ট্রেচের জন্য স্লাইডার ব্যবহার করে সাইড লাঞ্জ।', 'ফ্লেক্সিবিলিটি এবং এক্সেন্ট্রিক শক্তি বাড়ায়।', 'দাঁড়িয়ে, এক পা পাশে স্লাইড করুন এবং অন্য পা ভাঁজ করুন।', 'শরীর সোজা রাখুন এবং গোড়ালিতে ওজন রাখুন।', 'হাঁটুর সমস্যা থাকলে এটি করবেন না।', 'হাঁটু পায়ের আঙুলের সামনে যেতে দেওয়া।'),
+('sliding-adductor-lunge', 'vi', 'Lunge trượt cho cơ khép', 'Bài tập lunge bên sử dụng đĩa trượt để tăng cường kiểm soát và giãn cơ.', 'Tăng độ linh hoạt và sức mạnh ly tâm.', 'Đứng thẳng, trượt một chân sang bên trong khi gập chân còn lại.', 'Giữ thân người thẳng và trọng lượng dồn vào gót chân.', 'Tránh tập nếu gặp vấn đề về đầu gối.', 'Để đầu gối vượt quá mũi chân.'),
+('sliding-adductor-lunge', 'fa', 'تمرين لانژ کشويي عضلات نزديک‌کننده', 'لانژ جانبي با استفاده از صفحه کشويي براي کنترل و کشش بهتر.', 'انعطاف‌پذيري و قدرت اکسنتریک را افزايش مي‌دهد.', 'ايستاده، يک پا را به سمت پهلو بلغزانيد در حالي که پاي ديگر را خم مي‌کنيد.', 'تنه را صاف نگه داريد و وزن را روي پاشنه پا بيندازيد.', 'در صورت مشکلات زانو انجام ندهيد.', 'اجازه ندهيد زانو از انگشتان پا جلوتر برود.');

@@ -1,6 +1,7 @@
 -- Definición del ejercicio
 INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
 VALUES 
+('cable-hip-adduction', 'cable-hip-adduction.jpg', 'cable-hip-adduction.mp4', 'intermediate'),
 ('band-hip-adduction', 'band-hip-adduction.jpg', 'band-hip-adduction.mp4', 'beginner');
 
 -- Relación de grupo muscular
