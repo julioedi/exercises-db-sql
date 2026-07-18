@@ -1,0 +1,38 @@
+-- Definición del ejercicio
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('side-lying-hip-abduction', 'side-lying-hip-abduction.jpg', 'side-lying-hip-abduction.mp4', 'beginner'),
+('side-plank-with-abduction', 'side-plank-with-abduction.jpg', 'side-plank-with-abduction.mp4', 'advanced');
+
+-- Relación de grupo muscular
+INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('side-plank-with-abduction', 'abductors');
+
+-- Relación de alternativas
+INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('side-plank-with-abduction', 'side-lying-hip-abduction');
+
+
+-- Información multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('side-plank-with-abduction', 'es', 'Plancha lateral con abducción', 'Plancha lateral añadiendo un movimiento de elevación de la pierna superior.', 'Aumenta el desafío para el core y el glúteo medio.', 'En posición de plancha lateral, eleva la pierna superior manteniéndola estirada.', 'Mantén la alineación cuerpo-cadera y no dejes caer la pelvis.', 'Evitar si hay lesiones de hombro.', 'Dejar caer la cadera o perder el equilibrio.'),
+('side-plank-with-abduction', 'en', 'Side plank with abduction', 'Side plank adding a leg lift movement to the top leg.', 'Increases the challenge for the core and gluteus medius.', 'In side plank position, lift the top leg while keeping it straight.', 'Keep body alignment and do not let the pelvis drop.', 'Avoid if shoulder injuries exist.', 'Dropping the hip or losing balance.'),
+('side-plank-with-abduction', 'pt', 'Prancha lateral com abdução', 'Prancha lateral adicionando um movimento de elevação da perna superior.', 'Aumenta o desafio para o core e glúteo médio.', 'Na posição de prancha lateral, eleve a perna superior mantendo-a esticada.', 'Mantenha o alinhamento corporal e não deixe a pelve cair.', 'Evitar se houver lesões no ombro.', 'Deixar o quadril cair ou perder o equilíbrio.'),
+('side-plank-with-abduction', 'fr', 'Planche latérale avec abduction', 'Planche latérale en ajoutant un mouvement de levée de la jambe supérieure.', 'Augmente le défi pour le tronc et le moyen fessier.', 'En position de planche latérale, levez la jambe supérieure en la gardant tendue.', 'Gardez l''alignement du corps et ne laissez pas le bassin tomber.', 'À éviter en cas de blessures à l''épaule.', 'Laisser tomber la hanche ou perdre l''équilibre.'),
+('side-plank-with-abduction', 'de', 'Seitstütz mit Abduktion', 'Seitstütz mit zusätzlichem Anheben des oberen Beins.', 'Erhöht die Herausforderung für Rumpf und Gesäß.', 'In Seitstützposition das obere Bein gestreckt anheben.', 'Körperausrichtung beibehalten und Becken nicht absinken lassen.', 'Bei Schulterverletzungen vermeiden.', 'Hüfte absinken lassen oder Gleichgewicht verlieren.'),
+('side-plank-with-abduction', 'it', 'Plank laterale con abduzione', 'Plank laterale con l''aggiunta di un movimento di sollevamento della gamba superiore.', 'Aumenta la sfida per il core e il gluteo medio.', 'In posizione di plank laterale, solleva la gamba superiore mantenendola tesa.', 'Mantieni l''allineamento del corpo e non far cadere il bacino.', 'Evitare in caso di lesioni alla spalla.', 'Far cadere l''anca o perdere l''equilibrio.'),
+('side-plank-with-abduction', 'zh', '侧支撑外展', '在侧支撑的基础上增加上侧腿的抬腿动作。', '增加核心和臀中肌的锻炼难度。', '在侧支撑位置，抬起上侧腿并保持伸直。', '保持身体对齐，不要让骨盆下坠。', '如有肩部损伤，请避免。', '臀部下沉或失去平衡。'),
+('side-plank-with-abduction', 'ja', 'サイドプランク・ウィズ・アブダクション', 'サイドプランクの姿勢で上の脚を上げる動作を加えたもの。', '体幹と中殿筋への負荷を高めます。', 'サイドプランクの姿勢から、上の脚を伸ばしたまま上げます。', '体幹のラインを保ち、骨盤を下げないようにしてください。', '肩に怪我がある場合は避けてください。', '腰が落ちることや、バランスを崩すこと。'),
+('side-plank-with-abduction', 'ko', '사이드 플랭크 어브덕션', '사이드 플랭크 자세에서 위쪽 다리를 들어 올리는 운동.', '코어와 중둔근 강화.', '사이드 플랭크 자세에서 위쪽 다리를 곧게 펴서 올림.', '몸을 일직선으로 유지하고 골반이 처지지 않도록 주의.', '어깨 부상 시 피할 것.', '골반이 처지거나 중심을 잃는 것.'),
+('side-plank-with-abduction', 'ar', 'تمرين البلانك الجانبي مع الأبعاد', 'البلانك الجانبي مع إضافة حركة رفع الساق العلوية.', 'يزيد من التحدي للنواة والعضلة الألوية الوسطى.', 'في وضع البلانك الجانبي، ارفع الساق العلوية مع إبقائها مستقيمة.', 'حافظ على استقامة الجسم ولا تدع الحوض يسقط.', 'تجنب في حالة وجود إصابات في الكتف.', 'سقوط الحوض أو فقدان التوازن.'),
+('side-plank-with-abduction', 'hi', 'साइड प्लैंक विद एबडक्शन', 'साइड प्लैंक जिसमें ऊपर वाले पैर को ऊपर उठाने का मूवमेंट जोड़ा जाता है।', 'कोर और ग्लूटस मेडियस के लिए चुनौती बढ़ाता है।', 'साइड प्लैंक स्थिति में, ऊपर वाले पैर को सीधा रखते हुए उठाएं।', 'शरीर को सीधा रखें और पेल्विस को नीचे गिरने न दें।', 'यदि कंधे में चोट हो तो न करें।', 'कूल्हे को गिरने देना या संतुलन खोना।'),
+('side-plank-with-abduction', 'ru', 'Боковая планка с отведением', 'Боковая планка с добавлением подъема верхней ноги.', 'Увеличивает нагрузку на кор и среднюю ягодичную мышцу.', 'В положении боковой планки поднимите верхнюю ногу, удерживая ее прямой.', 'Держите тело на одной линии, не позволяйте тазу опускаться.', 'Избегайте при травмах плеча.', 'Опускание таза или потеря равновесия.'),
+('side-plank-with-abduction', 'nl', 'Side plank with abduction', 'Side plank met toevoeging van een beenhefbeweging.', 'Verhoogt de uitdaging voor de core en gluteus medius.', 'In side plank positie, til het bovenste been op terwijl je het gestrekt houdt.', 'Houd het lichaam in lijn en laat het bekken niet zakken.', 'Vermijden bij schouderblessures.', 'Heup laten zakken of evenwicht verliezen.'),
+('side-plank-with-abduction', 'sv', 'Side plank with abduction', 'Sidoplanka med benlyft på det övre benet.', 'Ökar utmaningen för core och gluteus medius.', 'I sidoplankposition, lyft det övre benet medan du håller det rakt.', 'Håll kroppen rak och låt inte bäckenet sjunka.', 'Undvik vid axelskador.', 'Att låta höften sjunka eller tappa balansen.'),
+('side-plank-with-abduction', 'pl', 'Plank boczny z odwodzeniem', 'Plank boczny z dodatkowym ruchem unoszenia górnej nogi.', 'Zwiększa wyzwanie dla mięśni głębokich i pośladkowych średnich.', 'W pozycji planku bocznego unieś górną nogę, trzymając ją prosto.', 'Utrzymuj proste ciało i nie pozwól miednicy opaść.', 'Unikaj w przypadku kontuzji barku.', 'Opadanie biodra lub utrata równowagi.'),
+('side-plank-with-abduction', 'id', 'Side plank with abduction', 'Side plank dengan gerakan mengangkat kaki atas.', 'Meningkatkan tantangan untuk otot core dan gluteus medius.', 'Dalam posisi side plank, angkat kaki atas sambil menjaganya tetap lurus.', 'Jaga kesejajaran tubuh dan jangan biarkan panggul turun.', 'Hindari jika ada cedera bahu.', 'Membiarkan panggul turun atau kehilangan keseimbangan.'),
+('side-plank-with-abduction', 'bn', 'সাইড প্ল্যাঙ্ক উইথ অ্যাবডাকশন', 'সাইড প্ল্যাঙ্ক যেখানে ওপরের পা ওপরে তোলার মুভমেন্ট থাকে।', 'কোর ও গ্লুটাস মিডিয়াসের চ্যালেঞ্জ বাড়ায়।', 'সাইড প্ল্যাঙ্ক পজিশনে, ওপরের পা সোজা রেখে তুলুন।', 'শরীর সোজা রাখুন এবং পেলভিস নিচে পড়তে দেবেন না।', 'কাঁধে চোট থাকলে এটি করবেন না।', 'হিপ নিচে নামানো বা ভারসাম্য হারানো।'),
+('side-plank-with-abduction', 'vi', 'Plank nghiêng với đá ngang', 'Plank nghiêng thêm động tác nhấc chân trên.', 'Tăng thách thức cho cơ lõi và cơ mông nhỡ.', 'Ở tư thế plank nghiêng, nâng chân trên trong khi giữ thẳng.', 'Giữ thẳng người và không để khung chậu hạ xuống.', 'Tránh tập nếu bị chấn thương vai.', 'Để hông hạ xuống hoặc mất thăng bằng.'),
+('side-plank-with-abduction', 'fa', 'تمرين پلانک جانبی با ابداکشن', 'پلانک جانبی با اضافه کردن حرکت بلند کردن پای بالایی.', 'چالش بیشتری برای هسته بدن و سرینی متوسط ایجاد می‌کند.', 'در حالت پلانک جانبی، پای بالایی را صاف بلند کنید.', 'بدن را در یک راستا نگه دارید و اجازه ندهید لگن پایین بیاید.', 'در صورت آسیب‌دیدگی شانه انجام ندهید.', 'پایین افتادن لگن یا از دست دادن تعادل.');

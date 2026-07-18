@@ -1,0 +1,37 @@
+-- 1. Registro en la tabla principal
+INSERT OR IGNORE INTO exercises (slug, img, video, difficulty) 
+VALUES 
+('hip-abduction-machine', 'hip-abduction-machine.jpg', 'hip-abduction-machine.mp4', 'beginner'),
+('sumo-squat', 'sumo-squat.jpg', 'sumo-squat.mp4', 'intermediate');
+
+-- 2. Registro de grupo muscular
+INSERT INTO exercise_body_target (exercise_slug, body_target_slug) 
+VALUES 
+('sumo-squat', 'abductors');
+
+-- 3. Registro de alternativas (ejemplo de enlace)
+INSERT INTO exercise_alternative (exercise_slug, alternative_slug) 
+VALUES 
+('sumo-squat', 'hip-abduction-machine');
+
+-- 4. Registro completo de información multiidioma
+INSERT OR IGNORE INTO exercises_info (slug, lang, title, description, benefits, instructions, tips, restrictions, mistakes) VALUES 
+('sumo-squat', 'es', 'Sentadilla sumo', 'Variante de sentadilla con postura amplia para mayor activación de abductores.', 'Fortalece glúteos, abductores y cuádriceps.', 'Pies más anchos que los hombros, puntas hacia afuera, baja el centro de gravedad.', 'Mantén el pecho erguido y las rodillas alineadas con los pies.', 'No realizar si hay dolor intenso en la cadera.', 'Rodillas hacia adentro o espalda curva.'),
+('sumo-squat', 'en', 'Sumo squat', 'Squat variation with wide stance for increased abductor activation.', 'Strengthens glutes, abductors, and quads.', 'Feet wider than shoulders, toes out, lower center of gravity.', 'Keep chest upright and knees aligned with feet.', 'Avoid if acute hip pain exists.', 'Knees caving in or rounded back.'),
+('sumo-squat', 'pt', 'Agachamento sumo', 'Variação de agachamento com base larga para maior ativação de abdutores.', 'Fortalece glúteos, abdutores e quadríceps.', 'Pés mais largos que os ombros, pontas para fora, baixe o centro de gravidade.', 'Mantenha o peito erguido e os joelhos alinhados com os pés.', 'Evitar se houver dor intensa no quadril.', 'Joelhos para dentro ou costas curvas.'),
+('sumo-squat', 'fr', 'Squat sumo', 'Variante de squat avec une base large pour une activation accrue des abducteurs.', 'Renforce les fessiers, les abducteurs et les quadriceps.', 'Pieds plus larges que les épaules, pointes vers l''extérieur, baissez le centre de gravité.', 'Gardez la poitrine droite et les genoux alignés avec les pieds.', 'À éviter en cas de douleur intense à la hanche.', 'Genoux vers l''intérieur ou dos rond.'),
+('sumo-squat', 'de', 'Sumo-Kniebeuge', 'Kniebeugenvariante mit breitem Stand für mehr Abduktorenaktivierung.', 'Stärkt Gesäß, Abduktoren und Quadrizeps.', 'Füße weiter als schulterbreit, Zehen nach außen, Schwerpunkt senken.', 'Brust aufrecht halten und Knie über den Füßen ausrichten.', 'Bei starken Hüftschmerzen vermeiden.', 'Knie nach innen oder runder Rücken.'),
+('sumo-squat', 'it', 'Sumo squat', 'Variante dello squat con base larga per una maggiore attivazione degli abduttori.', 'Rinforza glutei, abduttori e quadricipiti.', 'Piedi più larghi delle spalle, punte verso l''esterno, abbassa il baricentro.', 'Mantieni il petto eretto e le ginocchia allineate con i piedi.', 'Evitare in caso di dolore intenso all''anca.', 'Ginocchia verso l''interno o schiena curva.'),
+('sumo-squat', 'zh', '相扑深蹲', '深蹲的变式，宽站距以增加对外展肌的激活。', '加强臀部、外展肌和股四头肌。', '双脚宽于肩，脚尖向外，降低重心。', '保持胸部挺直，膝盖与脚尖对齐。', '如有严重髋部疼痛，请避免。', '膝盖内扣或背部弯曲。'),
+('sumo-squat', 'ja', 'スモウスクワット', '脚幅を広く取ったスクワットで、外転筋への刺激を強めたもの。', '殿筋、外転筋、大腿四頭筋を強化します。', '肩幅より広く足を広げ、つま先を外に向け、重心を下げます。', '胸を張り、膝とつま先の方向を揃えてください。', '股関節に激しい痛みがある場合は避けてください。', '膝が内側に入ることや、背中が丸まること。'),
+('sumo-squat', 'ko', '스모 스쿼트', '발을 넓게 벌려 외전근을 더 많이 사용하는 스쿼트 변형.', '둔근, 외전근, 대퇴사두근 강화.', '어깨너비보다 넓게 발을 벌리고 발끝을 밖으로 향하게 한 뒤 무게 중심을 낮춤.', '가슴을 펴고 무릎과 발끝 방향을 맞출 것.', '고관절 통증 시 피할 것.', '무릎이 모이거나 허리가 굽는 것.'),
+('sumo-squat', 'ar', 'تمرين سكوات السومو', 'تمرين سكوات بوقفة واسعة لزيادة تنشيط الأبعاد.', 'يقوي الأرداف والأبعاد وعضلات الفخذ الأمامية.', 'القدمان أعرض من الكتفين، أصابع القدم للخارج، اخفض مركز الجاذبية.', 'حافظ على استقامة الصدر ومحاذاة الركبتين مع القدمين.', 'تجنب في حالة وجود ألم شديد في الورك.', 'الركبتان للداخل أو تقوس الظهر.'),
+('sumo-squat', 'hi', 'सुमो स्क्वाट', 'चौड़ी मुद्रा के साथ स्क्वाट का प्रकार जो एबडक्टर्स को अधिक सक्रिय करता है।', 'कूल्हों, एबडक्टर्स और क्वाड्स को मजबूत करता है।', 'कंधों से अधिक चौड़े पैर, पैर की उंगलियां बाहर, शरीर का वजन नीचे लाएं।', 'छाती सीधी रखें और घुटनों को पैरों की सीध में रखें।', 'यदि कूल्हे में तीव्र दर्द हो तो न करें।', 'घुटनों का अंदर की ओर मुड़ना या पीठ का झुकना।'),
+('sumo-squat', 'ru', 'Сумо-приседания', 'Вариант приседаний с широкой постановкой ног для активации отводящих мышц.', 'Укрепляет ягодицы, отводящие мышцы и квадрицепсы.', 'Ноги шире плеч, носки в стороны, опустите центр тяжести.', 'Держите грудь прямо, колени должны быть на одной линии со стопами.', 'Избегайте при острой боли в бедре.', 'Колени внутрь или сутулость.'),
+('sumo-squat', 'nl', 'Sumo squat', 'Squat-variatie met brede stand voor meer activering van de abductoren.', 'Versterkt bilspieren, abductoren en quadriceps.', 'Voeten breder dan schouders, tenen naar buiten, laat het zwaartepunt zakken.', 'Houd de borst rechtop en de knieën in lijn met de voeten.', 'Vermijden bij acute heuppijn.', 'Knieën naar binnen of een gebogen rug.'),
+('sumo-squat', 'sv', 'Sumo squat', 'Knäböj med bred benställning för ökad aktivering av abduktorer.', 'Stärker säte, abduktorer och framsida lår.', 'Fötter bredare än axelbrett, tårna utåt, sänk tyngdpunkten.', 'Håll bröstet upprätt och knäna i linje med fötterna.', 'Undvik vid akut höftsmärta.', 'Att knäna faller inåt eller att ryggen kröks.'),
+('sumo-squat', 'pl', 'Przysiad sumo', 'Wariant przysiadu z szerokim rozstawem stóp dla większej aktywacji odwodzicieli.', 'Wzmacnia pośladki, odwodziciele i mięśnie czworogłowe.', 'Stopy szerzej niż barki, palce na zewnątrz, obniż środek ciężkości.', 'Utrzymuj wyprostowaną klatkę piersiową i kolana w linii ze stopami.', 'Unikaj w przypadku ostrego bólu biodra.', 'Schodzenie się kolan do wewnątrz lub zaokrąglone plecy.'),
+('sumo-squat', 'id', 'Sumo squat', 'Variasi squat dengan kuda-kuda lebar untuk aktivasi abduktor yang lebih besar.', 'Memperkuat otot bokong, abduktor, dan quadriceps.', 'Kaki lebih lebar dari bahu, jari kaki ke luar, turunkan pusat gravitasi.', 'Jaga dada tetap tegak dan lutut sejajar dengan kaki.', 'Hindari jika ada nyeri pinggul akut.', 'Lutut masuk ke dalam atau punggung melengkung.'),
+('sumo-squat', 'bn', 'সুমো স্কোয়াট', 'চওড়া অবস্থানে স্কোয়াট, যা অ্যাবডাক্টরকে বেশি সক্রিয় করে।', 'গ্লুটস, অ্যাবডাক্টর এবং কোয়াড্রিসেপস শক্তিশালী করে।', 'কাঁধের চেয়ে পা বেশি চওড়া রাখুন, পায়ের আঙুল বাইরের দিকে এবং নিচু হন।', 'বুক সোজা রাখুন এবং হাঁটু পায়ের সঙ্গে সারিবদ্ধ রাখুন।', 'হিপে তীব্র ব্যথা থাকলে এটি করবেন না।', 'হাঁটু ভেতরের দিকে ঢোকা বা পিঠ বাঁকা হওয়া।'),
+('sumo-squat', 'vi', 'Squat kiểu sumo', 'Biến thể squat với tư thế rộng để kích hoạt cơ giạng.', 'Tăng cường cơ mông, cơ giạng và cơ tứ đầu.', 'Chân rộng hơn vai, mũi chân hướng ra ngoài, hạ thấp trọng tâm.', 'Giữ ngực thẳng và đầu gối thẳng hàng với bàn chân.', 'Tránh tập nếu bị đau hông cấp tính.', 'Đầu gối chụm vào hoặc lưng cong.'),
+('sumo-squat', 'fa', 'تمرين اسکات سومو', 'تغيير در اسکات با پاهاي باز براي فعال‌سازي بيشتر ابداکتورها.', 'عضلات باسن، ابداکتورها و چهارسر ران را تقويت مي‌کند.', 'پاها عريض‌تر از شانه، انگشتان به سمت خارج، مرکز ثقل را پايين ببريد.', 'سينه را صاف نگه داريد و زانوها را با پاها در يک راستا قرار دهيد.', 'در صورت درد شديد لگن انجام ندهيد.', 'زانوها به سمت داخل يا کمر خميده.');
